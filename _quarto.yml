@@ -3,20 +3,23 @@ project:
   output-dir: docs
 
 book:
-  title: "heterodox economics"
+  title: "Heterodox Economics"
   author: "Celâl Güney"
   date: "29/07/2023"
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
+    - classical-marxian-models.qmd
+    - Neo-keynesian-models.qmd
     - references.qmd
 
 bibliography: references.bib
 
 format:
   html:
-    theme: darkly
+    theme:
+      dark: darkly
+      light: flatly
   pdf:
     documentclass: scrreprt
 

@@ -1,9 +1,4 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+This website is a guide for economics, macroeconomics and especially heterodox macroeconomics. Most of the content and macro models presented here are summaries of @blecker_heterodox_2019 manual on heterodox macroeconomics. I created this website simply because I need a platform to put all my notes and summaries from my economics classes during my studies, so that I can have a quick access to it and also make it accessible to anyone interested in the topic.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
-
-```{r}
-1 + 1
-```
