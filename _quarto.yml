@@ -6,12 +6,38 @@ book:
   title: "Heterodox Economics"
   author: "Celâl Güney"
   date: "29/07/2023"
+  navbar:
+    left:
+      - text: About
+        href: https://jeylal.github.io/myblog/about.html 
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+      - icon: envelope-fill
+        href: mailto:celal.gueney@etu.unige.ch
+      - text: "Content"
+        menu: 
+        - text: "Post"
+          file: https://jeylal.github.io/myblog/
+        - text: "Economics"
+          file: https://jeylal.github.io/myblog/economics.html
   chapters:
     - index.qmd
-    - intro.qmd
-    - classical-marxian-models.qmd
-    - Neo-keynesian-models.qmd
-    - neo-kaleckian-models.qmd
+    - part: "Introduction"
+      chapters: 
+        - intro.qmd
+        - consumer-theory.qmd
+        - production-theory.qmd
+    - part: "Classical-Marxian Models"
+      chapters:
+        - classical-marxian-models.qmd
+    - part: "Neo-Keynesian Models"
+      chapters:
+        - Neo-keynesian-models.qmd
+    - part: "Neo-Kaleckian Models"
+      chapters:
+        - neo-kaleckian-models.qmd
     - references.qmd
 
 bibliography: references.bib
