@@ -11,6 +11,7 @@ book:
     - intro.qmd
     - classical-marxian-models.qmd
     - Neo-keynesian-models.qmd
+    - neo-kaleckian-models.qmd
     - references.qmd
 
 bibliography: references.bib
