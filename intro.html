@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Heterodox Economics - References</title>
+<title>Heterodox Economics - 1&nbsp; Introduction: Market Equilibrium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
 }
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +64,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./neo-kaleckian-models.html" rel="prev">
+<link href="./consumer-theory.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,6 +97,8 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -147,7 +165,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html">Introduction</a></li><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction: Market Equilibrium</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -184,7 +202,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction: Market Equilibrium</span></span></a>
   </div>
 </li>
@@ -255,7 +273,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -265,14 +283,20 @@ div.csl-indent {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#market-equilibrium" id="toc-market-equilibrium" class="nav-link active" data-scroll-target="#market-equilibrium"><span class="header-section-number">1.1</span> Market equilibrium</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">References</h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction: Market Equilibrium</span></h1>
 </div>
 
 
@@ -287,11 +311,63 @@ div.csl-indent {
 
 </header>
 
-<div id="refs" role="list">
-
+<p>This website is a compilation of my economics classes’ notes and its goal is to provide summaries of important topics in heterodox economics. Since having some basics in mainstream economics is crucial to understand the main schools of heterodox economics, mainly because heterodox economics is constructed partly as a response and critic of mainstream-neoclassical economics, the present introduction will summarize the basics of neoclassical production and consumer theory, the two foundations of market equilibrium.</p>
+<p>Let’s first recall what market equilibrium is, because it is one of the most important concept in economics.</p>
+<section id="market-equilibrium" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="market-equilibrium"><span class="header-section-number">1.1</span> Market equilibrium</h2>
+<p>Market equilibrium is perhaps the most important element of neoclassical theory. Stated simply, market equilibrium tells what will be the price of any object or service, as long as the latters are commodified. Market equilibrium explains not only the equilirbium level of prices and commodities of any good or service, but also the change in prices resulting from exogenous shocks (change in income, confidence, technology…)</p>
+<p>Let’s directly take an example: suppose that the demand for grain follows a negative linear function.</p>
+<p><span class="math inline">\(Q_{demand} = 7-0.5p\)</span></p>
+<p>That means that the quantity demanded for grains decreases if the price for grain increases and vice and versa.</p>
+<p>Moreover, let’s say that the quantity supplied for grains is a positive linear function of prices for grain: the higher the price, the more are firms willing to supply grains.</p>
+<p><span class="math inline">\(Q_{supply} = 1+0.6p\)</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>demand <span class="ot">&lt;-</span> <span class="cf">function</span>(p) <span class="dv">7</span> <span class="sc">-</span> (<span class="fl">0.5</span><span class="sc">*</span>p)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>supply <span class="ot">&lt;-</span> <span class="cf">function</span>(p) <span class="dv">1</span> <span class="sc">+</span> <span class="fl">0.6</span><span class="sc">*</span>p</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="intro_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>To find the equilibrium price and quantity, we equate the demand and supply functions and solve for q:</p>
+<p><span class="math display">\[
+\begin{aligned}
+q_{demand} = 7- 0.5*p
+\\
+q_{supply} = 1 + 0.6*p
+\\
+q_{demand} = q_{supply}
+\\
+7 - 0.5*p = 1 + 0.6*p
+\\
+6-0.11p = 0
+\\
+p^* = 6/1.1 = 5.45
+\end{aligned}
+\]</span></p>
+<p>The equilibrium price level is thus <span class="math inline">\(p^* = 5.45\)</span>. To find the equilibrium quantity, we simple put the value of the equilibrium price (5.45) into either the supply or demand function: <span class="math inline">\(7-0.5*5.45 = 4.275 = p^*\)</span></p>
+<p>It is easy to check directly if the computation is correct in r:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>equilibrium <span class="ot">&lt;-</span> <span class="fu">curve_intersect</span>(demand, supply, <span class="at">empirical =</span> <span class="cn">FALSE</span>, <span class="at">domain =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">10</span>))</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>equilibrium</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$x
+[1] 5.454545
+
+$y
+[1] 4.272727</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="intro_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>But how did neoclassical theory arrive to this kind of model of equilibrium price and quantity determination? To understand better this model, we need to know why we have this positive supply curve and this negative demand curve. We will first investigate consumer choice theory, which is behind the negative demand curve, and then production-side theory, which is behind the positive supply curve.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -644,11 +720,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./neo-kaleckian-models.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Neo-Kaleckian Models</span></span>
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./consumer-theory.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Neoclassical-mainstream consumer choice theory</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
