@@ -25,7 +25,7 @@ theme_set(theme_light())
 
 ### What is a market?
 
-Market equilibrium is perhaps the most important element of neoclassical theory. Every introductory mainstream textbook starts with market equilibrium. @acemoglu_microeconomics_2017 defines an market as:
+Market equilibrium is perhaps the most important element of neoclassical theory. Every introductory mainstream textbooks start with market equilibrium. @acemoglu_microeconomics_2017 defines a market as:
 
   "A group of economic agents who are trading a good or service plus the rules and arrangements for trading" [@acemoglu_microeconomics_2017, p. 59].
 
@@ -33,17 +33,17 @@ The definition given by @pindyck_microeconomics_2013 is more precise:
 
   "**Market**: Collection of buyers and sellers that, through their actual or potential interactions, determine the price of a product or set of products" [@pindyck_microeconomics_2013, p. 8].
 
-Stated simply, market equilibrium tells what will be the price of any object or service, as long as the latters are commodified. Market equilibrium explains not only the equilirbium level of prices and commodities of any good or service, but also the change in prices resulting from exogenous shocks (change in income, confidence, technology...)
+Stated simply, market equilibrium tells what will be the price of any object or service, as long as the latter are turned into commodities. Market equilibrium explains not only the equilibrium level of prices and commodities of any good or service, but also the change in prices resulting from exogenous shocks (change in income, confidence, technology...).
 
-A market is thus a place (material or not) where an object or service is offered by suppliers and demanded by consumers and thus traded when an agreement is reached over the price which will determine the value of the traded commodity. 
+A market is thus a place (material or not) where an object or service turned into a commodity is offered by suppliers and demanded by consumers and thus traded when an agreement is reached over the price which will determine the value of the traded commodity. 
 
 ### Markets under perfect competition
 
-But there are many types of markets. Microeconomics generally starts with an ideal-type market: the *perfectly competitive market*. The latter refers to any market in which there are a large number of suppliers and as well as a large number of consumers. An important characteristic of perfectly competitive markets is that *suppliers and consumers think that they cannot manipulate or have an influence over the market price*. Market price is thus considered as *given* and *fixed* by the market when demand equates supply, as we will see below.
+But there are many types of markets. Microeconomics generally starts with an ideal-type market: the *perfectly competitive market*. The latter refers to any market in which there are a large number of suppliers as well as large number of consumers. An important characteristic of perfectly competitive markets is that *suppliers and consumers think that they cannot manipulate or have an influence over the market price*. Market price is thus considered as *given* and *fixed* by the market when demand equates supply, as we will see below.
 
 ### Demand, Supply, Equilibrium
 
-Consumers' total demand for a commodity constitute the overall market demand for that commodity. Demand is considered to be negatively related to the price of that commodity: the higher the price, the lower the demand. On the other hand, firms' supply of the commodity is a positive function of price. The higher the price, the higher the profits for any level of production, hence higher incentive to increase production and supply more quantity.
+Consumers' total demand for a commodity constitutes the overall market demand for that commodity. Demand is considered to be negatively related to the price of that commodity: the higher the price, the lower the demand. On the other hand, firms' supply of the commodity is a positive function of price. The higher the price, the higher the profits for any level of production, hence higher incentive to increase production and supply more quantity.
 
 Let's now take an example: suppose that the demand for grain follows a negative linear function.
 
