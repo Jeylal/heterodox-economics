@@ -218,7 +218,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, enhanced, frame hidden, interior hidden, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, breakable]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, interior hidden, enhanced, boxrule=0pt, breakable, borderline west={3pt}{0pt}{shadecolor}, sharp corners]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -248,14 +248,15 @@ accessible to anyone interested in the topic.
 \chapter{Introduction: Market
 Equilibrium}\label{introduction-market-equilibrium}}
 
-This website is a compilation of my economics classes' notes and its
-goal is to provide summaries of important topics in heterodox economics.
-Since having some basics in mainstream economics is crucial to
-understand the main schools of heterodox economics, mainly because
-heterodox economics is constructed partly as a response and critic of
-mainstream-neoclassical economics, the present introduction will
-summarize the basics of neoclassical production and consumer theory, the
-two foundations of market equilibrium.
+This website is guide to mainstream and heterodox economics constructed
+from my personal notes from a variety of bachelor and master level
+economics courses. goal is to provide summaries of important topics in
+neoclassical and heterodox economics. Since having some background in
+mainstream economics is crucial to understand the heterodox and
+Post-Keynesian economics, mainly because the latter are constructed
+partly as a response and critic of mainstream-neoclassical economics,
+the present introduction will summarize the basics of neoclassical
+production theory, consumer theory and market equilibrium.
 
 Let's first recall what market equilibrium is, because it is one of the
 most important concept in economics.
@@ -263,21 +264,70 @@ most important concept in economics.
 \hypertarget{market-equilibrium}{%
 \section{Market equilibrium}\label{market-equilibrium}}
 
+\hypertarget{what-is-a-market}{%
+\subsection{What is a market?}\label{what-is-a-market}}
+
 Market equilibrium is perhaps the most important element of neoclassical
-theory. Stated simply, market equilibrium tells what will be the price
-of any object or service, as long as the latters are commodified. Market
+theory. Every introductory mainstream textbook starts with market
+equilibrium. Acemoglu, Laibson, and List (2017) defines an market as:
+
+``A group of economic agents who are trading a good or service plus the
+rules and arrangements for trading'' (Acemoglu, Laibson, and List 2017,
+59).
+
+The definition given by Pindyck and Rubinfeld (2013) is more precise:
+
+``\textbf{Market}: Collection of buyers and sellers that, through their
+actual or potential interactions, determine the price of a product or
+set of products'' (Pindyck and Rubinfeld 2013, 8).
+
+Stated simply, market equilibrium tells what will be the price of any
+object or service, as long as the latters are commodified. Market
 equilibrium explains not only the equilirbium level of prices and
 commodities of any good or service, but also the change in prices
 resulting from exogenous shocks (change in income, confidence,
 technology\ldots)
 
-Let's directly take an example: suppose that the demand for grain
-follows a negative linear function.
+A market is thus a place (material or not) where an object or service is
+offered by suppliers and demanded by consumers and thus traded when an
+agreement is reached over the price which will determine the value of
+the traded commodity.
+
+\hypertarget{markets-under-perfect-competition}{%
+\subsection{Markets under perfect
+competition}\label{markets-under-perfect-competition}}
+
+But there are many types of markets. Microeconomics generally starts
+with an ideal-type market: the \emph{perfectly competitive market}. The
+latter refers to any market in which there are a large number of
+suppliers and as well as a large number of consumers. An important
+characteristic of perfectly competitive markets is that \emph{suppliers
+and consumers think that they cannot manipulate or have an influence
+over the market price}. Market price is thus considered as \emph{given}
+and \emph{fixed} by the market when demand equates supply, as we will
+see below.
+
+\hypertarget{demand-supply-equilibrium}{%
+\subsection{Demand, Supply,
+Equilibrium}\label{demand-supply-equilibrium}}
+
+Consumers' total demand for a commodity constitute the overall market
+demand for that commodity. Demand is considered to be negatively related
+to the price of that commodity: the higher the price, the lower the
+demand. On the other hand, firms' supply of the commodity is a positive
+function of price. The higher the price, the higher the profits for any
+level of production, hence higher incentive to increase production and
+supply more quantity.
+
+Let's now take an example: suppose that the demand for grain follows a
+negative linear function.
 
 \(Q_{demand} = 7-0.5p\)
 
 That means that the quantity demanded for grains decreases if the price
-for grain increases and vice and versa.
+for grain increases and vice and versa. The slope of the demand curve,
+\(-0.5\), means that when the price increases by one, the quantity
+demanded decreases by 0.5.
 
 Moreover, let's say that the quantity supplied for grains is a positive
 linear function of prices for grain: the higher the price, the more are
@@ -337,12 +387,76 @@ $y
 
 \includegraphics{intro_files/figure-pdf/unnamed-chunk-5-1.pdf}
 
+At equilibrium, economists say that ``the market clears''. In other
+words, when equilibrium is reached all commodities are sold, every
+suppliers have sold their commodities and every consumers have purchased
+one.
+
+\hypertarget{deviations-from-market-price}{%
+\subsection{Deviations from market
+price}\label{deviations-from-market-price}}
+
+If the price was lower than the market price, for instance after a price
+control policy (think for example of all the debates about energy price
+since covid and the war), there would be excess demand. Every commodity
+would be sold, but there would still be consumers who want to consume
+the good, but cannot because suppliers do not want to increase
+production because the price is too low.
+
+Conversely, if the price was above the market price, there would be a
+situation of excess supply. Firms supply a large quantity of commodities
+since the price is relatively very high, but not all commodities would
+be sold because some consumers would think that the price is too high
+for them.
+
+\hypertarget{change-in-equilibrium-prices}{%
+\subsection{Change in equilibrium
+prices}\label{change-in-equilibrium-prices}}
+
+Finally, change in market price happens each time either the supply
+curve or the demand curve shift to the right (positive shock) or to the
+left (negative shock).
+
+Regarding demand curve shifts, (Acemoglu, Laibson, and List 2017, 67)
+give five factors:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Tastes and preferences
+\item
+  Income and wealth
+\item
+  Availability and prices of related goods
+\item
+  Number and scale of buyers
+\item
+  Buyers' beliefs about the future
+\end{enumerate}
+
+And four factors for shifts in supply curve (Acemoglu, Laibson, and List
+2017, 73):
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Prices of inputs used to produce the good
+\item
+  Technology used to produce the good
+\item
+  Number and scale of sellers
+\item
+  Sellers' beliefs about the future
+\end{enumerate}
+
 But how did neoclassical theory arrive to this kind of model of
 equilibrium price and quantity determination? To understand better this
 model, we need to know why we have this positive supply curve and this
 negative demand curve. We will first investigate consumer choice theory,
-which is behind the negative demand curve, and then production-side
-theory, which is behind the positive supply curve.
+which is behind the negative demand curve, and then production theory,
+which is behind the positive supply curve.
 
 \hypertarget{neoclassical-mainstream-consumer-choice-theory}{%
 \chapter{Neoclassical-mainstream consumer choice
@@ -1099,6 +1213,190 @@ marginal revenue, the price, is equal to the marginal cost). Then, if
 price increases, marginal revenue increases, and firms can increase
 production and quantity supplied until marginal revenue is again equal
 to the marginal cost.
+
+\part{Neoclassical Macroeconomics}
+
+\hypertarget{is-lm-model}{%
+\chapter{IS-LM model}\label{is-lm-model}}
+
+\hypertarget{intro-1}{%
+\section{Intro}\label{intro-1}}
+
+The main objective of macroeconomics is to describe and explain the
+relationship between important economic variables such as unemployment,
+inflation, production and growth or the interest rate. Questions
+macroeconomics typically tries to answer are ``how can long run growth
+be sustained?'' ``how can unemployment be reduced?''. Macroeconomics
+also takes into account economic policy and the role of the government:
+how can the government reduce unemployment, increase output and maintain
+low level of inflation?
+
+Those are all questions most of macro models try to answer. In this blog
+post, I will explain one of the most famous and widespread macro model,
+which is the \textbf{Investment-Savings - Liquidity-Money} model (IS-LM
+model).
+
+\hypertarget{production-as-gross-national-product-gdp}{%
+\section{Production as Gross National Product
+(GDP)}\label{production-as-gross-national-product-gdp}}
+
+The main feature of the model is a graph, which show the relationship
+between output and the interest rate. But first, we have to define what
+is actually output (production) in macro theory.
+
+\hypertarget{the-three-approach-to-gdp}{%
+\subsection{The three approach to GDP}\label{the-three-approach-to-gdp}}
+
+Production is defined as the sum of value added within an economy (can
+be a nation, a region, or the world taken as a whole) during a period of
+time (a year, month, semester, quarter\ldots). There are three
+equivalent ways to define and compute GDP:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Production approach}
+
+  GDP is equal to the value (measured in price) of all final goods and
+  services sold minus the value of all intermediary inputs used in the
+  production process
+\end{enumerate}
+
+\(GDP \equiv value\: output\: sold - cost\: intermediary\: inputs\)
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  \textbf{Income approach}
+
+  GDP is equal to the income of all agents in the economy
+\end{enumerate}
+
+\(GDP \equiv salaries\:of\:workers + profits\:of\:capital\:owners\)
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  \textbf{Expenditure approach}
+
+  Finally, and this is the most famous definition of GDP, GDP is equal
+  to the total expenditure in the economy, which can be decomposed into
+  the private expenditures of housholds on goods and services C, private
+  expenditure of firms, investment I, and public expenditure G.
+\end{enumerate}
+
+\(GDP \equiv C + I + G\)
+
+If we take into account the fact that the economy is trading with the
+rest of the world, we must include the expenditure on imported goods M
+(imports) and expenditure from the rest of the world for national goods
+and services X (exports).
+
+\(GDP \equiv C + I + G + (X-I)\)
+
+Those three approaches are equivalent. Take for example the income and
+expenditure methods: it makes sense that any expenditure someone makes
+has to be a revenue for someone else.
+
+\hypertarget{investment-savings-curve-is}{%
+\subsection{Investment-savings curve
+(IS)}\label{investment-savings-curve-is}}
+
+The objective of the IS curve is to describe the relationship between
+the interest rate and output, which is determined by demand in the short
+run.
+
+The first step is to model demand and the equilibrium on the goods and
+services market. This can be done from the expenditure method to GDP,
+since expenditure is kind of the same way to say demand.
+
+The total demand in a (closed) economy is thus
+
+\(Y \equiv GDP \equiv C + I + G\)
+
+\hypertarget{consumption-c}{%
+\subsubsection{Consumption C}\label{consumption-c}}
+
+But what determines private consumption C? IS-LM model considers that
+consumption as a positive function of income \(Y\)
+
+\(C = C_{0}+C_{1}Y\)
+
+With \(C_{0}\) the minimum level of consumption if income is zero,
+\(C_{1}\) the marginal propsentity to consume (the additional
+consumption resulting from one-unit increase in income Y) and \(Y\) the
+income. Note that income \(Y\) is the \emph{disposable} income, that is,
+income after tax T: \(Y_d = Y-T\). Taxes T can be written as a
+proportion taken from income \(T = tY\) with \(t\) the tax rate on
+income.
+
+The consumption function can thus be rewritten:
+
+\[
+\begin{aligned}
+C = C_{0}+C_{1}Y
+\\
+C = C_{0} + C_{1}(Y-tY)
+\\
+C = C_{0} + C_{1}Y(1-t)
+\end{aligned}
+\]
+
+\hypertarget{investment-i}{%
+\subsubsection{Investment I}\label{investment-i}}
+
+Regarding investment, the latter is considered as a decreasing function
+of the interest rate i:
+
+\(I = I_{0} -iI_{1}\)
+
+The logic behind a negative relationship between investment and the
+interest rate is the following: the interest rate is the cost of
+borrowing. The higher the i, the higher it is to finance investment
+through borrowing. Conversely, at low i borrowing is cheaper, making
+firms more likely to borrow in order to invest.
+
+\hypertarget{public-spending-g}{%
+\subsubsection{Public spending G}\label{public-spending-g}}
+
+Government spending is considered as exogenous in the is-lm model. This
+means that G is determined by government decisions which is determined
+outside the model.
+
+\hypertarget{final-output-equation}{%
+\subsubsection{Final output equation}\label{final-output-equation}}
+
+The formula \(Y \equiv GDP \equiv C + I + G\) can thus take its final IS
+form:
+
+\(Y = [C_{0} + C_{1}Y(1-t)] + [I_{0} - iI_{1}] + \bar{G}\)
+
+We can see in this equation that ouput Y is negatively related to the
+interest rate i: the IS curve as thus a negative linear shape.
+
+To grasp the function in an easier way, we will just consider that the
+IS curve is a linear function of consumption (positive relation between
+output and consumption), Investment and government spending (also
+positive relation) and the interest rate (negative relation):
+
+\(IS = Y = F[C(Y_{+}, T_{-}), I(i_{-}), G_{+}]\)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#example of a linear IS function}
+\NormalTok{IS }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(A, k, x) A }\SpecialCharTok{{-}}\NormalTok{ k}\SpecialCharTok{*}\NormalTok{x }\CommentTok{\#with A autonomous spending, k the mutliplier and x the interest rate}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{is-lm_files/figure-pdf/unnamed-chunk-3-1.pdf}
+
+As shown in the graph above, an increase in government spending or in
+consumption (but not due to an increase in income) or in investment
+(except due to a decline in interest rate) will induce a positive shift
+(upward) of the IS curve. A negative shock will make a shift downards
+(negative shock).
 
 \part{Classical-Marxian Models}
 
@@ -2898,6 +3196,11 @@ the investment function and introduce foreign trade.
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-acemoglu_microeconomics_2017}{}}%
+Acemoglu, Daron, David Laibson, and John A. List. 2017.
+\emph{Microeconomics}. 2nd ed. Always Learning. Pearson.
+\url{http://gen.lib.rus.ec/book/index.php?md5=AE81E7B4B1AF2925CE54FC864B30482A}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-asimakopulos_kaleckian_1975}{}}%
 Asimakopulos, A. 1975. {``A Kaleckian Theory of Income Distribution.''}
 \emph{The Canadian Journal of Economics / Revue Canadienne d'Economique}
@@ -2928,6 +3231,11 @@ Political Quarterly} 14 (4): 322--30.
 \leavevmode\vadjust pre{\hypertarget{ref-kalecki_theory_1954}{}}%
 ---------. 1954. \emph{Theory of Economic Dynamics: An Essay on Cyclical
 and Long-Run Changes in Capitalist Economy}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-pindyck_microeconomics_2013}{}}%
+Pindyck, Robert S., and Daniel L. Rubinfeld. 2013.
+\emph{Microeconomics}. 8th ed. The Pearson Series in Economics. Boston:
+Pearson.
 
 \end{CSLReferences}
 

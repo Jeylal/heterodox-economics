@@ -30,6 +30,9 @@ book:
         - intro.qmd
         - consumer-theory.qmd
         - production-theory.qmd
+    - part: "Neoclassical Macroeconomics"
+      chapters: 
+        - is-lm.qmd
     - part: "Classical-Marxian Models"
       chapters:
         - classical-marxian-models.qmd

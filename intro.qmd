@@ -146,36 +146,5 @@ And four factors for shifts in supply curve [@acemoglu_microeconomics_2017, p. 7
 4. Sellers’ beliefs about the future
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 But how did neoclassical theory arrive to this kind of model of equilibrium price and quantity determination? To understand better this model, we need to know why we have this positive supply curve and this negative demand curve. We will first investigate consumer choice theory, which is behind the negative demand curve, and then production theory, which is behind the positive supply curve.
 
