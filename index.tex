@@ -218,7 +218,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, boxrule=0pt, frame hidden, borderline west={3pt}{0pt}{shadecolor}, sharp corners, breakable, enhanced]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, interior hidden, breakable, frame hidden, borderline west={3pt}{0pt}{shadecolor}, sharp corners, boxrule=0pt]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -2307,28 +2307,28 @@ the many important contributions of Kalecki to this discipline.
 
 The Neo-Kaleckian model is actually posterior to Kalecki (hence
 ``Neo''), but heavily based on his work. It was developed by Kaleckian
-economists in the 70s and 80s based on Kalecki work, but also on the
-work of Josef Steindl (1912-1993), an austrian post-keynesian economist
+economists in the 70s and 80s based on Kalecki's work, but also on the
+work of Josef Steindl (1912-1993), an Austrian Post-Keynesian economist
 who was a close collegue of Kalecki.
 
 Until now, almost all the models I summarized in my
 \href{https://jeylal.github.io/myblog/economics.html}{heterodox
-economics series}, the classical-marxian models (CMMs) and the
+economics series}, the Classical-Marxian models (CMMs) and the
 Neo-Keynesian models (NKMs), explain that more rapid growth can only be
 achieve at the expense of a more unequal distribution of income. In
-other words, the CMM and NKM explain that increasing the rate of growth
-implies more inequality through either lower real wage or lower wage
-share.
+other words, the CMMs and NKMs explain that increasing the rate of
+growth implies more inequality through either lower real wage or lower
+wage share.
 
-One major flaw of the CMM and NKM is that they either don't incorporate
-the important role of aggregate demand in the analysis (in the case of
-the CMMs) or only partially incorporate it (for the NKMs). Why is it
-important to take aggregate demand into account when one wants to
-analyze the determinants of economic growth? Before answering this
-question, let's first define aggregate demand. The latte can be defined
-as the \textbf{sum of all demand sources for goods and services in an
-economy}. Aggregate demand is often summarized with the following
-formula:
+One major flaw of the CMMs and NKMs is that they either don't
+incorporate the important role of aggregate demand in the analysis (in
+the case of the CMMs) or only partially incorporate it (for the NKMs).
+Why is it important to take aggregate demand into account when one wants
+to analyze the determinants of economic growth? Before answering this
+question, let's first remind ourserlves what aggregate demand is. The
+latter can be defined as the \textbf{sum of all demand sources for goods
+and services in an economy}. Aggregate demand is often summarized with
+the following accounting identity:
 
 \[Y^d \equiv C+I+G+(X-M)\]
 
@@ -2357,11 +2357,24 @@ With \(Y^d\) aggregate demand, which depends positively:
 
 Why is aggregate demand important? Because any increase in demand gives
 impetus to economic expansion: the higher the demand for goods and
-services, the more firms will want to respond by producing more.
+services, the more firms will want to respond by producing more. Demand
+does not mechanically accommodate to supply, as it is assumed in CMMs
+and NKMs. The idea that demand can never be a constraint to production
+is know as \emph{Say's Law}: demand will always accommodate supply
+because supply creates demand by itself. For instance, if I produce
+coffee beans, I will either consume it or want to trade it for other
+goods or services: my production has thus create at the same time my
+demand. It may sound paradoxical to say that CMMs and NKMs implicitly
+accepted Say's Law or at least did not put it into question since Marx,
+Keynes and Post-Neo-Keynesian economists are famous for their critic of
+Say's law.
 
-The (neo)-kaleckian models are thus very important among heterdox models
-of economic growth, because it the former incorporates the role of
-aggregate demand and its impact on growth, even in the long run.
+Nonetheless, the Neo-Kaleckian models presented below are the firsts to
+really put Say's Law into question and put aggregrate demand at the
+center. The (neo)-kaleckian models are thus very important among
+heterdox models of economic growth, because it the former incorporates
+the role of aggregate demand and its impact on growth, even in the long
+run.
 
 \hypertarget{main-characteristics-of-the-model}{%
 \section{Main characteristics of the
@@ -2456,10 +2469,29 @@ if \(a_0 = \frac{L}{Y}\), the labor/output ratio increases. Here, \(Y\)
 refers to the output produced by the firm and \(L\) the amount of labor
 employed by the firm.
 
-What will influence change in the markup rate \(\tau\)? Kalecki and the
-manual give five main factors which will influence the markup (a + or -
-sign is added next to each factor to indicate whether it rises the
-markup or decreases it):
+Once this price equation is defined, it can be shown that the profit
+share \(\pi\) is a positive (monotonic) function of markup \(\tau\):
+
+\[
+\begin{aligned}
+\pi = \frac{P - Wa_0}{P}
+\\
+= \frac{(1+\tau)Wa_0-Wa_0}{(1+\tau)Wa_0}
+\\
+\pi = \frac{\tau}{1+\tau}
+\end{aligned}
+\]
+
+Thus,
+
+\[\pi = \frac{\tau}{1+\tau}\] The higher the markup \(\tau\), the higher
+the profit share.
+
+What will influence change in the markup rate \(\tau\), and thus
+\emph{increase profit share and inequality}? Kalecki and the manual give
+five main factors which will influence the markup (a + or - sign is
+added next to each factor to indicate whether it rises the markup or
+decreases it):
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2534,6 +2566,308 @@ not independent of each other, meaning that if one of the two variables
 increases, the other will change as well, leaving an ambiguous impact on
 real wage \(w\).
 
+\includegraphics{neo-kaleckian-models_files/figure-pdf/unnamed-chunk-2-1.pdf}
+
+The graph above shows the inverse wage-profit relationship when the
+capacity rate is equal to one (u = 1), as in the CMMs, and when it is
+inferior to one, as in the Neo-Kaleckian models. \textbf{A rise in u
+allows for both the profit rate and the real wage to rise}.
+
+Recall that real wage \(w\) is \(W/P\). By replacing \(P\) by the price
+equation we saw above (\(P = (1 + \tau)Wa_0\)), we can see how the real
+wage is related to income distribution and inequality:
+
+\[
+\begin{aligned}
+w = \frac{W}{P} = \frac{W}{(1+\tau)Wa_0} = (\frac{1}{1+\tau})\frac{1}{a_0}
+\\
+w = \frac{1 - \pi}{a_0}
+\end{aligned}
+\]
+
+To sum up, we have
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Real wage as a positive function of wage share \(\psi = 1-\pi\), labor
+  productivity \(1/a_0\), utilization rate \(u = Y/Y_K\) and negative
+  with profit rate \(r\)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(w = \frac{1 - \pi}{a_0}\)
+  \item
+    \(w = \frac{1}{a_0} - \frac{a_1}{a_0} \frac{r}{u}\)
+  \end{itemize}
+\item
+  Profit rate as a positive function of profit share \(\pi\),
+  utilization rate \(u\), and capital productivity \(1/a_1\); and profit
+  share \(\pi\) as a positive function of markup \(\tau\)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(r = \frac{\pi u}{a_1}\)
+  \item
+    \(\pi = \frac{\tau}{1+\tau}\)
+  \end{itemize}
+\end{enumerate}
+
+\hypertarget{model-solution-and-equilibrium}{%
+\section{Model Solution and
+Equilibrium}\label{model-solution-and-equilibrium}}
+
+As usual, the equilibrium values of our variables of interest (growth
+rate, profit rate, real wage\ldots) will be determined by the
+equilibrium between savings and investment. To do so, we must first
+define the saving and investment functions.
+
+\hypertarget{saving-function-1}{%
+\subsection{Saving function}\label{saving-function-1}}
+
+The saving function is essentially the same as in the NKMs: all savings
+come out of profits (\textbf{no savings out of wages}):
+
+\[\sigma = s_rr\] \textbf{Assuming that:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  All savings come out of profits
+\item
+  Closed economy (no foreign trade)
+\item
+  No government
+\end{enumerate}
+
+\hypertarget{investment-function}{%
+\subsection{Investment function}\label{investment-function}}
+
+Unlike the saving function, the Neo-Kaleckian function has a major
+difference with NKMs. The difference is that investment is now not only
+a positive function of actual profits \(r\), but also of the capacity
+rate of utilization \(u\):
+
+\[g = g_0+g_1r+g_2u\]
+
+Recall that the Neo-Robinsonian model considered that investment was a
+positive function, not of realized profits, but of expected profits. The
+Neo-Kaleckian model considers that investment if a positive function of
+actual profits because the latter influences investment decisions by
+relieving financial and liquidity constraints.
+
+Regarding the capacity rate \(u = Y/Y_k\), if this variable increases
+(meaning that a given firm is utilizing more unused capital, for
+instance to catch up with a rise in demand), firms will want to invest
+more to keep excess capacity (recall that firms in this model want to
+keep a certain level of excess capacity, the reasons are listed at the
+beginning).
+
+Replacing \(u\) using the profit equation \(r = \frac{\pi u}{a_1}\), the
+investment function can be written as a function of profit rate and
+profit share:
+
+\[g = g_0+(g_1+g_2a_1/\pi)r\]
+
+\hypertarget{saving-investment-equilibrium}{%
+\subsection{Saving-Investment
+Equilibrium}\label{saving-investment-equilibrium}}
+
+\hypertarget{deriving-equilibrium}{%
+\subsubsection{Deriving Equilibrium}\label{deriving-equilibrium}}
+
+Equalizing Investment and Savings equation, we get:
+
+\[
+\sigma = g
+\]
+
+Replacing \(\sigma\) and \(g\) by their respective definition, we get:
+
+\[s_rr= g_0+g_1r+g_2u\]
+
+Then we replace the profit rate \(r\) by \(\frac{\pi u}{a_1}\):
+
+\[s_r\frac{\pi u}{a_1}= g_0+g_1\frac{\pi u}{a_1}+g_2u\]
+
+Solving for (isolating on the left) the capacity rate \(u\), we get:
+
+\[
+u^* = \frac{g_0}{(s_r-g_1)(\pi/a_1)-g_2}
+\]
+
+The equilibrium capacity rate is thus a positive function of \(g_0\)
+(firms' confidence in the economy), of \(g_2\) (effect of a one unit
+increase in \(u\) on investment), of \(g_1\) (degree of positive
+response of profit rate on investment)
+
+On the other hand, \(u^*\) is negative function of \(\pi\) (profit
+share), and of \(a_1\) (and thus positive function of labor productivity
+\(1/a_1\)).
+
+The equilibrium profit rate is:
+
+\[
+r^* = \frac{g_0 (\pi / a_1)}{(s_r-g_1)(\pi / a_1)-g_2}
+\]
+
+The latter increase with: \(g_0, g_1, g_2\) and decrease with \(s_r\).
+
+Equilibrium savings and investment are:
+
+\[
+g^*=\sigma^*=\frac{s_r g_0(\pi/a_1)}{(s_r-g_1)(\pi /a_1)-g_2}
+\]
+
+Which are thus positive functions of \(g_0, g_1, g_2\)
+
+\hypertarget{vizualizing-equilibrium}{%
+\subsubsection{Vizualizing Equilibrium}\label{vizualizing-equilibrium}}
+
+The Neo-Kaleckian model can be graphed using the three main equations of
+the model:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Real Wage: \(w = \frac{1}{a_0} - \frac{a_1}{a_0} \frac{r}{u}\)
+\item
+  Savings: \(\sigma = s_rr\)
+\item
+  Investment: \(g = g_0+(g_1+g_2a_1/\pi)r\)
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=6.32292in,height=\textheight]{images/kalecki-steindl1.jpg}
+
+}
+
+\caption{Kalecki-Steindl growth model equilibrium (Blecker and
+Setterfield , 2018: 176)}
+
+\end{figure}
+
+Some remarks about the graph above and the main equations:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The more firms have excess capacity, the more \(u\) will be inferior
+  to one, and the more the curve on the left (wage-profit curve) will
+  rotate down to the right (because the intercept on the r axis will go
+  down).
+\item
+  Rates of utilization \(u\) , profit rate \(r\) and real wage \(w\) are
+  mutually and simultaneously determined.
+\item
+  A rise in profit share \(\pi\) will make the investment curve rotate
+  to the left.
+\item
+  A rise or fall in wage and profit share depends on technology and
+  markup.
+\end{enumerate}
+
+\hypertarget{main-results-of-the-neo-kaleckian-model}{%
+\section{Main Results of the Neo-Kaleckian
+model}\label{main-results-of-the-neo-kaleckian-model}}
+
+The main implication of the Neo-Kaleckian (Kalecki-Steindl) model is
+that faster economic growth can be achieved through a more equal
+distribution of income, rising real wage and profit rates. These
+conclusions of the model are very different from CMMs and NKMs, in which
+faster growth can only happen with greater inequality.
+
+This stand is sharp contrast with the CMMs and NKMs, which tell that
+faster growth comes at the expense of real wages, wage share and thus
+with more inequality. The difference lies in the fact that, in most CMMs
+and NKMs, the rate of capacity utilization is considered constant at
+full level \(u = 1\), so that a simultaneous increase in profit rates,
+real wage and growth can happen only if there is technological change
+(except a Marx-biased technological change), which is also considered
+exogenous.
+
+This Neo-Kaleckian model thus implies that growth can be
+\emph{wage-led}, which means that faster growth can be achieved with a
+more equal distribution of income: higher real wage and wage share allow
+for faster growth. We arrived to this result mainly by introducing
+markups in the model and a flexible capacity rate.
+
+But what is the logic behind wage-led growth? Think for example of what
+would happen if the profit share rises in an economy. A rise in profit
+share implies a redistribution of income from wages to profits. Since,
+in this model, 100\% of wages are consumed whereas only a fraction of
+profits are consumed (\(1-s_r\)), a rise in profit share reduces total
+consumption demand in the economy. A fall in consumption demand will
+then slow down growth, because there are less outlets for finished
+products and services to be sold and consumed. Note that this mechanism
+looks a lot to underconsumption theory expressed by some Marxists.
+
+Keep in mind that it could be possible for a fall consumption (due to a
+fall in real wage) to be offset by a rise in investment (firms have more
+income, and thus can invest more). In this model, not only this is not
+possible, but if the profit share rises (and wage share declines), even
+investment itself falls because of a fall in utilization rate and
+realized profits. This is a paradoxical result in which there is an
+inverse \textbf{relationship between profit share and profit rates}.
+Bhaduri and Marglin (1990) argue that the specification of the
+investment function, which double counts the capacity rate, is the
+reason behind this paradox. But logically, this paradox is due to the
+fact that, when profit share \(\pi\) rises, the negative effect of the
+decline in consumption demand out of wages is so strong that capacity
+rate \(u\) falls more than profit share \(\pi\) rises, making the profit
+rate \(r = \pi u/a_1\) fall.
+
+The graph below shows the negative effect of rise in the profit share.
+The investment curve \(g\) rotates to the left and the wage-profit curve
+rotates down to the right:
+
+\begin{figure}
+
+{\centering \includegraphics[width=4.75in,height=\textheight]{images/kaleckisteindl2.jpg}
+
+}
+
+\caption{Blecker and Setterfield (2018, 180)}
+
+\end{figure}
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+This Neo-Kaleckian model, also called Kalecki-Steindl model, has strong
+differences with CMMs and NKMs. First, the \textbf{rate of capacity
+utilization} \(u = Y/Y_k\) is \textbf{considered flexible}, inferior to
+one, and has a positive impact on investment. Second, the model defines
+prices and profit share as positive functions of markup \(\tau\), which
+depends on the five factors listed at the beginning of this chapter. A
+higher markup leads to higher profit share, lower growth, real wage,
+wage share, utilization rate, and higher unemployment. The model
+introduces two important assumptions/ideas: (1) \textbf{flexible
+capacity} rate and (2) \textbf{markup pricing}.
+
+Finally, the Kalecki-Steindl model is a good illustration of the
+negative effects of the increase in industrial concentration (increase
+in monopoly, decrease in competition) and that the latter can lead to
+economic stagnation. Regarding the effect of an increase in propensity
+to save \(s_r\), or a rise in confidence \(g_0\), the model leads to
+conclusions similar (but not totally) to NKMs: a rise in \(s_r\)
+(propensity to save out of profits) reduces equilibrium level of
+capacity rate \(u^*\), profit rate \(r^*\), and investment \(g^*\). An
+increase in \(g_0\) has the opposite effects. The difference with NKMs
+is that \(u\) is affected in this Kalecki-Steindl model, but is not in
+the NKMs.
+
+In the next chapter, we will see models which are developments of this
+basic Neo-Kaleckian model. More precisely, we will see that an economy
+can not always be wage-led, but also profit-led or export-led when we
+introduce saving propensity out of wages, change the specification of
+the investment function and introduce foreign trade.
+
 \bookmarksetup{startatroot}
 
 \hypertarget{references}{%
@@ -2544,6 +2878,12 @@ real wage \(w\).
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-bhaduri_unemployment_1990}{}}%
+Bhaduri, Amit, and Stephen Marglin. 1990. {``Unemployment and the Real
+Wage: The Economic Basis for Contesting Political Ideologies.''}
+\emph{Cambridge Journal of Economics} 14 (4): 375--93.
+\url{https://doi.org/10.1093/oxfordjournals.cje.a035141}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-blecker_heterodox_2019}{}}%
 Blecker, Robert A., and Mark Setterfield. 2019. \emph{Heterodox
 Macroeconomics: Models of Demand, Distribution and Growth}. Cheltenham,
