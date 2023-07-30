@@ -218,7 +218,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, interior hidden, breakable, frame hidden, borderline west={3pt}{0pt}{shadecolor}, sharp corners, boxrule=0pt]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, enhanced, frame hidden, interior hidden, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, breakable]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -2286,39 +2286,51 @@ always want to invest at a rate they cannot achieve.
 
 \part{Neo-Kaleckian Models}
 
-\hypertarget{neo-kaleckian-models-1}{%
-\chapter{Neo-Kaleckian Models}\label{neo-kaleckian-models-1}}
+\hypertarget{kaleckian-steindl-model}{%
+\chapter{Kaleckian-Steindl Model}\label{kaleckian-steindl-model}}
 
 \hypertarget{preliminary-notes}{%
 \section{Preliminary Notes}\label{preliminary-notes}}
 
+\hypertarget{biographical-notes-authors-and-sources}{%
+\subsection{Biographical notes, authors and
+sources}\label{biographical-notes-authors-and-sources}}
+
 Michał Kalecki (1899-1970) was a Polish economist and major figure of
-heterodox economics. He made important contributions in macroeconomics
-and political economy, and his work represents a crucial legacy for a
-lot of contemporary heterodox economics.
+heterodox and Post-Keynesian economics. He made important contributions
+in macroeconomics and political economy, and his work represents a
+crucial legacy for a lot of contemporary work in heterodox economics.
 
 The models that will be presented here are related to the macroeconomics
-of Kalecki. However, it is important to keep in mind that Kalecki also
-developed a theory of political business cycles (I talk shortly about
-this theory
-\href{https://jeylal.github.io/myblog/posts/About\%20cycles\%20and\%20crises/cycles_crises.html}{here}).
-What will be presented here (based on the manual) is just one part of
-the many important contributions of Kalecki to this discipline.
+of Kalecki. Kalecki (1954) is often considered as the work which laid
+out the foundations of Kalecki's macroeconomics that will be exposed
+here.
+
+However, it is important to keep in mind that Kalecki also developed a
+theory of political business cycles (I talk shortly about this theory
+\href{https://jeylal.github.io/myblog/posts/About\%20cycles\%20and\%20crises/cycles_crises.html}{here})
+Kalecki (1943). What will be presented here (based on the manual Blecker
+and Setterfield (2019)) will be hence just a part of the (many)
+important contributions of Kalecki in political economy and
+macroeconomics.
 
 The Neo-Kaleckian model is actually posterior to Kalecki (hence
 ``Neo''), but heavily based on his work. It was developed by Kaleckian
 economists in the 70s and 80s based on Kalecki's work, but also on the
 work of Josef Steindl (1912-1993), an Austrian Post-Keynesian economist
-who was a close collegue of Kalecki.
+who was a close collegue of Kalecki. The first Neo-Kaleckian model that
+will be presented here is called by Blecker and Setterfield (2019) the
+``Kaleckian-Steindl'' model and is based on Post-Keynesian writings in
+the 70s and 80s, for instance Harris (1974) (Donald J. Harris who is by
+the way the father of Kemala Harris, current vice-president of the
+United-States) and Asimakopulos (1975).
 
-Until now, almost all the models I summarized in my
-\href{https://jeylal.github.io/myblog/economics.html}{heterodox
-economics series}, the Classical-Marxian models (CMMs) and the
-Neo-Keynesian models (NKMs), explain that more rapid growth can only be
-achieve at the expense of a more unequal distribution of income. In
-other words, the CMMs and NKMs explain that increasing the rate of
-growth implies more inequality through either lower real wage or lower
-wage share.
+Until now, almost all the heterodox models summarized until now, the
+Classical-Marxian models (CMMs) and the Neo-Keynesian models (NKMs),
+explain that more rapid growth can only be achieve at the expense of a
+more unequal distribution of income. In other words, the CMMs and NKMs
+explain that increasing the rate of growth implies more inequality
+through either lower real wage or lower wage share.
 
 One major flaw of the CMMs and NKMs is that they either don't
 incorporate the important role of aggregate demand in the analysis (in
@@ -2327,8 +2339,13 @@ Why is it important to take aggregate demand into account when one wants
 to analyze the determinants of economic growth? Before answering this
 question, let's first remind ourserlves what aggregate demand is. The
 latter can be defined as the \textbf{sum of all demand sources for goods
-and services in an economy}. Aggregate demand is often summarized with
-the following accounting identity:
+and services in an economy}.
+
+\hypertarget{aggregate-demand}{%
+\subsection{Aggregate Demand}\label{aggregate-demand}}
+
+Aggregate demand is often summarized with the following accounting
+identity:
 
 \[Y^d \equiv C+I+G+(X-M)\]
 
@@ -2449,12 +2466,12 @@ costs}\label{prices-as-markups-over-costs}}
 
 In most models described until now, none of them had a precise
 model/equation describing how prices are set by firms. The Neo-Kaleckian
-as an explicit and precise definition of how prices are set. Recall that
-in the context of perfect competition, standard economic theory tells
-that prices are the result of the equilibrium between demand and supply.
-In the Neo-Kaleckian framework, markets are not perfectly competitive
-and firms have what economics call ``market power'', that is, the power
-to influence prices and thus set the latter.
+has an explicit and precise definition of how prices are set. Recall
+that in the context of perfect competition, standard economic theory
+tells that prices are the result of the equilibrium between demand and
+supply. In the Neo-Kaleckian framework, markets are not perfectly
+competitive and firms have what economics call ``market power'', that
+is, the power to influence prices and thus set the latter.
 
 How will firms then set prices in the Neo-Kaleckian model? The manual
 presents the following price equation:
@@ -2467,10 +2484,13 @@ nominal wage is a cost for the firm, note that here other costs are
 ignored for simplicity and only labor costs are taken into account), or
 if \(a_0 = \frac{L}{Y}\), the labor/output ratio increases. Here, \(Y\)
 refers to the output produced by the firm and \(L\) the amount of labor
-employed by the firm.
+employed by the firm. The idea that prices are not determined by demand
+and supply equilibrium, but by markup over costs is called \emph{markup
+pricing}.
 
-Once this price equation is defined, it can be shown that the profit
-share \(\pi\) is a positive (monotonic) function of markup \(\tau\):
+Once the markup pricing equation is defined, it can be shown that the
+profit share \(\pi\) is a positive (monotonic) function of markup
+\(\tau\):
 
 \[
 \begin{aligned}
@@ -2878,6 +2898,11 @@ the investment function and introduce foreign trade.
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-asimakopulos_kaleckian_1975}{}}%
+Asimakopulos, A. 1975. {``A Kaleckian Theory of Income Distribution.''}
+\emph{The Canadian Journal of Economics / Revue Canadienne d'Economique}
+8 (3): 313--33. \url{https://doi.org/10.2307/134236}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-bhaduri_unemployment_1990}{}}%
 Bhaduri, Amit, and Stephen Marglin. 1990. {``Unemployment and the Real
 Wage: The Economic Basis for Contesting Political Ideologies.''}
@@ -2888,6 +2913,21 @@ Wage: The Economic Basis for Contesting Political Ideologies.''}
 Blecker, Robert A., and Mark Setterfield. 2019. \emph{Heterodox
 Macroeconomics: Models of Demand, Distribution and Growth}. Cheltenham,
 {UK} ; Northampton, {MA}, {USA}: Edward Elgar Publishing Ltd.
+
+\leavevmode\vadjust pre{\hypertarget{ref-harris_price_1974}{}}%
+Harris, Donald J. 1974. {``The Price Policy of Firms, the Level of
+Employment and Distribution of Income in the Short Run*.''}
+\emph{Australian Economic Papers} 13 (22): 144--51.
+\url{https://doi.org/10.1111/j.1467-8454.1974.tb00879.x}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-kalecki_political_1943}{}}%
+Kalecki, M. 1943. {``Political Aspects of Full Employment1.''} \emph{The
+Political Quarterly} 14 (4): 322--30.
+\url{https://doi.org/10.1111/j.1467-923X.1943.tb01016.x}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-kalecki_theory_1954}{}}%
+---------. 1954. \emph{Theory of Economic Dynamics: An Essay on Cyclical
+and Long-Run Changes in Capitalist Economy}.
 
 \end{CSLReferences}
 

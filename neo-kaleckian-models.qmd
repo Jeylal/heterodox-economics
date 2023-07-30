@@ -1,4 +1,4 @@
-# Neo-Kaleckian Models
+# Kaleckian-Steindl Model
 
 ```{r}
 #| echo: false
@@ -11,17 +11,23 @@ theme_set(theme_minimal())
 
 ## Preliminary Notes
 
-Michał Kalecki (1899-1970) was a Polish economist and major figure of heterodox economics. He made important contributions in macroeconomics and political economy, and his work represents a crucial legacy for a lot of contemporary heterodox economics.
+### Biographical notes, authors and sources
+
+Michał Kalecki (1899-1970) was a Polish economist and major figure of heterodox and Post-Keynesian economics. He made important contributions in macroeconomics and political economy, and his work represents a crucial legacy for a lot of contemporary work in heterodox economics.
 
 The models that will be presented here are related to the macroeconomics of Kalecki. @kalecki_theory_1954 is often considered as the work which laid out the foundations of Kalecki's macroeconomics that will be exposed here.
 
-However, it is important to keep in mind that Kalecki also developed a theory of political business cycles (I talk shortly about this theory [here](https://jeylal.github.io/myblog/posts/About%20cycles%20and%20crises/cycles_crises.html)) @kalecki_political_1943. What will be presented here (based on the manual @blecker_heterodox_2019) will be hence just a part of the (many) important contributions of Kalecki to economics.
+However, it is important to keep in mind that Kalecki also developed a theory of political business cycles (I talk shortly about this theory [here](https://jeylal.github.io/myblog/posts/About%20cycles%20and%20crises/cycles_crises.html)) @kalecki_political_1943. What will be presented here (based on the manual @blecker_heterodox_2019) will be hence just a part of the (many) important contributions of Kalecki in political economy and macroeconomics.
 
-The Neo-Kaleckian model is actually posterior to Kalecki (hence "Neo"), but heavily based on his work. It was developed by Kaleckian economists in the 70s and 80s based on Kalecki's work, but also on the work of Josef Steindl (1912-1993), an Austrian Post-Keynesian economist who was a close collegue of Kalecki.
+The Neo-Kaleckian model is actually posterior to Kalecki (hence "Neo"), but heavily based on his work. It was developed by Kaleckian economists in the 70s and 80s based on Kalecki's work, but also on the work of Josef Steindl (1912-1993), an Austrian Post-Keynesian economist who was a close collegue of Kalecki. The first Neo-Kaleckian model that will be presented here is called by @blecker_heterodox_2019 the "Kaleckian-Steindl" model and is based on Post-Keynesian writings in the 70s and 80s, for instance @harris_price_1974 (Donald J. Harris who is by the way the father of Kemala Harris, current vice-president of the United-States) and @asimakopulos_kaleckian_1975.
 
-Until now, almost all the models I summarized in my [heterodox economics series](https://jeylal.github.io/myblog/economics.html), the Classical-Marxian models (CMMs) and the Neo-Keynesian models (NKMs), explain that more rapid growth can only be achieve at the expense of a more unequal distribution of income. In other words, the CMMs and NKMs explain that increasing the rate of growth implies more inequality through either lower real wage or lower wage share.
+Until now, almost all the heterodox models summarized until now, the Classical-Marxian models (CMMs) and the Neo-Keynesian models (NKMs), explain that more rapid growth can only be achieve at the expense of a more unequal distribution of income. In other words, the CMMs and NKMs explain that increasing the rate of growth implies more inequality through either lower real wage or lower wage share.
 
-One major flaw of the CMMs and NKMs is that they either don't incorporate the important role of aggregate demand in the analysis (in the case of the CMMs) or only partially incorporate it (for the NKMs). Why is it important to take aggregate demand into account when one wants to analyze the determinants of economic growth? Before answering this question, let's first remind ourserlves what aggregate demand is. The latter can be defined as the **sum of all demand sources for goods and services in an economy**. Aggregate demand is often summarized with the following accounting identity:
+One major flaw of the CMMs and NKMs is that they either don't incorporate the important role of aggregate demand in the analysis (in the case of the CMMs) or only partially incorporate it (for the NKMs). Why is it important to take aggregate demand into account when one wants to analyze the determinants of economic growth? Before answering this question, let's first remind ourserlves what aggregate demand is. The latter can be defined as the **sum of all demand sources for goods and services in an economy**. 
+
+### Aggregate Demand
+
+Aggregate demand is often summarized with the following accounting identity:
 
 $$Y^d \equiv C+I+G+(X-M)$$
 
@@ -69,15 +75,15 @@ Why does the Neo-Kaleckian model has such a conception of the capacity rate? The
 
 ### Prices as markups over costs
 
-In most models described until now, none of them had a precise model/equation describing how prices are set by firms. The Neo-Kaleckian as an explicit and precise definition of how prices are set. Recall that in the context of perfect competition, standard economic theory tells that prices are the result of the equilibrium between demand and supply. In the Neo-Kaleckian framework, markets are not perfectly competitive and firms have what economics call "market power", that is, the power to influence prices and thus set the latter.
+In most models described until now, none of them had a precise model/equation describing how prices are set by firms. The Neo-Kaleckian has an explicit and precise definition of how prices are set. Recall that in the context of perfect competition, standard economic theory tells that prices are the result of the equilibrium between demand and supply. In the Neo-Kaleckian framework, markets are not perfectly competitive and firms have what economics call "market power", that is, the power to influence prices and thus set the latter.
 
 How will firms then set prices in the Neo-Kaleckian model? The manual presents the following price equation:
 
 $$P = (1 + \tau)Wa_0$$
 
-Which means that a firm will increase price $P$ if it decides to rise its markup rate $\tau$, or if nominal wage increase $W$ (since nominal wage is a cost for the firm, note that here other costs are ignored for simplicity and only labor costs are taken into account), or if $a_0 = \frac{L}{Y}$, the labor/output ratio increases. Here, $Y$ refers to the output produced by the firm and $L$ the amount of labor employed by the firm.
+Which means that a firm will increase price $P$ if it decides to rise its markup rate $\tau$, or if nominal wage increase $W$ (since nominal wage is a cost for the firm, note that here other costs are ignored for simplicity and only labor costs are taken into account), or if $a_0 = \frac{L}{Y}$, the labor/output ratio increases. Here, $Y$ refers to the output produced by the firm and $L$ the amount of labor employed by the firm. The idea that prices are not determined by demand and supply equilibrium, but by markup over costs is called *markup pricing*.
 
-Once this price equation is defined, it can be shown that the profit share $\pi$ is a positive (monotonic) function of markup $\tau$:
+Once the markup pricing equation is defined, it can be shown that the profit share $\pi$ is a positive (monotonic) function of markup $\tau$:
 
 $$
 \begin{aligned}
