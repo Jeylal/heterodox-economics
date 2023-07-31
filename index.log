@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.30)  31 JUL 2023 18:28
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.30)  31 JUL 2023 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1209,7 +1209,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.597 6
-       00 = 4*apple + 200*watch 
+       00 = 4apple + 200watch 
 Here is how much of TeX's memory you used:
  37395 strings out of 477869
  781718 string characters out of 5820872

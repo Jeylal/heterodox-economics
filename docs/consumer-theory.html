@@ -398,7 +398,7 @@ div.csl-indent {
 <p><span class="math display">\[U(x,y)=x^20.18y\]</span></p>
 <p>With x and y two different goods, apples and watches for example. To get the indifference curve function, we fix utility U at any positive value, and rearrange the function above to get y as a function of x and U:</p>
 <p><span class="math display">\[U = x^20.18y\]</span></p>
-<p><span class="math display">\[y = \frac{U}{0.18*x^2}\]</span></p>
+<p><span class="math display">\[y = \frac{U}{0.18x^2}\]</span></p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>Yacas vector:
@@ -417,21 +417,20 @@ div.csl-indent {
 <p>In the indifference curve graph above, the consumer can choose any combination of apples and watches on the line, and those combinations would bring the same utility U = 10. However, one important element was not taken into account yet. This element is the fact that consumers are limited in their consumption decisions by their income. Neoclassical theory calls this <strong>budget constraint</strong>. For instance, let’s say that our consumer has an income of 600 francs. The price of one apple is 4 francs (one bag of apples to be more realistic) whereas the price of a watch is 200 francs. The budget constraint can be written as:</p>
 <p><span class="math display">\[
 \begin{aligned}
-Income = P_{apple}*Q_{apple} + P_{watch}*Q_{watch}
+Income = P_{apple}Q_{apple} + P_{watch}Q_{watch}
 \\
-600 = 4*apple + 200*watch
+600 = 4apple + 200watch
 \end{aligned}
 \]</span></p>
 <p>To include this budget constraint into the previous graph, we have to rearrange this equation to have the quantity of apples as a function of the quantity of books:</p>
 <span class="math display">\[\begin{aligned}
-600 = 4*apple + 200*watch
+600 = 4apple + 200watch
 \\
 4apple = 600 - 200watch
 \\
-apple = 600/4 - 200/4*watch
+apple = 600/4 - 200/4watch
 \\
-apple = 150 - 50*watch
-
+apple = 150 - 50watch
 \end{aligned}\]</span>
 <p>More generally, the budget function can also be written as</p>
 <p><span class="math display">\[
@@ -450,7 +449,7 @@ Q_1 = \frac{Income}{P_1} - \frac{P_2}{P_1}Q_2
 <p>So what will be the consumer’s final choice? He will choose the point at which the budget constraint line is tangent to one of his indifference curve.</p>
 <p>Mathematically, this means that the quantity of apples and watches the consumer will choose is the point at which the slope of the budget line <span class="math inline">\(\frac{P_{watch}}{P_{apples}}\)</span> is equal to the slope of the indifference curve, which microeconomics call the <strong>marginal rate of substitution</strong>. Marginal rate of substitution shows how much of a good (here apples) the consumer can give up in exchange of one unit of the other good (here a watch). Using algebra, we can find the slope of the budget line and of the indifference curve by computing their derivatives.</p>
 <span class="math display">\[\begin{aligned}
-apple = 150 - 50*watch
+apple = 150 - 50watch
 \\
 \frac{\partial{apple}}{\partial{watch}} = -50
 \\
@@ -462,7 +461,7 @@ U = x^20.18y
 \\
 \frac{\partial{U}}{\partial{x}} = 0.36xy
 \\
-\frac{\partial{U}}{\partial{y}} = 0.18*x^2
+\frac{\partial{U}}{\partial{y}} = 0.18x^2
 \end{aligned}\]</span>
 <p>Thus</p>
 <p><span class="math display">\[MRS = \frac{0.36xy}{0.18x^2} = 2\frac{y}{x}\]</span></p>
@@ -475,17 +474,16 @@ y = 25x
 \end{aligned}\]</span>
 <p>We can then substitute y with 25x in the budget equation</p>
 <span class="math display">\[\begin{aligned}
-y = 150 - 50*x
+y = 150 - 50x
 \\
 25x = 150 -50x
 \\
 x = 150/75 = 2
 \\
 x = 2
-
 \end{aligned}\]</span>
 <p>The optimal solution for x (quantity of watch) is thus 2, the consumer will choose 2 watches. Now that know the quantity of watches, we can obtain the quantity of apples as well as how much utility this combination of apples and watches will bring to the consumer.</p>
-<p>To get the number of apples, we simply replace x by 6 in the budget constraint equation <span class="math inline">\(y = 150-50*2 = 50\)</span>, <span class="math inline">\(U = 2^2*50*0.18 = 36\)</span></p>
+<p>To get the number of apples, we simply replace x by 6 in the budget constraint equation <span class="math inline">\(y = 150-50 \times 2 = 50\)</span>, <span class="math inline">\(U = 2^2 \times 50 \times 0.18 = 36\)</span></p>
 <p>R can check the results</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>price_x <span class="ot">=</span> <span class="dv">200</span></span>
@@ -528,7 +526,7 @@ x = 2
 <p><span class="math inline">\(apple = 150 - 50watch\)</span></p>
 <p>And now, the price of watch increases up to 400, income is unchanged (Income = 600) as well as the price of apples (4):</p>
 <span class="math display">\[\begin{aligned}
-600 = 4*apple + 400watch
+600 = 4apple + 400watch
 \\
 4apple = 600-400watch
 \\

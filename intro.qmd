@@ -77,10 +77,10 @@ ggplot(data = tibble(x = 0:10), aes(x = x))+
 To find the equilibrium price and quantity, we equate the demand and supply functions and solve for q:
 
 $$
-q_{demand} = 7- 0.5*p
+q_{demand} = 7- 0.5p
 $$
 $$
-q_{supply} = 1 + 0.6*p 
+q_{supply} = 1 + 0.6p 
 $$
 
 
@@ -89,7 +89,7 @@ q_{demand} = q_{supply}
 $$
 
 $$
-7 - 0.5*p = 1 + 0.6*p
+7 - 0.5p = 1 + 0.6p
 $$
 
 $$
@@ -100,7 +100,7 @@ $$
 p^* = 6/1.1 = 5.45
 $$
 
-The equilibrium price level is thus $p^* = 5.45$. To find the equilibrium quantity, we simple put the value of the equilibrium price (5.45) into either the supply or demand function: $7-0.5*5.45 = 4.275 = p^*$
+The equilibrium price level is thus $p^* = 5.45$. To find the equilibrium quantity, we simple put the value of the equilibrium price (5.45) into either the supply or demand function: $7-0.5 \times 5.45 = 4.275 = p^*$
 
 It is easy to check directly if the computation is correct in r:
 

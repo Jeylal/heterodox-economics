@@ -76,7 +76,7 @@ With x and y two different goods, apples and watches for example. To get the ind
 
 $$U = x^20.18y$$
 
-$$y = \frac{U}{0.18*x^2}$$
+$$y = \frac{U}{0.18x^2}$$
 
 ```{r}
 #| echo: false
@@ -120,9 +120,9 @@ In the indifference curve graph above, the consumer can choose any combination o
 
 $$
 \begin{aligned}
-Income = P_{apple}*Q_{apple} + P_{watch}*Q_{watch}
+Income = P_{apple}Q_{apple} + P_{watch}Q_{watch}
 \\
-600 = 4*apple + 200*watch
+600 = 4apple + 200watch
 \end{aligned}
 $$
 
@@ -130,14 +130,13 @@ To include this budget constraint into the previous graph, we have to rearrange 
 
 ```{=tex}
 \begin{aligned}
-600 = 4*apple + 200*watch
+600 = 4apple + 200watch
 \\
 4apple = 600 - 200watch
 \\
-apple = 600/4 - 200/4*watch
+apple = 600/4 - 200/4watch
 \\
-apple = 150 - 50*watch
-
+apple = 150 - 50watch
 \end{aligned}
 ```
 
@@ -183,7 +182,7 @@ Mathematically, this means that the quantity of apples and watches the consumer 
 
 ```{=tex}
 \begin{aligned}
-apple = 150 - 50*watch
+apple = 150 - 50watch
 \\
 \frac{\partial{apple}}{\partial{watch}} = -50
 \\
@@ -200,7 +199,7 @@ U = x^20.18y
 \\
 \frac{\partial{U}}{\partial{x}} = 0.36xy
 \\
-\frac{\partial{U}}{\partial{y}} = 0.18*x^2 
+\frac{\partial{U}}{\partial{y}} = 0.18x^2 
 \end{aligned}
 ```
 
@@ -233,14 +232,13 @@ We can then substitute y with 25x in the budget equation
 
 ```{=tex}
 \begin{aligned}
-y = 150 - 50*x
+y = 150 - 50x
 \\
 25x = 150 -50x
 \\ 
 x = 150/75 = 2
 \\
 x = 2
-
 \end{aligned}
 ```
 
@@ -248,7 +246,7 @@ x = 2
 
 The optimal solution for x (quantity of watch) is thus 2, the consumer will choose 2 watches. Now that know the quantity of watches, we can obtain the quantity of apples as well as how much utility this combination of apples and watches will bring to the consumer.
 
-To get the number of apples, we simply replace x by 6 in the budget constraint equation $y = 150-50*2 = 50$, $U = 2^2*50*0.18 = 36$
+To get the number of apples, we simply replace x by 6 in the budget constraint equation $y = 150-50 \times 2 = 50$, $U = 2^2 \times 50 \times 0.18 = 36$
 
 R can check the results
 
@@ -326,7 +324,7 @@ And now, the price of watch increases up to 400, income is unchanged (Income = 6
 
 ```{=tex}
 \begin{aligned}
-600 = 4*apple + 400watch
+600 = 4apple + 400watch
 \\
 4apple = 600-400watch
 \\
