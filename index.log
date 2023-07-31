@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.30)  30 JUL 2023 23:16
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.30)  31 JUL 2023 17:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1208,15 +1208,15 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.590 6
+l.596 6
        00 = 4*apple + 200*watch 
 Here is how much of TeX's memory you used:
  37395 strings out of 477869
  781718 string characters out of 5820872
- 1919869 words of memory out of 5000000
+ 1920869 words of memory out of 5000000
  57766 multiletter control sequences out of 15000+600000
  564508 words of font info for 87 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 108i,8n,120p,10900b,914s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,8n,120p,10900b,920s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on index.pdf (12 pages).

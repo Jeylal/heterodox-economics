@@ -7,10 +7,14 @@ book:
   title: "Economics"
   author: "Celâl Güney"
   date: "29/07/2023"
+  search: 
+    location: sidebar
+    type: textbox
+  downloads: [pdf, epub]
   navbar:
     left:
       - text: About
-        href: https://jeylal.github.io/myblog/about.html 
+        href: https://jeylal.github.io/celalguney/about.html 
       - icon: github
         href: https://github.com/
       - icon: twitter
@@ -20,9 +24,9 @@ book:
       - text: "Content"
         menu: 
         - text: "Post"
-          file: https://jeylal.github.io/myblog/
+          file: https://jeylal.github.io/celalguney/
         - text: "Economics"
-          file: https://jeylal.github.io/myblog/economics.html
+          file: https://jeylal.github.io/heterodox-economics/
   chapters:
     - index.qmd
     - part: "Introduction"

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Heterodox Economics - 1&nbsp; Introduction: Market Equilibrium</title>
+<title>Economics - 1&nbsp; Introduction: Market Equilibrium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -97,11 +97,11 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -129,17 +129,16 @@ div.csl-indent {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Heterodox Economics</span>
+    <span class="navbar-title">Economics</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://jeylal.github.io/myblog/about.html" rel="" target="">
+    <a class="nav-link" href="https://jeylal.github.io/celalguney/about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -163,17 +162,34 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-content">    
         <li>
-    <a class="dropdown-item" href="https://jeylal.github.io/myblog/" rel="" target="">
+    <a class="dropdown-item" href="https://jeylal.github.io/celalguney/" rel="" target="">
  <span class="dropdown-text">Post</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://jeylal.github.io/myblog/economics.html" rel="" target="">
+    <a class="dropdown-item" href="https://jeylal.github.io/heterodox-economics/" rel="" target="">
  <span class="dropdown-text">Economics</span></a>
   </li>  
     </ul>
   </li>
 </ul>
             <div class="quarto-navbar-tools ms-auto">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools ms-auto-item" href="./Economics.pdf">
+              <i class="bi bi-bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools ms-auto-item" href="./Economics.epub">
+              <i class="bi bi-bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
           </div> <!-- /navcollapse -->
@@ -390,19 +406,21 @@ div.csl-indent {
 </div>
 <p>To find the equilibrium price and quantity, we equate the demand and supply functions and solve for q:</p>
 <p><span class="math display">\[
-\begin{aligned}
 q_{demand} = 7- 0.5*p
-\\
+\]</span> <span class="math display">\[
 q_{supply} = 1 + 0.6*p
-\\
+\]</span></p>
+<p><span class="math display">\[
 q_{demand} = q_{supply}
-\\
+\]</span></p>
+<p><span class="math display">\[
 7 - 0.5*p = 1 + 0.6*p
-\\
+\]</span></p>
+<p><span class="math display">\[
 6-0.11p = 0
-\\
+\]</span></p>
+<p><span class="math display">\[
 p^* = 6/1.1 = 5.45
-\end{aligned}
 \]</span></p>
 <p>The equilibrium price level is thus <span class="math inline">\(p^* = 5.45\)</span>. To find the equilibrium quantity, we simple put the value of the equilibrium price (5.45) into either the supply or demand function: <span class="math inline">\(7-0.5*5.45 = 4.275 = p^*\)</span></p>
 <p>It is easy to check directly if the computation is correct in r:</p>
