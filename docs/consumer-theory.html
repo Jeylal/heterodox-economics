@@ -54,7 +54,26 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -350,7 +369,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>Mainstream consumer choice theory has for ambition to explain consumers’ decision, that is to say, the choices consumers make between consuming one good or another.</p>
+<p>As explained in the previous chapter, demand curve represents a crucial element of equilibrium and neoclassical theory. What lies behind this famous negative demand curve is neoclassical consumer theory. Neoclassical consumer choice theory has for ambition to explain consumers’ decision, that is to say, the choices consumers make between consuming one good or another. Consumer theory, along with production theory (see following chapter), constitutes an important branch of microeconomics.</p>
+<p>Note that this chapter is overall a summary of consumer theory as presented in classical and famous micreconomics textbook. I here especially used <span class="citation" data-cites="acemoglu_microeconomics_2017">Acemoglu, Laibson, and List (<a href="#ref-acemoglu_microeconomics_2017" role="doc-biblioref">2017</a>)</span> and <span class="citation" data-cites="pindyck_microeconomics_2013">Pindyck and Rubinfeld (<a href="#ref-pindyck_microeconomics_2013" role="doc-biblioref">2013</a>)</span>.</p>
 <section id="the-three-assumptions" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="the-three-assumptions"><span class="header-section-number">2.1</span> The three assumptions</h2>
 <p>Consumer theory makes important assumptions, which are the foundation of the theory:</p>
@@ -375,18 +395,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="indifference-curve" class="level3" data-number="2.2.1">
 <h3 data-number="2.2.1" class="anchored" data-anchor-id="indifference-curve"><span class="header-section-number">2.2.1</span> Indifference curve</h3>
 <p>Indifference curves are based on utility functions. An utility function can be for example:</p>
-<p><span class="math display">\[
-\begin{aligned}
-U(x,y)=x^20.18y
-\end{aligned}
-\]</span> With x and y two different goods, apples and watches for example. To get the indifference curve function, we fix utility U at any positive value, and rearrange the function above to get y as a function of x and U:</p>
-<p><span class="math display">\[
-\begin{aligned}
-U = x^20.18y
-\\
-y = \frac{U}{0.18*x^2}
-\end{aligned}
-\]</span></p>
+<p><span class="math display">\[U(x,y)=x^20.18y\]</span></p>
+<p>With x and y two different goods, apples and watches for example. To get the indifference curve function, we fix utility U at any positive value, and rearrange the function above to get y as a function of x and U:</p>
+<p><span class="math display">\[U = x^20.18y\]</span></p>
+<p><span class="math display">\[y = \frac{U}{0.18*x^2}\]</span></p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>Yacas vector:
@@ -411,7 +423,6 @@ Income = P_{apple}*Q_{apple} + P_{watch}*Q_{watch}
 \end{aligned}
 \]</span></p>
 <p>To include this budget constraint into the previous graph, we have to rearrange this equation to have the quantity of apples as a function of the quantity of books:</p>
-<p>$$</p>
 <span class="math display">\[\begin{aligned}
 600 = 4*apple + 200*watch
 \\
@@ -422,7 +433,7 @@ apple = 600/4 - 200/4*watch
 apple = 150 - 50*watch
 
 \end{aligned}\]</span>
-<p>$$ More generally, the budget function can also be written as</p>
+<p>More generally, the budget function can also be written as</p>
 <p><span class="math display">\[
 Q_1 = \frac{Income}{P_1} - \frac{P_2}{P_1}Q_2
 \]</span></p>
@@ -438,38 +449,31 @@ Q_1 = \frac{Income}{P_1} - \frac{P_2}{P_1}Q_2
 <p>The budget line represents all the combination of apples and watches that the consumer can afford with his income. This implies that is final choice has to be on this line. The consumer cannot afford to be on the U = 90 indifference curve because its income is not large enough. Also, he will not choose any point on U = 10 because the latter’s majority of point are on the left of the budget line (the assumption of more is better than less would not be respected if the consumer for instance chooses 1 watch and 50 apples, because he can afford more of the two goods).</p>
 <p>So what will be the consumer’s final choice? He will choose the point at which the budget constraint line is tangent to one of his indifference curve.</p>
 <p>Mathematically, this means that the quantity of apples and watches the consumer will choose is the point at which the slope of the budget line <span class="math inline">\(\frac{P_{watch}}{P_{apples}}\)</span> is equal to the slope of the indifference curve, which microeconomics call the <strong>marginal rate of substitution</strong>. Marginal rate of substitution shows how much of a good (here apples) the consumer can give up in exchange of one unit of the other good (here a watch). Using algebra, we can find the slope of the budget line and of the indifference curve by computing their derivatives.</p>
-<p><span class="math display">\[
-\begin{aligned}
+<span class="math display">\[\begin{aligned}
 apple = 150 - 50*watch
 \\
 \frac{\partial{apple}}{\partial{watch}} = -50
 \\
-\end{aligned}
-\]</span></p>
-<p>Note that finding the marginal rate of substitution is a bit trickier than for the budget line. To find the MRS, we have to compute the derivative with respect to the first good (x which are apples here) and then for the second one (y the watches). Then, the MRS is the ratio between the two marginal utilities <span class="math inline">\(\frac{\frac{\partial{U}}{\partial{x}}}{\frac{\partial{U}}{\partial{y}}}\)</span></p>
-<p><span class="math display">\[
-\begin{aligned}
+\end{aligned}\]</span>
+<p>Note that finding the marginal rate of substitution is a bit trickier than for the budget line. To find the MRS, we have to compute the derivative with respect to the first good (x which are apples here) and then for the second one (y the watches). Then, the MRS is the ratio between the two marginal utilities</p>
+<p><span class="math inline">\(\frac{\frac{\partial{U}}{\partial{x}}}{\frac{\partial{U}}{\partial{y}}}\)</span></p>
+<span class="math display">\[\begin{aligned}
 U = x^20.18y
 \\
 \frac{\partial{U}}{\partial{x}} = 0.36xy
 \\
 \frac{\partial{U}}{\partial{y}} = 0.18*x^2
-\end{aligned}
-\]</span> Thus</p>
-<p><span class="math display">\[
-\begin{aligned}
-MRS = \frac{0.36xy}{0.18x^2} = 2\frac{y}{x}
-\end{aligned}
-\]</span> Here is how to compute this in R</p>
+\end{aligned}\]</span>
+<p>Thus</p>
+<p><span class="math display">\[MRS = \frac{0.36xy}{0.18x^2} = 2\frac{y}{x}\]</span></p>
+<p>Here is how to compute this in R</p>
 <p>Then, we set the marginal rate of substitution equal to the slope of the budget line:</p>
-<p><span class="math display">\[
-\begin{aligned}
+<span class="math display">\[\begin{aligned}
 2\frac{y}{x} = 50
 \\
 y = 25x
-\end{aligned}
-\]</span> We can then substitute y with 25x in the budget equation</p>
-$$
+\end{aligned}\]</span>
+<p>We can then substitute y with 25x in the budget equation</p>
 <span class="math display">\[\begin{aligned}
 y = 150 - 50*x
 \\
@@ -480,7 +484,6 @@ x = 150/75 = 2
 x = 2
 
 \end{aligned}\]</span>
-<p>$$</p>
 <p>The optimal solution for x (quantity of watch) is thus 2, the consumer will choose 2 watches. Now that know the quantity of watches, we can obtain the quantity of apples as well as how much utility this combination of apples and watches will bring to the consumer.</p>
 <p>To get the number of apples, we simply replace x by 6 in the budget constraint equation <span class="math inline">\(y = 150-50*2 = 50\)</span>, <span class="math inline">\(U = 2^2*50*0.18 = 36\)</span></p>
 <p>R can check the results</p>
@@ -524,15 +527,13 @@ x = 2
 <p>The budget constraint will change. Initially we have</p>
 <p><span class="math inline">\(apple = 150 - 50watch\)</span></p>
 <p>And now, the price of watch increases up to 400, income is unchanged (Income = 600) as well as the price of apples (4):</p>
-<p><span class="math display">\[
-\begin{aligned}
+<span class="math display">\[\begin{aligned}
 600 = 4*apple + 400watch
 \\
 4apple = 600-400watch
 \\
 apple = 150 - 100watch
-\end{aligned}
-\]</span></p>
+\end{aligned}\]</span>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="consumer-theory_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
@@ -555,6 +556,14 @@ apple = 150 - 100watch
 <p>This is how microeconomics derive the demand curve. We will see below that the supply curve is also derived with the same logic, the steps being almost the same as we saw here, but by replacing the utility function with a production function and replacing the two goods by capital and labour, which are the factors of production of any firm.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-acemoglu_microeconomics_2017" class="csl-entry" role="listitem">
+Acemoglu, Daron, David Laibson, and John A. List. 2017. <em>Microeconomics</em>. 2nd ed. Always Learning. Pearson. <a href="http://gen.lib.rus.ec/book/index.php?md5=AE81E7B4B1AF2925CE54FC864B30482A">http://gen.lib.rus.ec/book/index.php?md5=AE81E7B4B1AF2925CE54FC864B30482A</a>.
+</div>
+<div id="ref-pindyck_microeconomics_2013" class="csl-entry" role="listitem">
+Pindyck, Robert S., and Daniel L. Rubinfeld. 2013. <em>Microeconomics</em>. 8th ed. The Pearson Series in Economics. Boston: Pearson.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

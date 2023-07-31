@@ -218,7 +218,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, sharp corners, borderline west={3pt}{0pt}{shadecolor}, interior hidden, breakable, frame hidden, enhanced]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, breakable, interior hidden, borderline west={3pt}{0pt}{shadecolor}, frame hidden, sharp corners, enhanced]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -468,9 +468,19 @@ which is behind the positive supply curve.
 \chapter{Neoclassical-mainstream consumer choice
 theory}\label{neoclassical-mainstream-consumer-choice-theory}}
 
-Mainstream consumer choice theory has for ambition to explain consumers'
-decision, that is to say, the choices consumers make between consuming
-one good or another.
+As explained in the previous chapter, demand curve represents a crucial
+element of equilibrium and neoclassical theory. What lies behind this
+famous negative demand curve is neoclassical consumer theory.
+Neoclassical consumer choice theory has for ambition to explain
+consumers' decision, that is to say, the choices consumers make between
+consuming one good or another. Consumer theory, along with production
+theory (see following chapter), constitutes an important branch of
+microeconomics.
+
+Note that this chapter is overall a summary of consumer theory as
+presented in classical and famous micreconomics textbook. I here
+especially used Acemoglu, Laibson, and List (2017) and Pindyck and
+Rubinfeld (2013).
 
 \hypertarget{the-three-assumptions}{%
 \section{The three assumptions}\label{the-three-assumptions}}
@@ -541,22 +551,15 @@ goods which give the same utility for the consumer.
 Indifference curves are based on utility functions. An utility function
 can be for example:
 
-\[
-\begin{aligned}
-U(x,y)=x^20.18y
-\end{aligned}
-\] With x and y two different goods, apples and watches for example. To
-get the indifference curve function, we fix utility U at any positive
-value, and rearrange the function above to get y as a function of x and
-U:
+\[U(x,y)=x^20.18y\]
 
-\[
-\begin{aligned}
-U = x^20.18y
-\\
-y = \frac{U}{0.18*x^2}
-\end{aligned}
-\]
+With x and y two different goods, apples and watches for example. To get
+the indifference curve function, we fix utility U at any positive value,
+and rearrange the function above to get y as a function of x and U:
+
+\[U = x^20.18y\]
+
+\[y = \frac{U}{0.18*x^2}\]
 
 \begin{verbatim}
 Yacas vector:
@@ -590,8 +593,6 @@ To include this budget constraint into the previous graph, we have to
 rearrange this equation to have the quantity of apples as a function of
 the quantity of books:
 
-\$\$
-
 \begin{aligned}
 600 = 4*apple + 200*watch
 \\
@@ -603,7 +604,7 @@ apple = 150 - 50*watch
 
 \end{aligned}
 
-\$\$ More generally, the budget function can also be written as
+More generally, the budget function can also be written as
 
 \[
 Q_1 = \frac{Income}{P_1} - \frac{P_2}{P_1}Q_2
@@ -643,23 +644,21 @@ other good (here a watch). Using algebra, we can find the slope of the
 budget line and of the indifference curve by computing their
 derivatives.
 
-\[
 \begin{aligned}
 apple = 150 - 50*watch
 \\
 \frac{\partial{apple}}{\partial{watch}} = -50
 \\
 \end{aligned}
-\]
 
 Note that finding the marginal rate of substitution is a bit trickier
 than for the budget line. To find the MRS, we have to compute the
 derivative with respect to the first good (x which are apples here) and
 then for the second one (y the watches). Then, the MRS is the ratio
 between the two marginal utilities
+
 \(\frac{\frac{\partial{U}}{\partial{x}}}{\frac{\partial{U}}{\partial{y}}}\)
 
-\[
 \begin{aligned}
 U = x^20.18y
 \\
@@ -667,26 +666,23 @@ U = x^20.18y
 \\
 \frac{\partial{U}}{\partial{y}} = 0.18*x^2 
 \end{aligned}
-\] Thus
 
-\[
-\begin{aligned}
-MRS = \frac{0.36xy}{0.18x^2} = 2\frac{y}{x}
-\end{aligned}
-\] Here is how to compute this in R
+Thus
+
+\[MRS = \frac{0.36xy}{0.18x^2} = 2\frac{y}{x}\]
+
+Here is how to compute this in R
 
 Then, we set the marginal rate of substitution equal to the slope of the
 budget line:
 
-\[
 \begin{aligned}
 2\frac{y}{x} = 50
 \\
 y = 25x
 \end{aligned}
-\] We can then substitute y with 25x in the budget equation
 
-\$\$
+We can then substitute y with 25x in the budget equation
 
 \begin{aligned}
 y = 150 - 50*x
@@ -698,8 +694,6 @@ x = 150/75 = 2
 x = 2
 
 \end{aligned}
-
-\$\$
 
 The optimal solution for x (quantity of watch) is thus 2, the consumer
 will choose 2 watches. Now that know the quantity of watches, we can
@@ -780,7 +774,6 @@ The budget constraint will change. Initially we have
 And now, the price of watch increases up to 400, income is unchanged
 (Income = 600) as well as the price of apples (4):
 
-\[
 \begin{aligned}
 600 = 4*apple + 400watch
 \\
@@ -788,7 +781,6 @@ And now, the price of watch increases up to 400, income is unchanged
 \\
 apple = 150 - 100watch
 \end{aligned}
-\]
 
 \includegraphics{consumer-theory_files/figure-pdf/unnamed-chunk-16-1.pdf}
 
@@ -853,16 +845,18 @@ Theory}\label{mainstreamneoclassical-production-theory}}
 \hypertarget{intro}{%
 \section{Intro}\label{intro}}
 
-As I explained in the
-\href{https://jeylal.github.io/myblog/economics_series/consumer\%20theory/consumer\%20theory.html}{consumer
-theory post}, the most important element of mainstream neoclassical
-theory is the concept of market equilibrium under perfect competition.
-In the consumer theory post, I explained how mainstream economists
-derive the market equilibrium downwards slopping demand curve. Here, the
-objective is to understand how the other curve, the upward slopping
-supply curve, is derived. To understand why mainstream economics arrived
-to this result, one needs to understand mainstream production theory,
-which is the goal of this post.
+As I explained in the introduction, the most important element of
+mainstream neoclassical theory is the concept of market equilibrium
+under perfect competition. In the previous chapter, I gave a short
+summary on how mainstream economists derive the market equilibrium
+downwards slopping demand curve. Here, the objective is to understand
+how the other curve, the upward slopping supply curve, is derived. To
+understand why mainstream economics arrived to this result, one needs to
+understand mainstream production theory, which is the goal of this post.
+
+As the previous chapter, what follows is mainly a summary of Acemoglu,
+Laibson, and List (2017) and Pindyck and Rubinfeld (2013), especially
+the parts on production.
 
 \hypertarget{how-firms-produce-in-neoclassical-mainstream-theory}{%
 \section{How firms produce in neoclassical-mainstream
@@ -921,14 +915,14 @@ process:
   product of labour is the first derivative with respect to labour:
 \end{enumerate}
 
-\[
 \begin{aligned}
 \frac{\partial{Y}}{\partial{L}} = 0.5K^{0.5}L^{0.5-1}
 \\
 = 0.5K^{0.5}L^{-0.5}
 \end{aligned}
-\] Here is how to find the marginal productivity of labor function of
-our example in R:
+
+Here is how to find the marginal productivity of labor function of our
+example in R:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1237,10 +1231,11 @@ also takes into account economic policy and the role of the government:
 how can the government reduce unemployment, increase output and maintain
 low level of inflation?
 
-Those are all questions most of macro models try to answer. In this blog
-post, I will explain one of the most famous and widespread macro model,
-which is the \textbf{Investment-Savings - Liquidity-Money} model (IS-LM
-model).
+Those are all questions most of macro models try to answer. In this
+chapter, I will explain one of the most famous and widespread macro
+model, which is the \textbf{Investment-Savings - Liquidity-Money} model
+(IS-LM model), as it is explained in one of the most famous macro
+textbook: Blanchard (2020).
 
 \hypertarget{production-as-gross-national-product-gdp}{%
 \section{Production as Gross National Product
@@ -1340,7 +1335,6 @@ income.
 
 The consumption function can thus be rewritten:
 
-\[
 \begin{aligned}
 C = C_{0}+C_{1}Y
 \\
@@ -1348,7 +1342,6 @@ C = C_{0} + C_{1}(Y-tY)
 \\
 C = C_{0} + C_{1}Y(1-t)
 \end{aligned}
-\]
 
 \hypertarget{investment-i}{%
 \subsubsection{Investment I}\label{investment-i}}
@@ -3217,6 +3210,11 @@ Bhaduri, Amit, and Stephen Marglin. 1990. {``Unemployment and the Real
 Wage: The Economic Basis for Contesting Political Ideologies.''}
 \emph{Cambridge Journal of Economics} 14 (4): 375--93.
 \url{https://doi.org/10.1093/oxfordjournals.cje.a035141}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-blanchard_macroeconomics_2020}{}}%
+Blanchard, Olivier. 2020. \emph{Macroeconomics (8th Edition)}. 8th ed.
+Pearson.
+\url{http://gen.lib.rus.ec/book/index.php?md5=A1C2AC264BE18F9B15C6F0B5686B4508}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-blecker_heterodox_2019}{}}%
 Blecker, Robert A., and Mark Setterfield. 2019. \emph{Heterodox

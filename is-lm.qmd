@@ -15,7 +15,7 @@ theme_set(theme_bw())
 
 The main objective of macroeconomics is to describe and explain the relationship between important economic variables such as unemployment, inflation, production and growth or the interest rate. Questions macroeconomics typically tries to answer are "how can long run growth be sustained?" "how can unemployment be reduced?". Macroeconomics also takes into account economic policy and the role of the government: how can the government reduce unemployment, increase output and maintain low level of inflation?
 
-Those are all questions most of macro models try to answer. In this blog post, I will explain one of the most famous and widespread macro model, which is the **Investment-Savings - Liquidity-Money** model (IS-LM model).
+Those are all questions most of macro models try to answer. In this chapter, I will explain one of the most famous and widespread macro model, which is the **Investment-Savings - Liquidity-Money** model (IS-LM model), as it is explained in one of the most famous macro textbook: @blanchard_macroeconomics_2020.
 
 ## Production as Gross National Product (GDP)
 
@@ -69,7 +69,7 @@ With $C_{0}$ the minimum level of consumption if income is zero, $C_{1}$ the mar
 
 The consumption function can thus be rewritten:
 
-$$
+```{=tex}
 \begin{aligned}
 C = C_{0}+C_{1}Y
 \\
@@ -77,7 +77,7 @@ C = C_{0} + C_{1}(Y-tY)
 \\
 C = C_{0} + C_{1}Y(1-t)
 \end{aligned}
-$$
+```
 
 #### Investment I
 

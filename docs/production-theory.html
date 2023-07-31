@@ -54,7 +54,26 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -352,7 +371,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="intro" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="intro"><span class="header-section-number">3.1</span> Intro</h2>
-<p>As I explained in the <a href="https://jeylal.github.io/myblog/economics_series/consumer%20theory/consumer%20theory.html">consumer theory post</a>, the most important element of mainstream neoclassical theory is the concept of market equilibrium under perfect competition. In the consumer theory post, I explained how mainstream economists derive the market equilibrium downwards slopping demand curve. Here, the objective is to understand how the other curve, the upward slopping supply curve, is derived. To understand why mainstream economics arrived to this result, one needs to understand mainstream production theory, which is the goal of this post.</p>
+<p>As I explained in the introduction, the most important element of mainstream neoclassical theory is the concept of market equilibrium under perfect competition. In the previous chapter, I gave a short summary on how mainstream economists derive the market equilibrium downwards slopping demand curve. Here, the objective is to understand how the other curve, the upward slopping supply curve, is derived. To understand why mainstream economics arrived to this result, one needs to understand mainstream production theory, which is the goal of this post.</p>
+<p>As the previous chapter, what follows is mainly a summary of <span class="citation" data-cites="acemoglu_microeconomics_2017">Acemoglu, Laibson, and List (<a href="#ref-acemoglu_microeconomics_2017" role="doc-biblioref">2017</a>)</span> and <span class="citation" data-cites="pindyck_microeconomics_2013">Pindyck and Rubinfeld (<a href="#ref-pindyck_microeconomics_2013" role="doc-biblioref">2013</a>)</span>, especially the parts on production.</p>
 </section>
 <section id="how-firms-produce-in-neoclassical-mainstream-theory" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="how-firms-produce-in-neoclassical-mainstream-theory"><span class="header-section-number">3.2</span> How firms produce in neoclassical-mainstream theory</h2>
@@ -371,13 +391,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><strong>Positive but diminishing marginal returns</strong></p>
 <p>Also called diminishing marginal products, or decreasing marginal productivity. This means that all factors of production (capital and labor) show positive but diminishing marginal returns: when we increase one of the inputs by one, with all the other inputs fixed, output will increase, but by less than the previous additional input. For example, the quantity of capital is often considered fixed in the short run, making labor the only variable input in the short run. Labor is assumed to have a decreasing marginal productivity (or marginal returns): with capital fixed, each time a firm employs an additional laborer, output will increase, but by less than when the previous additional laborer was employed. In our example, marginal product of labour is the first derivative with respect to labour:</p></li>
 </ol>
-<p><span class="math display">\[
-\begin{aligned}
+<span class="math display">\[\begin{aligned}
 \frac{\partial{Y}}{\partial{L}} = 0.5K^{0.5}L^{0.5-1}
 \\
 = 0.5K^{0.5}L^{-0.5}
-\end{aligned}
-\]</span> Here is how to find the marginal productivity of labor function of our example in R:</p>
+\end{aligned}\]</span>
+<p>Here is how to find the marginal productivity of labor function of our example in R:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>MPL <span class="ot">&lt;-</span> <span class="fu">Deriv</span>(neo_prod_fun, <span class="st">"l"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>MPL</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -503,6 +522,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Micro theory tells that the supply curve represents all the combinations of price and output (quantity of the good supplied) in which the price is higher than the average variable cost. If the market price is below the average variable cost (AVC), supplying the good would not be profitable. If the price is higher than AVC, it is profitable for the firm to produce (and the firm will supply the quantity at which its marginal revenue, the price, is equal to the marginal cost). Then, if price increases, marginal revenue increases, and firms can increase production and quantity supplied until marginal revenue is again equal to the marginal cost.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-acemoglu_microeconomics_2017" class="csl-entry" role="listitem">
+Acemoglu, Daron, David Laibson, and John A. List. 2017. <em>Microeconomics</em>. 2nd ed. Always Learning. Pearson. <a href="http://gen.lib.rus.ec/book/index.php?md5=AE81E7B4B1AF2925CE54FC864B30482A">http://gen.lib.rus.ec/book/index.php?md5=AE81E7B4B1AF2925CE54FC864B30482A</a>.
+</div>
+<div id="ref-pindyck_microeconomics_2013" class="csl-entry" role="listitem">
+Pindyck, Robert S., and Daniel L. Rubinfeld. 2013. <em>Microeconomics</em>. 8th ed. The Pearson Series in Economics. Boston: Pearson.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

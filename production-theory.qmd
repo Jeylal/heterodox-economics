@@ -29,7 +29,9 @@ leon_prod_fun(l = 9, k = 4, a0 = 3/1, a1 = 1)
 
 ## Intro
 
-As I explained in the [consumer theory post](https://jeylal.github.io/myblog/economics_series/consumer%20theory/consumer%20theory.html), the most important element of mainstream neoclassical theory is the concept of market equilibrium under perfect competition. In the consumer theory post, I explained how mainstream economists derive the market equilibrium downwards slopping demand curve. Here, the objective is to understand how the other curve, the upward slopping supply curve, is derived. To understand why mainstream economics arrived to this result, one needs to understand mainstream production theory, which is the goal of this post.
+As I explained in the introduction, the most important element of mainstream neoclassical theory is the concept of market equilibrium under perfect competition. In the previous chapter, I gave a short summary on how mainstream economists derive the market equilibrium downwards slopping demand curve. Here, the objective is to understand how the other curve, the upward slopping supply curve, is derived. To understand why mainstream economics arrived to this result, one needs to understand mainstream production theory, which is the goal of this post.
+
+As the previous chapter, what follows is mainly a summary of @acemoglu_microeconomics_2017 and @pindyck_microeconomics_2013, especially the parts on production.
 
 ## How firms produce in neoclassical-mainstream theory
 
@@ -67,13 +69,17 @@ The neoclassical production function rests on important assumptions which illust
 
     Also called diminishing marginal products, or decreasing marginal productivity. This means that all factors of production (capital and labor) show positive but diminishing marginal returns: when we increase one of the inputs by one, with all the other inputs fixed, output will increase, but by less than the previous additional input. For example, the quantity of capital is often considered fixed in the short run, making labor the only variable input in the short run. Labor is assumed to have a decreasing marginal productivity (or marginal returns): with capital fixed, each time a firm employs an additional laborer, output will increase, but by less than when the previous additional laborer was employed. In our example, marginal product of labour is the first derivative with respect to labour:
 
-$$
+```{=tex}
 \begin{aligned}
 \frac{\partial{Y}}{\partial{L}} = 0.5K^{0.5}L^{0.5-1}
 \\
 = 0.5K^{0.5}L^{-0.5}
 \end{aligned}
-$$ Here is how to find the marginal productivity of labor function of our example in R:
+```
+
+
+
+Here is how to find the marginal productivity of labor function of our example in R:
 
 ```{r}
 MPL <- Deriv(neo_prod_fun, "l")

@@ -16,7 +16,11 @@ library(Ryacas0)
 theme_set(theme_light())
 ```
 
-Mainstream consumer choice theory has for ambition to explain consumers' decision, that is to say, the choices consumers make between consuming one good or another.
+
+
+As explained in the previous chapter, demand curve represents a crucial element of equilibrium and neoclassical theory. What lies behind this famous negative demand curve is neoclassical consumer theory. Neoclassical consumer choice theory has for ambition to explain consumers' decision, that is to say, the choices consumers make between consuming one good or another. Consumer theory, along with production theory (see following chapter), constitutes an important branch of microeconomics.
+
+Note that this chapter is overall a summary of consumer theory as presented in classical and famous micreconomics textbook. I here especially used @acemoglu_microeconomics_2017 and @pindyck_microeconomics_2013.
 
 ## The three assumptions
 
@@ -66,19 +70,13 @@ Decreasing marginal utility is an important assumption which explains the shape 
 
 Indifference curves are based on utility functions. An utility function can be for example:
 
-$$
-\begin{aligned}
-U(x,y)=x^20.18y
-\end{aligned}
-$$ With x and y two different goods, apples and watches for example. To get the indifference curve function, we fix utility U at any positive value, and rearrange the function above to get y as a function of x and U:
+$$U(x,y)=x^20.18y$$
 
-$$
-\begin{aligned}
-U = x^20.18y
-\\
-y = \frac{U}{0.18*x^2}
-\end{aligned}
-$$
+With x and y two different goods, apples and watches for example. To get the indifference curve function, we fix utility U at any positive value, and rearrange the function above to get y as a function of x and U:
+
+$$U = x^20.18y$$
+
+$$y = \frac{U}{0.18*x^2}$$
 
 ```{r}
 #| echo: false
@@ -130,8 +128,6 @@ $$
 
 To include this budget constraint into the previous graph, we have to rearrange this equation to have the quantity of apples as a function of the quantity of books:
 
-\$\$
-
 ```{=tex}
 \begin{aligned}
 600 = 4*apple + 200*watch
@@ -144,7 +140,9 @@ apple = 150 - 50*watch
 
 \end{aligned}
 ```
-\$\$ More generally, the budget function can also be written as
+
+
+More generally, the budget function can also be written as
 
 $$
 Q_1 = \frac{Income}{P_1} - \frac{P_2}{P_1}Q_2
@@ -183,18 +181,20 @@ So what will be the consumer's final choice? He will choose the point at which t
 
 Mathematically, this means that the quantity of apples and watches the consumer will choose is the point at which the slope of the budget line $\frac{P_{watch}}{P_{apples}}$ is equal to the slope of the indifference curve, which microeconomics call the **marginal rate of substitution**. Marginal rate of substitution shows how much of a good (here apples) the consumer can give up in exchange of one unit of the other good (here a watch). Using algebra, we can find the slope of the budget line and of the indifference curve by computing their derivatives.
 
-$$
+```{=tex}
 \begin{aligned}
 apple = 150 - 50*watch
 \\
 \frac{\partial{apple}}{\partial{watch}} = -50
 \\
 \end{aligned}
-$$
+```
 
-Note that finding the marginal rate of substitution is a bit trickier than for the budget line. To find the MRS, we have to compute the derivative with respect to the first good (x which are apples here) and then for the second one (y the watches). Then, the MRS is the ratio between the two marginal utilities $\frac{\frac{\partial{U}}{\partial{x}}}{\frac{\partial{U}}{\partial{y}}}$
+Note that finding the marginal rate of substitution is a bit trickier than for the budget line. To find the MRS, we have to compute the derivative with respect to the first good (x which are apples here) and then for the second one (y the watches). Then, the MRS is the ratio between the two marginal utilities
 
-$$
+$\frac{\frac{\partial{U}}{\partial{x}}}{\frac{\partial{U}}{\partial{y}}}$
+
+```{=tex}
 \begin{aligned}
 U = x^20.18y
 \\
@@ -202,13 +202,13 @@ U = x^20.18y
 \\
 \frac{\partial{U}}{\partial{y}} = 0.18*x^2 
 \end{aligned}
-$$ Thus
+```
 
-$$
-\begin{aligned}
-MRS = \frac{0.36xy}{0.18x^2} = 2\frac{y}{x}
-\end{aligned}
-$$ 
+Thus
+
+
+$$MRS = \frac{0.36xy}{0.18x^2} = 2\frac{y}{x}$$
+
 Here is how to compute this in R
 
 ```{r}
@@ -219,18 +219,19 @@ mu_y <- deriv(utility_u(x, y), y)
 
 Then, we set the marginal rate of substitution equal to the slope of the budget line:
 
-$$
+```{=tex}
 \begin{aligned}
 2\frac{y}{x} = 50
 \\
 y = 25x
 \end{aligned}
-$$ 
+```
+
+
 We can then substitute y with 25x in the budget equation
 
 
-
-$$
+```{=tex}
 \begin{aligned}
 y = 150 - 50*x
 \\
@@ -241,7 +242,8 @@ x = 150/75 = 2
 x = 2
 
 \end{aligned}
-$$
+```
+
 
 
 The optimal solution for x (quantity of watch) is thus 2, the consumer will choose 2 watches. Now that know the quantity of watches, we can obtain the quantity of apples as well as how much utility this combination of apples and watches will bring to the consumer.
@@ -322,7 +324,7 @@ $apple = 150 - 50watch$
 
 And now, the price of watch increases up to 400, income is unchanged (Income = 600) as well as the price of apples (4):
 
-$$
+```{=tex}
 \begin{aligned}
 600 = 4*apple + 400watch
 \\
@@ -330,7 +332,7 @@ $$
 \\
 apple = 150 - 100watch
 \end{aligned}
-$$
+```
 
 ```{r}
 #| echo: false
@@ -385,14 +387,4 @@ Income and substitution effects depend on the type of the good. There are indeed
 
     A Giffen good refers to goods whose demand increases when price increases. The logic behind this are the goods which are very essential to every day living (for example staple food): an increase in the price of very essential food can lead to the consumer's decision of reducing the consumption of other goods to still afford consuming the essential good.
 
-
 This is how microeconomics derive the demand curve. We will see below that the supply curve is also derived with the same logic, the steps being almost the same as we saw here, but by replacing the utility function with a production function and replacing the two goods by capital and labour, which are the factors of production of any firm.
-
-
-
-
-
-
-
-
-
