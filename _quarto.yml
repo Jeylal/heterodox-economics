@@ -14,7 +14,7 @@ book:
   navbar:
     left:
       - text: About
-        href: https://jeylal.github.io/celalguney/about.html 
+        href: https://jeylal.github.io/celalguney/about.html
       - icon: github
         href: https://github.com/
       - icon: twitter
