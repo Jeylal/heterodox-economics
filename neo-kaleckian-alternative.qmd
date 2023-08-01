@@ -1,4 +1,4 @@
-# Wage-led Vs Profits-led Neo-Kaleckian Demand Regimes
+# Demand Regimes and Open Economy Neo-Kaleckian Models
 
 ```{r}
 #| echo: false
@@ -48,7 +48,7 @@ The main effects of including positive savings out of wages are the following:
 
 -   Whether an economy is wage-led or profit-led depends on the gap between the saving propensity out of profits and wages $(s_r-s_w)$. The higher the gap (the higher $s_r$ is relatively to $s_w$), the more likely is the economy (through demand) to be wage-led, because the gains from increasing consumer demand after redistribution of income towards wages will be large. Remember that when $s_w =0$, the economy would always be wage-led.
 
--   If the gap between $s_r, s_w$ is small (when $s_r^$ is closed to $s_w$), demand is more likely to be profit-led. The logic behind this is that the loss of investment demand after a redistribution of income unfavorable to profits and favorable to wages will outweigh the gain in consumption demand, because the propensity to consume out of wages is relatively low.
+-   If the gap between $s_r, s_w$ is small (when $s_r$ is closed to $s_w$), demand is more likely to be profit-led. The logic behind this is that the loss of investment demand after a redistribution of income unfavorable to profits and favorable to wages will outweigh the gain in consumption demand, because the propensity to consume out of wages is relatively low.
 
 -   The higher the responsiveness of investment to profits ($g_1$), the more likely are demand and growth to be profit-led. That means that higher profit share would boost investment so much that the negative effects of reduced consumption out of wages would be surpassed and outweighed.
 
@@ -88,38 +88,117 @@ To sum up, here's first an explanation of what is meant by "wage-led" and "profi
 ## Open Economy Neo-Kaleckian Model
 
 
-How would the neo-Kaleckian model change is the assumption of no foreign trade is relaxed? So that aggregate demand now includes $X-M$, the external balance (exports minus imports) in $Y = C+I+(X-I)$.
+How would the neo-Kaleckian model change is the assumption of no foreign trade is relaxed? So that aggregate demand now includes $X-M$, the external balance (exports minus imports) in $Y = C+I+(X-M)$.
+
+Taking foreign trade into account changes how labor costs, or rising real wage/wage share can affect aggregate demand and output. A rise in unit labor costs $Wa_0=WL/Y$ in an economy ("home economy") can potentially lead to a rise in the price of exported goods, for instance if unit labor cost rise in a firm which exports a lot of goods. This rise in the price of exports implies a loss of competitiveness: demand for the exported goods can decrease in the price increase too much relatively with other exporting countries. Home products thus loose competitiveness, and this can have an negative impact on aggregate demand which surpasses the positive impact due to the rise of consumer demand (due to rise in wages). **A redistribution of income favorable to wages can, even if the domestic economy is wage-led, lead to a contraction of aggregate demand and output**.
+
+### New Markup Pricing Equation
+
+Relaxing the assumption of no foreign trade also affects how markup pricing is defined. Remember from last chapter that the markup pricing equation was:
+
+$$P = (1+\tau)Wa_0$$
+
+This equation can be rewritten to write markup rate $1+\tau$ as a function of price and unit labor cost:
+
+$$1+\tau=\frac{P}{Wa_0}$$
+
+[@blecker_heterodox_2019, p. 190] then rewrite the right part of this equation as follows:
+
+$$1+\tau=\mu\left(\frac{EP_f}{P}\right)^\eta$$
+
+With $\mu>1$ the target or desired markup rate of firms, $P_f$ the foreign price level, $P$ home price level, $E$ nominal exchange rate and $\eta$ the elasticity  of the price–cost margin with respect to
+the real exchange rate.
+
+This equation basically tells that when real exchange rate rises $\nearrow \left(\frac{EP_f}{P}\right)$, meaning that home goods and services become relatively cheaper (foreign goods become more expensive, there is a real depreciation of home currency, foreign currencies become more expensive), firms will respond by raising their markup to take advantage of increasing competitiveness (make more revenues for each sale).
+
+Conversely, if home products become relatively more expensive (the real exchange rate appreciate, $\searrow \left(\frac{EP_f}{P}\right)$), firms will decrease their markup to try to keep competitiveness (keep selling goods).
+
+By replacing $P$ in the denominator of the equation above by $(1+\tau)Wa_0$, leads to:
+
+$$1+\tau=\mu^{\frac{1}{1+\eta}}\left(\frac{EP_f}{Wa_0}\right)^{\frac{\eta}{1+\eta}}$$
+
+$\frac{EP_f}{Wa_0}$ is the ratio of foreign price to domestic unit labor cost (how much labor costs for each unit of output). This ratio is a measure of firms' international competitiveness in terms of unit labor costs. Thus, international trade changes the model by showing a negative impact of unit labor costs on markup $\tau$.
+
+### New Profit Share Equation
+
+The factors affecting profit share $\pi$ will also change. When there is no international trade, profit share was a positive function of markup $\tau$ only:
+
+$$\pi=\frac{\tau}{1+\tau}$$
+Once international trade is included, profit share is not only a positive function of (target) markup, but also of the ratio $\frac{EP_f}{Wa_0}$ written as $z$ below:
+
+$$\pi=\pi(\mu_+,z_+)$$
+With $\pi_\mu>0$ and $\pi_z>0$ (both partial derivatives are positive, meaning that both $\mu$ and $z$ have positive impact). Conversely, the wage share $\psi=1-\pi$ is negatively related with these two factors.
+
+### Modelling the Trade Balance
+
+The next step is to model net exports $(X-M)$. The trade balance is considered a positive function of the real exchange rate $\frac{EP_f}{P}$ and negatively related to the ratio of capacity utilization on the capital-output ratio $\frac{u}{a_1}$:
+
+$$b=b\left(\frac{EP_f}{P}_{(+)}, \frac{u}{a_1}_{(-)}\right)$$
+
+Net exports are positively related with the real exchange rate, because an increase of the latter is synonym of real depreciation and, assuming that the Marshall-Lerner condition is satisfied[^2], real depreciation ameliorates the trade balance by increasing exports.
+
+Trade balance $b$ in inversely related to $u/a_1$ because the increase in the latter is associated with rising demand for imports relative to capital.
+
+### New Investment Function
+
+Regarding the investment function, the latter becomes:
+
+$$g=h_0+h_1(\pi-\pi_f)+h_2\frac{u}{a_1}$$
+
+With $h_1,h_2>0$. What changes is that investment now depends positively on the difference between the domestic profit share and the foreign profit share $(\pi-\pi_f)$. The reason is that once we consider competition with foreign countries, the profit share of the domestic country must be greater than profit share in foreign countries. Otherwise, capital would simply move abroad (firms would not invest in the home economy if profits are higher in other parts of the world). $(\pi-\pi_f)$ can be interpreted as a difference in profitability between the domestic economy and the rest of the world.
+
+### New Equilibrium Condition
+
+Now that we are considering trade balance, domestic savings $\sigma$ are not only equal to domestic investment $g$, but also equal to the trade balance $b$:
+
+$$\sigma=g+b$$
+
+The variables above could be replaced by their respective definitions, but since it would be tedious, I will simply conclude by summarizing the intuitions of how the main variables of interest interact between them.
+
+### Impacts of variations in $z$ and $\mu$
+
+Since the two exogenous variables of this model are the target markup for firms $\mu$ and the international competitiveness to labor costs ratio $z = \frac{EP_f}{Wa_0}$, we have to see how their variation impact the other variables of the model to see what are the main results and conclusions of the model.
+
+#### Increase in markup $\mu$
+
+An increase in target markup for firms (for instance after reduced competition) increases (domestic) profit share, but decreases international competitiveness since an increase in target markups increases domestic prices.
+
+A rise in markup $\mu$ makes home products more expensive and thus reduces net exports while at the same time increasing the profit share $\pi$ and reducing the equilibrium rate of capacity, making the economy more likely to be wage-led.
+
+$\nearrow{\mu} \Rightarrow \searrow{b} \Rightarrow \searrow{u}, \nearrow \pi$
+
+#### Increase in international competitiveness $z$ (decrease in wage share)
+
+An increase in $z$ (for instance after a fall in labor costs after a cut in nominal wages) also increases profit share and has a positive impact on international competitiveness.
 
 
+Furthermore, an increase in $z$, makes home products relatively cheaper, increases net exports and increases profit share $\pi$, thus having a positive impact on $u$ and making profit-led demand more likely to obtain.
+
+$\searrow{W} \Rightarrow \nearrow{z} \Rightarrow \nearrow{b} \Rightarrow \nearrow{u}, \nearrow \pi$
 
 
+The main conclusion of the open-economy model is that an economy cannot be classified directly as having wage-led or profit-led demand, because it is the source of the exogenous shocks (changes in either $z$ and $\mu$) on income distribution that will provoke wage-led or profit-led effects. 
+
+To sum up:
+
+1. **Changes in the industrial structure affecting** $\mu$ (concentration and all the factors affecting markup explained in the previous chapter) **will in general have wage-led effects**. 
+
+2. **Changes in international competitiveness relative to labor costs**, $z$, **will in general have profit-led effects**
 
 
+It is important to keep in mind that these effects of international trade can still be offset and surpassed by domestic impact of distributional shifts. If the domestic demand is strongly wage-led, an increase in the wage share will still lead to higher growth and capacity rate even if exports decline (assuming that international competitive effects are relatively weak). This would be the case, for instance, of any country which is rather closed to foreign trade or has relatively low level of foreign trade with other countries.
 
+Similarly, if any given economy is strongly profit-led, then a rise in markup $\mu$ can still have a positive impact of utilization rate and growth even though there are losses on the international trade side.
 
+### Open Economy neo-Kaleckian Model and Currency Depreciation
 
+This neo-Kaleckian open economy model also has strong implication for foreign trade policy (currency depreciation).
 
+A depreciation makes $z$ rise. If the domestic economy shows profit-led response to such a shock (meaning that exports increase a lot and outweigh the loss in consumption demand from decreased purchasing power of households), the depreciation is expansionary.
 
+On the other hand, if the economy shows a wage-led response, the depreciation will not be expansionary. The reason is that depreciation reduces domestic purchasing power of households and if domestic demand is strongly wage-led, depreciation will not rise exports enough to compensate the loss in domestic consumer demand and will have negative effects on growth.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Finally, a depreciation, rise in $z$, will always rise profit share and thus make the distribution of income more unequal. In addition, if the economy has wage-led demand, the depreciation is likely to be contractionary.
 
 
 
@@ -127,7 +206,7 @@ How would the neo-Kaleckian model change is the assumption of no foreign trade i
 
 [^1]: Here's the complete explanation: $g_2$ is the effect of $u$ on investment with $r$ fixed. Since $r = \frac{\pi u}{a_1}$, assuming $g_2>0$ implies that when $u$ rises, $r$ stays constant because profit share $\pi$ falls in the exact same proportion.
 
-
+[^2]: The Marshall-Lerner condition refers to the conditions that leads real depreciation to improve net exports (trade balance). A depreciation has basically two effects. On the one hand, it makes home products relatively cheaper in the world market and thus increases exports of domestic products. On the other hand, real depreciation also makes imported goods dearer (for the same quantity of imports). The effect of depreciation on exported quantities is called "volume effect" and the effect on imported price "value effect". For the depreciation to have a positive impact on net exports, the volume effect has to outweigh the value effect. In other words, the increase in exports needs to surpass the increase of the value of imported goods and services.
 
 
 
