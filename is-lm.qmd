@@ -19,11 +19,13 @@ Those are all questions most of macro models try to answer. In this chapter, I w
 
 ## Production as Gross National Product (GDP)
 
-The main feature of the model is a graph, which show the relationship between output and the interest rate. But first, we have to define what is actually output (production) in macro theory.
+IS-LM can essentially we resumed in a graph, showing the relationship between output and the interest rate. But first, we have to define what is actually output (production) in macro theory.
 
 ### The three approach to GDP
 
-Production is defined as the sum of value added within an economy (can be a nation, a region, or the world taken as a whole) during a period of time (a year, month, semester, quarter...). There are three equivalent ways to define and compute GDP:
+In economics, Production is defined as the sum of value added within an economy (can be a nation, a region, or the world taken as a whole) during a period of time (a year, month, semester, quarter...).
+
+There are three equivalent ways to define and compute GDP:
 
 1.  **Production approach**
 
@@ -124,4 +126,4 @@ isplot <- ggplot(data = tibble(x = 0:15), aes(x = x)) +
 isplot
 ```
 
-As shown in the graph above, an increase in government spending or in consumption (but not due to an increase in income) or in investment (except due to a decline in interest rate) will induce a positive shift (upward) of the IS curve. A negative shock will make a shift downards (negative shock).
+As shown in the graph above, an increase in government spending or in consumption (but not due to an increase in income) or in investment (except due to a decline in interest rate) will induce a positive shift (upward) of the IS curve. A negative shock will make a shift downwards (negative shock).

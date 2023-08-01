@@ -1,6 +1,6 @@
 # Introduction: Market Equilibrium
 
-This website is guide to mainstream and heterodox economics constructed from my personal notes from a variety of bachelor and master level economics courses.  goal is to provide summaries of important topics in neoclassical and heterodox economics. Since having some background in mainstream economics is crucial to understand the heterodox and Post-Keynesian economics, mainly because the latter are constructed partly as a response and critic of mainstream-neoclassical economics, the present introduction will summarize the basics of neoclassical production theory, consumer theory and market equilibrium.
+This website is a guide to mainstream and heterodox economics constructed from my personal notes from a variety of bachelor and master level economics courses.  goal is to provide summaries of the main topics and models of neoclassical and heterodox economics. Since having some background in mainstream economics is crucial to understand the heterodox and Post-Keynesian economics, mainly because the latter are constructed partly as a response and critic of mainstream-neoclassical economics, the present introduction will summarize the basics of neoclassical production theory, consumer theory and market equilibrium.
 
 Let's first recall what market equilibrium is, because it is one of the most important concept in economics.
 

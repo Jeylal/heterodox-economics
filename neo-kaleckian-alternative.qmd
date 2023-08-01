@@ -1,0 +1,138 @@
+# Wage-led Vs Profits-led Neo-Kaleckian Demand Regimes
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+library(tidyverse)
+library(Ryacas0)
+library(Deriv)
+```
+
+## Summary of Kalecki-Steindl model
+
+Wa saw in the previous chapter that the Kalecki-Steindl has strong implications for growth. A decrease in markup and profit share leads to higher growth, real wage and profit rates. Such an economy is known in the literature as *wage-led economy*.
+
+However, these rather unusual results, compared with all the models seen until now, are the results of the assumptions of the model, which are:
+
+1.  Flexible capacity rate of utilization
+2.  Markup pricing
+3.  Specification of the investment function: $g = g_0 + g_r + g_2u$
+4.  No Government (no taxes, no government spending)
+5.  Closed economy (no foreign trade)
+6.  No savings out of wages (all savings come out of profits)
+
+In this chapter, we will see that some economists came out with different conclusions by relaxing some of the assumptions above. In fact, it will be shown that, by relaxing assumptions 6 and by considering another specification of the investment function, an economy can not only be *wage-led*, but also *profit-led* (when demand resulting from investment drives economic growth). A further complexification of the model is to relax assumption 5 and include foreign trade in the model.
+
+### Savings out of Wages
+
+#### Similarities with the Early Kaldorian Model
+
+Assuming, as the Kalecki-Steindl model does, that there is no positive savings out of wages is not a realistic assumptions. In effect, savings out of wages can be very low and most of the time lower than savings out of profits, but they still exist. It it thus important to consider how positive savings out of wages can be included in the model, and see how the model changes. It is also important to take savings out of wages into account, because the latter varies a lot accross countries: there are countries in which savings out of wages are relatively higher than other countries (East Asia for instance). Hence, relaxing this assumption is of great interest. But how is it done?
+
+Remember that we already a model which includes positive savings out of wages: the early Kaldorian model (EKM). [@blecker_heterodox_2019, p. 182] introduces the following saving function, which is very similar to the EKM saving function:
+
+$$\sigma = S/K = [s_r\pi+s_w(1-\pi)]\frac{u}{a_1}$$
+
+Note that we assume positive savings out of wages, but with a lower propensity than savings out of profits: $0<s_w<s_r<1$. The rational behind this is that wages recipients have a higher propensity to consumer that profits recipients since the latter have a relatively higher income.
+
+Note that the only difference with the EKM savings function is the fact that $u$ appears in this alternative Neo-Kaleckian model, whereas is was assumed constant at full capacity in the EKM.
+
+It is important to keep in mind that $s_r$ and $s_w$ are the saving propensities *out of the types of income received* (here profits and wages), they do not refer to saving propensities of workers and capitalists. A worker can receive both wage and profits revenues, and we assume here that workers will save income out of profits more than income out of wages. That means that **profits are always saved at a higher propensity than wages**.
+
+#### Effects on the model
+
+The main effects of including positive savings out of wages are the following:
+
+-   The main variables of the model (capacity, profits, investment rates) are now not necessarily inversely related with the profit share. It can be thus possible that the economy is not wage-led.
+
+-   Whether an economy is wage-led or profit-led depends on the gap between the saving propensity out of profits and wages $(s_r-s_w)$. The higher the gap (the higher $s_r$ is relatively to $s_w$), the more likely is the economy (through demand) to be wage-led, because the gains from increasing consumer demand after redistribution of income towards wages will be large. Remember that when $s_w =0$, the economy would always be wage-led.
+
+-   If the gap between $s_r, s_w$ is small (when $s_r^$ is closed to $s_w$), demand is more likely to be profit-led. The logic behind this is that the loss of investment demand after a redistribution of income unfavorable to profits and favorable to wages will outweigh the gain in consumption demand, because the propensity to consume out of wages is relatively low.
+
+-   The higher the responsiveness of investment to profits ($g_1$), the more likely are demand and growth to be profit-led. That means that higher profit share would boost investment so much that the negative effects of reduced consumption out of wages would be surpassed and outweighed.
+
+### Modifying the Investment function
+
+#### Flaws of the Kalecki-Steindl Investment function
+
+In the previous chapter, the Kalecki-Steindl investment function was:
+
+$$g=g_0+g_1r+g_2u$$
+
+This specification (was of defining) the investment function as positively related to profit rate of utilization rate was criticized by @marglin_profit_1991, who argued that the utilization rate is double counted in this specification, imposing an overstated role of demand on investment in the economy. $u$ is double counted because profit rate can be written as $r = \pi u/a_1$:
+
+$$g=g_0+g_1\frac{\pi u}{a_1}+g_2u$$
+
+But the double counting of $u$ is not the only problem. In fact, assuming that $g_2$ is always positive (meaning that increase in capacity rate will have a positive effect of investment) is also unrealistic, because it implies that when utilization increases and profit share falls simultaneously, firms will always want to invest more[^1]. @marglin_profit_1991 argued that this was not a reasonable assumption and that $g_2$ could be either positive or negative.
+
+#### Marglin-Badhuri Investment Function
+
+[insert badhuri marglin 1991] thus proposed a new investment function combining Kaleckian and Robinsonian elements:
+
+$$g = f[r^e(\pi,u)] = h(\pi,u)$$
+This modified investment function means that investment depends positively on the capacity rate $u$ and profit share $\pi$. This specification assumes that the partial derivatives $h_\pi$ and $h_u$ are positive. That means that if $u$ stays constant and $\pi$ increase (or conversely), firms will be willing to invest more. $h_\pi$ is interpreted as the profitability effect of investment (the marginal effect of profit share on investment, with $u$ fixed).
+
+Using this new investment function, an economy can be profit-led even if we assume that there is not positive savings out of wages $s_w=0$ and no international trade.
+
+
+## Summary
+
+To sum up, here's first an explanation of what is meant by "wage-led" and "profit-led" demand:
+
+- *Wage-led* demand means that aggregate demand $Y = C+I$ (recall that we assume no government and foreign trade, so aggregate demand ignores $G$ and $X-M$) is driven by private consumption $C$. In other words, when the wage share increases (and profit share decreases), aggregate demand increases through $C$ and this effect surpasses the fall of investment $I$ due to lower profitability. The logic behind wage-led demand is to consider that a redistribution of income towards wages boost private consumption so much that growth, investment, real wage and profit rates increase. Thus, a rise in the wage share boosts the economy through positive effect on demand.
+
+- *Profit-led* demand means that a rise in the profit share boosts investment so much that this effect offsets and even surpasses the fall in private consumption due to a fall in the wage share. Firms are very responsive to the increase in their profit share and are thus willing to invest a lot.
+
+
+## Open Economy Neo-Kaleckian Model
+
+
+How would the neo-Kaleckian model change is the assumption of no foreign trade is relaxed? So that aggregate demand now includes $X-M$, the external balance (exports minus imports) in $Y = C+I+(X-I)$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[^1]: Here's the complete explanation: $g_2$ is the effect of $u$ on investment with $r$ fixed. Since $r = \frac{\pi u}{a_1}$, assuming $g_2>0$ implies that when $u$ rises, $r$ stays constant because profit share $\pi$ falls in the exact same proportion.
+
+
+
+
+
+
+
+
+
+

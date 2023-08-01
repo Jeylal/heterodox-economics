@@ -46,6 +46,7 @@ book:
     - part: "Neo-Kaleckian Models"
       chapters:
         - neo-kaleckian-models.qmd
+        - neo-kaleckian-alternative.qmd
     - references.qmd
 
 bibliography: references.bib
