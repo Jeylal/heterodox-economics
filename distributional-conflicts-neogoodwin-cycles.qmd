@@ -1,0 +1,202 @@
+# Distributional Conflict, Aggregate Demand, Neo-Goodwin Cycles
+
+## Preliminary Notes
+
+### Importance and Motivations for Distributional Conflict Models
+
+Neo-Keynesian and neo-Kaleckian seen in the previous chapters are key models within heterodox macroeconomics. However, all these models consider important variables as exogenous. Neo-Keynesian models typically assume a given nominal wage and the neo-Kaleckian models generally assume an exogenous markup rate (except open-economy models).
+
+A major drawback of these two types of models is that they do not explicitly give an explanation of inflation arising from distributional conflict. The only exception is the Marglin's synthesis we saw in the Neo-Keynesian models part.
+
+Developing models which include class conflict between workers and capitalists over the distribution of national income is crucial for heterodox economics, because one characteristic common to all heterodox schools (Marxian, Kalecian, Keynesian...) is that they all recognized that capitalists economies are marked by class conflict.
+
+We will see that the outcome of distributive conflict models is the derivation of the **distributive curve** (DC), which is an important result of post-Keynesian/heterodox macroeconomics. In simple terms, the DC describes the relationship and dynamics between aggregate demand (measure through capacity rate $u$) and inequality (measured through wage share $\psi$). If the DC is positive, higher aggregate demand and growth lead to higher wage share because increase in the former redistributes income to wages (thus a positive DC implies that workers have strong bargaining power). Conversely, a negative DC means that as output and aggregate demand increase, the wage share decreases. We will see that a positive DC is called **profit-squeeze** and a negative DC **wage-squeeze**.
+
+## Basic Distributional Conflict Model
+
+A very simple distributional model assumes that capitalists and workers both fight to achieve given objectives. On the one hand, workers want to reach and negotiate a target real wage $w_w$, while they get their actual real wage $w$. On the other hand, firms want to reach a given target markup rate $\tau_f$, which corresponds to an implicit target real wage for firms $w_f$. But let's first see how nominal wage changes according to change in target real wage for workers.
+
+### Change in Nominal Wage $\hat{W}$
+
+When the discrepancy between target real wage and the actual real wage $w_w-w$ is high, workers are willing negotiate higher nominal wage wage to reduce this difference.
+
+The degree to which workers will be able to rise their nominal wage depends on many institutional factors such as the strength of labor unions, labor market regulations, unemployment rate and social norms. All these factors will affect the target real wage $w_w$, while the degree to which the discrepancy will pass through higher nominal wage depends on a coefficient, $\phi$, which can be interpreted as the speed of adjustment of nominal wage:
+
+$$\hat{W}=\phi(w_w-w)$$
+
+### Change in Price $\hat{P}$
+
+On the price side, change in price will be a positive function of the difference between actual real wage and target real wage for firms $w-w_f$. The higher this difference, the more firms will raise their depending on the price adjustment speed factor $\theta$, which depends on the monopoly power of the firms and antitrust regulation:
+
+$$\hat{P}=\theta(w-w_f)$$
+
+### Effects of Labor Productivity, Target Wage Share instead of Real Wage
+
+However, this simple model omits important factors such as labor productivity. An increase in labor productivity $Q = 1/a_0$ decreases the wage share $\psi=\frac{W}{P}a_0$. Hence, when labor productivity rises, workers may want to negotiate higher nominal wage so that the wage share is held constant. On the firms side, increase in labor productivity allow them to reduce price increase, because labor productivity gains reduce (unit labor) costs.
+
+Moreover, workers and firms may rather target a given wage share and profit share instead of real wage (and markup rate).
+
+Including labor productivity changes the simple model as such:
+
+$$\hat{W} = \phi(\psi_w-\psi)+\beta{q} + \alpha{\hat{P}}$$ Note that I also include here $\alpha{\hat{P}}$, which reflects to what degree nominal wage are indexed to inflation (no inflation would be the $\alpha=0$ case, perfect indexation, $\alpha=1$).
+
+$$\hat{P}=\theta(\psi-\psi_f)-\gamma{q}$$
+
+With $q=Y/L=1/a_0$ labor productivity, $\psi_{w}$ the target wage share of workers and $\psi_f$ the target wage share for firms.
+
+## The Distributive Curve (DC)
+
+Some further steps are required to derive the distributive curve from the model above.
+
+### Modeling Target Wage Share for Firms and Workers as Functions of $u$
+
+The next step is to model changes in target wage share for firms and workers.
+
+A rise in the capacity rate of utilization $u=Y/Y_k$ can be considered as synonymous of increasing employment rate. Moreover, as employment rate increases, workers are assumed to be more able to negotiate higher wage share, mainly because lower unemployment implies stronger bargaining power for workers. Hence, the model assumes that $\psi_w$ is a positive function of utilization rate $u$:
+
+$$\psi_w=\lambda_0+\lambda_1{u}$$
+
+In addition, the target profit share $1-\psi_f$ can also be written as a funtion of capacity rate:
+
+$$1-\psi_f=\eta_0+\eta_1u$$
+
+Note that $\eta_1$ can be either positive or negative. On the one hand, firms could target higher markup rate, hence profit share, because they would try to raise profits when sales are reduced during a recession. On the other hand, during expansion (rise in $u$), firms could have the possibility to raise prices without losing customers.
+
+Now that target wage share for firms and workers are modeled as functions of $u$, they can be substituted in the nominal wage and price change equations. Thus,
+
+$$\hat{W} = \phi(\psi_w-\psi)+\beta{q} + \alpha{\hat{P}}$$ $$\hat{P}=\theta(\psi-\psi_f)-\gamma{q}$$ become
+
+$$\hat{W} = \phi(\lambda_0+\lambda_1{u}-\psi)+\beta{q} + \alpha{\hat{P}}$$ $$\hat{P}=\theta(\psi-1+\eta_0+\eta_1u))-\gamma{q}$$
+
+### Modeling productivity as a Function of $u, \psi, y$
+
+The final step to complete the model and derive the DC curve is to model labor productivity growth $q = \hat{Y}-\hat{L}$ as function of capacity rate $u=Y/Y_k$.
+
+However, $q$ also depends on other variables such as the wage share or output growth, here is a summary of the variables affecting labor productivity growth:
+
+-   **Capacity utilization** $u$ (+):
+
+    In the short run, labor productivity growth is positively associated with output and utilization because of overhead labor. Overhead labor refers to managers, engineers and all the workers who are not easily fired during a recession. Thus, in a short run recession (when output and $u$ fall), $L$ does not fall enough and thus $Y$ falls more than $L$, making the labor productivity ratio fall $Q = \frac{Y}{L}$. Conversely, during short run expansion (rise of output and utilization), labor productivity increases because hiring is less than proportional to output increase ($Y$ increase more than $L$).
+
+-   **Wage Share** $\psi$ (+):
+
+    A higher wage share can induce firms to invest more in labor-saving equipment. The reason is that by investing in labor-saving equipment, firms can decrease workers' bargaining power. Hence, when labor costs are high, labor productivity is expected to rise.
+
+-   **Output Growth** $y$ (+)
+
+    Verdoorn and Kaldor showed that growth of output and labor productivity are positively associated and even positively influence each other. Labor productivity growth increases output growth, because more $Y$ is produced for the same quantity of labor, but this rise in output growth will in return also have a positive impact on $q$.
+
+To sum up, labor productivity growth can be written as a linear function of $u$ and $\psi$:
+
+$$q=q_0+q_1u+q_2\psi$$
+
+### Equilibrium and Distributional Conflict curve
+
+We have thus the following wage and price inflation functions:
+
+$$\hat{W} = \phi(\lambda_0+\lambda_1{u}-\psi)+\beta{(q_0+q_1u+q_2\psi)} + \alpha{\hat{P}}$$
+
+$$\hat{P}=\theta(\psi-1+\eta_0+\eta_1u))-\gamma{(q_0+q_1u+q_2\psi)}$$
+
+To derive the DC, we equate $\hat{P}=\hat{W}$ and solve for the equilibrium wage share $\psi$, which gives:
+
+$$\psi=\frac{\phi\lambda_0+\theta(1-\alpha)(1-\eta_0)-q_0+u[\phi\lambda_1-\theta\eta_1(1-\alpha)-q_1]}{\phi+\theta(1-\alpha)+q_2}$$
+
+This equation seems complicated, with a lot of different variables. However, it is only the sign of
+
+$$u[\phi\lambda_1-\theta\eta_1(1-\alpha)-q_1]$$
+
+which truly is of interest here, because it will determine whether the utilization $u$ will have a positive impact of the wage share or not.
+
+Remember that:
+
+-   $\phi$ is the speed of adjustment of nominal wages when workers bargain for higher wage share.
+
+-   $\lambda_1$ is the positive marginal impact of $u$ on target wage share $\psi_w$ for workers.
+
+    -   Hence, the product $\phi\lambda_1$ can be interpreted as a set of institutional factors which reinforce workers' bargaining power. $\phi\lambda_1$ reflects the bargaining power of workers.
+
+But this product is subtracted by:
+
+-   $\theta\eta_1$, which is the degree to which firms raise price during a short term recession ($\eta_1$) multiplied by the speed of adjustment of price to target wage share for firms. This product is also multiplied by the inverse of the degree of indexation (of nominal wage to inflation). The higher are nominal wages indexed to inflation, the more likely the final sign of the bracket will be positive.
+
+    -   **Hence,** $\theta\eta_1$ reflects the monopoly power of firms
+
+-   $q_1$, which is the marginal impact of utilization on labor productivity growth. The higher is $q_1$, the more a rise in utilization makes labor productivity increase and since the latter has a negative impact of the wage share, the higher is $q_1$, the more likely a rise in $u$ will have a negative impact on the wage share.
+
+To sum up, the DC can be either positive or negative depending on the final sign of the bracket above. The more is the institutional framework favorable to workers (wage indexation, strength of labor union, labor market legislation...), the more likely is the DC to be positive (and conversely).
+
+![The different types of DC, Blecker and Setterfield (2019, 222)](images/dc.jpg){fig-align="center"}
+
+As explained in the introduction, there are two types of DC (we ignore the third type shown in the illustration above):
+
+-   **Profit-squeeze** DC:
+
+    When the impact of higher utilization and employment of wage increase is superior than the effect on price and productivity growth, an increase in utilization will increase the wage share. This positive relationship between wage share and utilization is called "profit-squeeze" because an increase in output and $u$ make redistribute income to wages and thus decreases the profit share.
+
+-   **Wage-squeeze** DC:
+
+    When the impact of higher utilization, output and employment on productivity growth and price increase is superior to the rise in wages, the DC is called "wage-squeeze" because there is a negative relationship (impact) of output and utilization on the wage share. The more output and utilization increase, the more is total income more favorably redistributed to profits and thus the wage share decline and the profit share increase.
+
+## Combining Distributional Curve and Demand Regimes
+
+In the last chapter on neo-Kaleckian model, we saw that the demand regime (how utilization and output are related to the wage share and profit share) could be either:
+
+-   **Profit-led**
+
+    When an increase in the wage share has a negative impact on utilization and output, because aggregate demand is driven mainly by investment and/or exports.
+
+-   **Wage-led**
+
+    When an increase in the wage share has a positive impact on utilization and output, because aggregate demand is mainly driven by private domestic consumption.
+
+We now saw that an economy is not only characterized by either wage-led or profit-led demand, but that is has also either a wage-squeeze or profit-squeeze DC. There are thus many combinations possible: an economy can have a profit-led demand with a wage-squeeze DC, a wage-led demand and a wage-squeeze DC and so on.
+
+However, how these combinations can be interpreted depends on some assumptions. There are two possible assumptions:
+
+1.  Demand and output (utilization) adjust more rapidly than distribution (nominal wages and prices).
+
+2.  Demand and output, and prices, wages and distribution have the same adjustment speed.
+
+### 1. Demand adjusts more rapidly
+
+In that case, the economy is always on the AD curve in the short run and the DC curve only puts pressure on the wage share and utilization at the medium and long run. At any point below the DC curve, there is an upward pressure on the wage share and a downwards pressure at any point above it.
+
+![Blecker and Setterfield (2019, 227)](images/ad-dc1.jpg){fig-align="center"}
+
+The illustration above shows the possible scenarios in the case of a wage-led demand regime (upward slopping AD curve).
+
+But what does it actually mean to have, for instance, a wage-led demand regime with a wage-squeeze distributive curve (graph a)? Wage-led demand regime means that, as the wage share increase, utilization and output rise as well. But since distribution is wage-squeeze, as output and utilization increase distributional dynamics which are unfavorable to workers and their wage share will decrease the wage share and increase the profit share. Therefore, at low level of utilization (any point on the left on the graph, at low $u$), the wage share is also relatively low. Subsequently, output, utilization and the wage share will gradually increase (because either increase in wage share or utilization will have a positive feedback) on each other until the AD curve crosses the DC curve.
+
+If the DC and demand curves are positive, we have both wage-led demand and profit-squeeze distribution. If the DC curve has a slower slope than AD curve, we are in scenario (b), if it is higher, it corresponds to scenario (c). Having wage-led demand and profit-squeeze distribution means that higher wage share will have a positive impact on utilization which, in return, will redistribute even more of total income to the wage share, which in return will increase utilization even further and so on. The difference between scenario b and c is that in c the slope of the DC curve is higher, meaning that the effect of $u$ on distribution is very favorable to workers and their wage share. In that case, it is possible that the positive interaction between increasing $u$ and the wage share never stops (this is why there are arrows pointing away from equilibrium in graph c).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

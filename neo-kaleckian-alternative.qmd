@@ -64,29 +64,27 @@ This specification (was of defining) the investment function as positively relat
 
 $$g=g_0+g_1\frac{\pi u}{a_1}+g_2u$$
 
-But the double counting of $u$ is not the only problem. In fact, assuming that $g_2$ is always positive (meaning that increase in capacity rate will have a positive effect of investment) is also unrealistic, because it implies that when utilization increases and profit share falls simultaneously, firms will always want to invest more[^1]. @marglin_profit_1991 argued that this was not a reasonable assumption and that $g_2$ could be either positive or negative.
+But the double counting of $u$ is not the only problem. In fact, assuming that $g_2$ is always positive (meaning that increase in capacity rate will have a positive effect of investment) is also unrealistic, because it implies that when utilization increases and profit share falls simultaneously, firms will always want to invest more[^neo-kaleckian-alternative-1]. @marglin_profit_1991 argued that this was not a reasonable assumption and that $g_2$ could be either positive or negative.
+
+[^neo-kaleckian-alternative-1]: Here's the complete explanation: $g_2$ is the effect of $u$ on investment with $r$ fixed. Since $r = \frac{\pi u}{a_1}$, assuming $g_2>0$ implies that when $u$ rises, $r$ stays constant because profit share $\pi$ falls in the exact same proportion.
 
 #### Marglin-Badhuri Investment Function
 
-[insert badhuri marglin 1991] thus proposed a new investment function combining Kaleckian and Robinsonian elements:
+@marglin_profit_1991 thus proposed a new investment function combining Kaleckian and Robinsonian elements:
 
-$$g = f[r^e(\pi,u)] = h(\pi,u)$$
-This modified investment function means that investment depends positively on the capacity rate $u$ and profit share $\pi$. This specification assumes that the partial derivatives $h_\pi$ and $h_u$ are positive. That means that if $u$ stays constant and $\pi$ increase (or conversely), firms will be willing to invest more. $h_\pi$ is interpreted as the profitability effect of investment (the marginal effect of profit share on investment, with $u$ fixed).
+$$g = f[r^e(\pi,u)] = h(\pi,u)$$ This modified investment function means that investment depends positively on the capacity rate $u$ and profit share $\pi$. This specification assumes that the partial derivatives $h_\pi$ and $h_u$ are positive. That means that if $u$ stays constant and $\pi$ increase (or conversely), firms will be willing to invest more. $h_\pi$ is interpreted as the profitability effect of investment (the marginal effect of profit share on investment, with $u$ fixed).
 
 Using this new investment function, an economy can be profit-led even if we assume that there is not positive savings out of wages $s_w=0$ and no international trade.
-
 
 ## Summary
 
 To sum up, here's first an explanation of what is meant by "wage-led" and "profit-led" demand:
 
-- *Wage-led* demand means that aggregate demand $Y = C+I$ (recall that we assume no government and foreign trade, so aggregate demand ignores $G$ and $X-M$) is driven by private consumption $C$. In other words, when the wage share increases (and profit share decreases), aggregate demand increases through $C$ and this effect surpasses the fall of investment $I$ due to lower profitability. The logic behind wage-led demand is to consider that a redistribution of income towards wages boost private consumption so much that growth, investment, real wage and profit rates increase. Thus, a rise in the wage share boosts the economy through positive effect on demand.
+-   *Wage-led* demand means that aggregate demand $Y = C+I$ (recall that we assume no government and foreign trade, so aggregate demand ignores $G$ and $X-M$) is driven by private consumption $C$. In other words, when the wage share increases (and profit share decreases), aggregate demand increases through $C$ and this effect surpasses the fall of investment $I$ due to lower profitability. The logic behind wage-led demand is to consider that a redistribution of income towards wages boost private consumption so much that growth, investment, real wage and profit rates increase. Thus, a rise in the wage share boosts the economy through positive effect on demand.
 
-- *Profit-led* demand means that a rise in the profit share boosts investment so much that this effect offsets and even surpasses the fall in private consumption due to a fall in the wage share. Firms are very responsive to the increase in their profit share and are thus willing to invest a lot.
-
+-   *Profit-led* demand means that a rise in the profit share boosts investment so much that this effect offsets and even surpasses the fall in private consumption due to a fall in the wage share. Firms are very responsive to the increase in their profit share and are thus willing to invest a lot.
 
 ## Open Economy Neo-Kaleckian Model
-
 
 How would the neo-Kaleckian model change is the assumption of no foreign trade is relaxed? So that aggregate demand now includes $X-M$, the external balance (exports minus imports) in $Y = C+I+(X-M)$.
 
@@ -106,8 +104,7 @@ $$1+\tau=\frac{P}{Wa_0}$$
 
 $$1+\tau=\mu\left(\frac{EP_f}{P}\right)^\eta$$
 
-With $\mu>1$ the target or desired markup rate of firms, $P_f$ the foreign price level, $P$ home price level, $E$ nominal exchange rate and $\eta$ the elasticity  of the price–cost margin with respect to
-the real exchange rate.
+With $\mu>1$ the target or desired markup rate of firms, $P_f$ the foreign price level, $P$ home price level, $E$ nominal exchange rate and $\eta$ the elasticity of the price--cost margin with respect to the real exchange rate.
 
 This equation basically tells that when real exchange rate rises $\nearrow \left(\frac{EP_f}{P}\right)$, meaning that home goods and services become relatively cheaper (foreign goods become more expensive, there is a real depreciation of home currency, foreign currencies become more expensive), firms will respond by raising their markup to take advantage of increasing competitiveness (make more revenues for each sale).
 
@@ -123,11 +120,9 @@ $\frac{EP_f}{Wa_0}$ is the ratio of foreign price to domestic unit labor cost (h
 
 The factors affecting profit share $\pi$ will also change. When there is no international trade, profit share was a positive function of markup $\tau$ only:
 
-$$\pi=\frac{\tau}{1+\tau}$$
-Once international trade is included, profit share is not only a positive function of (target) markup, but also of the ratio $\frac{EP_f}{Wa_0}$ written as $z$ below:
+$$\pi=\frac{\tau}{1+\tau}$$ Once international trade is included, profit share is not only a positive function of (target) markup, but also of the ratio $\frac{EP_f}{Wa_0}$ written as $z$ below:
 
-$$\pi=\pi(\mu_+,z_+)$$
-With $\pi_\mu>0$ and $\pi_z>0$ (both partial derivatives are positive, meaning that both $\mu$ and $z$ have positive impact). Conversely, the wage share $\psi=1-\pi$ is negatively related with these two factors.
+$$\pi=\pi(\mu_+,z_+)$$ With $\pi_\mu>0$ and $\pi_z>0$ (both partial derivatives are positive, meaning that both $\mu$ and $z$ have positive impact). Conversely, the wage share $\psi=1-\pi$ is negatively related with these two factors.
 
 ### Modelling the Trade Balance
 
@@ -135,7 +130,9 @@ The next step is to model net exports $(X-M)$. The trade balance is considered a
 
 $$b=b\left(\frac{EP_f}{P}_{(+)}, \frac{u}{a_1}_{(-)}\right)$$
 
-Net exports are positively related with the real exchange rate, because an increase of the latter is synonym of real depreciation and, assuming that the Marshall-Lerner condition is satisfied[^2], real depreciation ameliorates the trade balance by increasing exports.
+Net exports are positively related with the real exchange rate, because an increase of the latter is synonym of real depreciation and, assuming that the Marshall-Lerner condition is satisfied[^neo-kaleckian-alternative-2], real depreciation ameliorates the trade balance by increasing exports.
+
+[^neo-kaleckian-alternative-2]: The Marshall-Lerner condition refers to the conditions that leads real depreciation to improve net exports (trade balance). A depreciation has basically two effects. On the one hand, it makes home products relatively cheaper in the world market and thus increases exports of domestic products. On the other hand, real depreciation also makes imported goods dearer (for the same quantity of imports). The effect of depreciation on exported quantities is called "volume effect" and the effect on imported price "value effect". For the depreciation to have a positive impact on net exports, the volume effect has to outweigh the value effect. In other words, the increase in exports needs to surpass the increase of the value of imported goods and services.
 
 Trade balance $b$ in inversely related to $u/a_1$ because the increase in the latter is associated with rising demand for imports relative to capital.
 
@@ -171,20 +168,17 @@ $\nearrow{\mu} \Rightarrow \searrow{b} \Rightarrow \searrow{u}, \nearrow \pi$
 
 An increase in $z$ (for instance after a fall in labor costs after a cut in nominal wages) also increases profit share and has a positive impact on international competitiveness.
 
-
 Furthermore, an increase in $z$, makes home products relatively cheaper, increases net exports and increases profit share $\pi$, thus having a positive impact on $u$ and making profit-led demand more likely to obtain.
 
 $\searrow{W} \Rightarrow \nearrow{z} \Rightarrow \nearrow{b} \Rightarrow \nearrow{u}, \nearrow \pi$
 
-
-The main conclusion of the open-economy model is that an economy cannot be classified directly as having wage-led or profit-led demand, because it is the source of the exogenous shocks (changes in either $z$ and $\mu$) on income distribution that will provoke wage-led or profit-led effects. 
+The main conclusion of the open-economy model is that an economy cannot be classified directly as having wage-led or profit-led demand, because it is the source of the exogenous shocks (changes in either $z$ and $\mu$) on income distribution that will provoke wage-led or profit-led effects.
 
 To sum up:
 
-1. **Changes in the industrial structure affecting** $\mu$ (concentration and all the factors affecting markup explained in the previous chapter) **will in general have wage-led effects**. 
+1.  **Changes in the industrial structure affecting** $\mu$ (concentration and all the factors affecting markup explained in the previous chapter) **will in general have wage-led effects**.
 
-2. **Changes in international competitiveness relative to labor costs**, $z$, **will in general have profit-led effects**
-
+2.  **Changes in international competitiveness relative to labor costs**, $z$, **will in general have profit-led effects**
 
 It is important to keep in mind that these effects of international trade can still be offset and surpassed by domestic impact of distributional shifts. If the domestic demand is strongly wage-led, an increase in the wage share will still lead to higher growth and capacity rate even if exports decline (assuming that international competitive effects are relatively weak). This would be the case, for instance, of any country which is rather closed to foreign trade or has relatively low level of foreign trade with other countries.
 
@@ -199,19 +193,3 @@ A depreciation makes $z$ rise. If the domestic economy shows profit-led response
 On the other hand, if the economy shows a wage-led response, the depreciation will not be expansionary. The reason is that depreciation reduces domestic purchasing power of households and if domestic demand is strongly wage-led, depreciation will not rise exports enough to compensate the loss in domestic consumer demand and will have negative effects on growth.
 
 Finally, a depreciation, rise in $z$, will always rise profit share and thus make the distribution of income more unequal. In addition, if the economy has wage-led demand, the depreciation is likely to be contractionary.
-
-
-
-
-
-[^1]: Here's the complete explanation: $g_2$ is the effect of $u$ on investment with $r$ fixed. Since $r = \frac{\pi u}{a_1}$, assuming $g_2>0$ implies that when $u$ rises, $r$ stays constant because profit share $\pi$ falls in the exact same proportion.
-
-[^2]: The Marshall-Lerner condition refers to the conditions that leads real depreciation to improve net exports (trade balance). A depreciation has basically two effects. On the one hand, it makes home products relatively cheaper in the world market and thus increases exports of domestic products. On the other hand, real depreciation also makes imported goods dearer (for the same quantity of imports). The effect of depreciation on exported quantities is called "volume effect" and the effect on imported price "value effect". For the depreciation to have a positive impact on net exports, the volume effect has to outweigh the value effect. In other words, the increase in exports needs to surpass the increase of the value of imported goods and services.
-
-
-
-
-
-
-
-

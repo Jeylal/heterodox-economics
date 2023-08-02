@@ -47,6 +47,9 @@ book:
       chapters:
         - neo-kaleckian-models.qmd
         - neo-kaleckian-alternative.qmd
+    - part: "Extended Heterodox Models: Distributional Conflicts and Cycles"
+      chapters: 
+        - distributional-conflicts-neogoodwin-cycles.qmd
     - references.qmd
 
 bibliography: references.bib
