@@ -56,17 +56,19 @@ A rise in the capacity rate of utilization $u=Y/Y_k$ can be considered as synony
 
 $$\psi_w=\lambda_0+\lambda_1{u}$$
 
-In addition, the target profit share $1-\psi_f$ can also be written as a funtion of capacity rate:
+In addition, the target profit share $1-\psi_f$ can also be written as a function of capacity rate:
 
 $$1-\psi_f=\eta_0+\eta_1u$$
 
-Note that $\eta_1$ can be either positive or negative. On the one hand, firms could target higher markup rate, hence profit share, because they would try to raise profits when sales are reduced during a recession. On the other hand, during expansion (rise in $u$), firms could have the possibility to raise prices without losing customers.
+Note that $\eta_1$ can be either positive or negative. On the one hand, firms could target higher markup rate, hence profit share, because they would try to raise profits when sales are reduced during a recession. On the other hand, during expansion (rise in $u$), firms could raise prices without fearing to lose customers.
 
 Now that target wage share for firms and workers are modeled as functions of $u$, they can be substituted in the nominal wage and price change equations. Thus,
 
-$$\hat{W} = \phi(\psi_w-\psi)+\beta{q} + \alpha{\hat{P}}$$ $$\hat{P}=\theta(\psi-\psi_f)-\gamma{q}$$ become
+$$\hat{W} = \phi(\psi_w-\psi)+\beta{q} + \alpha{\hat{P}}$$
+$$\hat{P}=\theta(\psi-\psi_f)-\gamma{q}$$ become
 
-$$\hat{W} = \phi(\lambda_0+\lambda_1{u}-\psi)+\beta{q} + \alpha{\hat{P}}$$ $$\hat{P}=\theta(\psi-1+\eta_0+\eta_1u))-\gamma{q}$$
+$$\hat{W} = \phi(\lambda_0+\lambda_1{u}-\psi)+\beta{q} + \alpha{\hat{P}}$$
+$$\hat{P}=\theta(\psi-1+\eta_0+\eta_1u))-\gamma{q}$$
 
 ### Modeling productivity as a Function of $u, \psi, y$
 
@@ -122,7 +124,7 @@ But this product is subtracted by:
 
     -   **Hence,** $\theta\eta_1$ reflects the monopoly power of firms
 
--   $q_1$, which is the marginal impact of utilization on labor productivity growth. The higher is $q_1$, the more a rise in utilization makes labor productivity increase and since the latter has a negative impact of the wage share, the higher is $q_1$, the more likely a rise in $u$ will have a negative impact on the wage share.
+-   $q_1$, which is the marginal impact of utilization on labor productivity growth. The higher is $q_1$, the more a rise in utilization makes labor productivity increase and since the latter has a negative impact on the wage share, the higher is $q_1$, the more likely a rise in $u$ will have a negative impact on the wage share.
 
 To sum up, the DC can be either positive or negative depending on the final sign of the bracket above. The more is the institutional framework favorable to workers (wage indexation, strength of labor union, labor market legislation...), the more likely is the DC to be positive (and conversely).
 
@@ -160,6 +162,8 @@ However, how these combinations can be interpreted depends on some assumptions. 
 
 ### 1. Demand adjusts more rapidly
 
+#### Wage-led demand
+
 In that case, the economy is always on the AD curve in the short run and the DC curve only puts pressure on the wage share and utilization at the medium and long run. At any point below the DC curve, there is an upward pressure on the wage share and a downwards pressure at any point above it.
 
 ![Blecker and Setterfield (2019, 227)](images/ad-dc1.jpg){fig-align="center"}
@@ -171,12 +175,95 @@ But what does it actually mean to have, for instance, a wage-led demand regime w
 If the DC and demand curves are positive, we have both wage-led demand and profit-squeeze distribution. If the DC curve has a slower slope than AD curve, we are in scenario (b), if it is higher, it corresponds to scenario (c). Having wage-led demand and profit-squeeze distribution means that higher wage share will have a positive impact on utilization which, in return, will redistribute even more of total income to the wage share, which in return will increase utilization even further and so on. The difference between scenario b and c is that in c the slope of the DC curve is higher, meaning that the effect of $u$ on distribution is very favorable to workers and their wage share. In that case, it is possible that the positive interaction between increasing $u$ and the wage share never stops (this is why there are arrows pointing away from equilibrium in graph c).
 
 
+#### Profit-led demand
+
+How do the three scenarios above change is demand is profit-led? When demand is profit-led, the AD curve becomes negative: the higher the wage share, the lower the capacity rate.
+
+As with wage-led, there are three possible scenarios:
+
+```{r profit led AD}
+#| message: false
+#| warning: false
+#| echo: false
+
+library(tidyverse)
+
+AD <- function(z, b, u) z + b*u  
+DC <- function(z, b, u) z + b*u
+
+scenario1 <- 
+ggplot(data = tibble(u = 0:15))+
+  aes(u = u)+
+  stat_function(fun = AD, aes(x = u), args = list(z = 1, b = -2))+
+  annotate(geom = "label", x = 0.1, y = 0.7, label = "AD")+
+  stat_function(fun = DC, aes(x = u), args = list(z = -1, b = 2))+
+  annotate(geom = "label", x = 1, y = 0.6, label = "DC")+
+  theme_minimal()+
+  xlim(0,1)+
+  ylim(-1,1)+
+  geom_segment(aes(x = 0.1, y = 1, xend = 0.4, yend = 0.4), arrow = arrow(length = unit(0.5, "cm")))+
+  geom_segment(aes(x = 1, y = -0.9, xend = 0.55, yend = -0.001), arrow = arrow(length = unit(0.5, "cm")))+
+  labs(title = "(A)",
+       subtitle = "Profit-led Demand, Profit-Squeeze DC",
+       x = "Utilization (Y/Y_k)", y = "Wage Share")
 
 
 
 
+scenario2 <- 
+ggplot(data = tibble(u = 0:15))+
+  aes(u = u)+
+  stat_function(fun = AD, aes(x = u), args = list(z = 1, b = -2))+
+  annotate(geom = "label", x = 0.1, y = AD(u = 0.1, z = 1, b = -2), label = "DC")+
+  stat_function(fun = DC, aes(x = u), args = list(z = 5, b = -3))+
+  annotate(geom = "label", x = 1, y = DC(u=-0.5,z=5,b=-3), label = "AD")+
+  theme_minimal()+
+  labs(title = "(B)",
+       subtitle = "Profit-led Demand, Wage-Squeeze DC",
+       x = "Utilization (Y/Y_k)", y = "Wage Share")+
+  xlim(-5,10)+
+  ylim(-30, 10)+
+   geom_segment(aes(x = -5, y = 9, xend = 4, yend = -9), arrow = arrow(length = unit(0.3, "cm")))+
+  geom_segment(aes(x = 10, y = -19, xend = 5, yend = -9), arrow = arrow(length = unit(0.3, "cm")))
+
+scenario3 <- 
+ggplot(data = tibble(u = 0:15))+
+  aes(u = u)+
+  stat_function(fun = AD, aes(x = u), args = list(z = -10, b = -1.5))+
+  annotate(geom = "label", x = 0.1, y = AD(u = 0.1, z = -10, b = -1.5), label = "AD")+
+  stat_function(fun = DC, aes(x = u), args = list(z = 5, b = -3))+
+  annotate(geom = "label", x = 0, y = DC(u=0,z=5,b=-2), label = "DC")+
+  geom_segment(aes(x = 10, y = -26, xend = 0, yend = -12), arrow = arrow(length = unit(0.3, "cm")))+
+  geom_segment(aes(x = 10, y = -20, xend = 15, yend = -30), arrow = arrow(length = unit(0.3, "cm")))+
+  theme_minimal()+
+  labs(title = "(C)",
+       subtitle = "Profit-led Demand, Strong Wage-Squeeze DC",
+       y = "", x = "")+
+  theme(axis.ticks = element_blank(),
+        axis.text = element_blank())
+
+scenario1
+```
 
 
+- (A): In the case of profit-led demand with profit-squeeze distribution, the situation is stable. When the wage share is high, utilization and output will be low (since demand is profit-led, high wage share depress demand and thus output). At this low level of utilization and high level of wage share, distribution is not in favor of workers (low output implies low employment and thus low bargaining power): nominal wages will slowly decrease, this decrease will in return have a positive impact on utilization and will continue until utilization rises enough so that workers have regain enough bargaining power to stop the fall in their nominal wage. If utilization is initially very high, workers have a lot of bargaining power to bargain a high share of national income. However, a high wage share has a negative impact on utilization (firms would not want to invest a this level) and demand will be depressed: utilization, demand, output and employment fall until the wage share falls enough so that demand stabilizes at equilibrium
+
+
+
+If distribution is wage-squeeze, there are two scenario depending on whether the wage-squeeze DC is strong or not:
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+cowplot::plot_grid(scenario2, scenario3)
+```
+
+
+- (B) The situation in which demand is profit-led and distribution weakly wage-squeeze leads to a stable equilibrium. If utilization is low, the wage share is high, but workers would not be able to keep such a high share of national income, because any increase in utilization, demand and output will redistribute more share to profits, which will stimulate demand further and so on. The wage share gradually decreases, which stimulate investment, increase utilization, output and employment until workers can stop the decrease in their wage share. If we start at high level of utilization, the wage share is low but distribution is favorable for workers. The latter can negotiate higher wages and capture higher share of national income until capacity decreases enough so that workers loose this bargaining advantage and stop capturing higher share at equilibrium.
+
+- (C) In the case of a strong wage-squeeze, the situation is unstable and wage share and output can move perpetually away from equilibrium. For low level of utilization, the wage share is high. As output and demand decreases because of high wage share, workers are able to capture even more share of national income, which depresses demand even further, redistributes even more income to the wage share and so on. Conversely, strong demand dynamics lead to lower wage share, which stimulate demand and growth even further, redistribute income even more to profit share and so on.
 
 
 
