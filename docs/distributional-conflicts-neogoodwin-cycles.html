@@ -328,6 +328,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#combining-distributional-curve-and-demand-regimes" id="toc-combining-distributional-curve-and-demand-regimes" class="nav-link" data-scroll-target="#combining-distributional-curve-and-demand-regimes"><span class="header-section-number">9.4</span> Combining Distributional Curve and Demand Regimes</a>
   <ul class="collapse">
   <li><a href="#demand-adjusts-more-rapidly" id="toc-demand-adjusts-more-rapidly" class="nav-link" data-scroll-target="#demand-adjusts-more-rapidly"><span class="header-section-number">9.4.1</span> 1. Demand adjusts more rapidly</a></li>
+  <li><a href="#demand-and-distribution-nominal-wage-and-price-have-similar-adjustment-speed" id="toc-demand-and-distribution-nominal-wage-and-price-have-similar-adjustment-speed" class="nav-link" data-scroll-target="#demand-and-distribution-nominal-wage-and-price-have-similar-adjustment-speed"><span class="header-section-number">9.4.2</span> 2. Demand and Distribution (nominal wage and price) have similar adjustment speed</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -514,6 +515,57 @@ ul.task-list li input[type="checkbox"] {
 <li>In the case of a strong wage-squeeze, the situation is unstable and wage share and output can move perpetually away from equilibrium. For low level of utilization, the wage share is high. As output and demand decreases because of high wage share, workers are able to capture even more share of national income, which depresses demand even further, redistributes even more income to the wage share and so on. Conversely, strong demand dynamics lead to lower wage share, which stimulate demand and growth even further, redistribute income even more to profit share and so on.</li>
 </ol></li>
 </ul>
+</section>
+</section>
+<section id="demand-and-distribution-nominal-wage-and-price-have-similar-adjustment-speed" class="level3" data-number="9.4.2">
+<h3 data-number="9.4.2" class="anchored" data-anchor-id="demand-and-distribution-nominal-wage-and-price-have-similar-adjustment-speed"><span class="header-section-number">9.4.2</span> 2. Demand and Distribution (nominal wage and price) have similar adjustment speed</h3>
+<p>What happens when demand and distribution adjust with similar speed? After specifying the change of aggregate demand <span class="math inline">\(\hat{u}\)</span> and distribution <span class="math inline">\(\hat{\psi}\)</span>, we will see that the model implies can, under some specific conditions, describe business cycles dynamics.</p>
+<section id="change-in-wage-share-hatpsi" class="level4" data-number="9.4.2.1">
+<h4 data-number="9.4.2.1" class="anchored" data-anchor-id="change-in-wage-share-hatpsi"><span class="header-section-number">9.4.2.1</span> Change in wage share <span class="math inline">\(\hat{psi}\)</span></h4>
+<p>Change in the wage share is a positive function of nominal wage and a negative function of productivity and price:</p>
+<p><span class="math display">\[
+\hat{\psi} = \hat{W}-q-\hat{P}
+\]</span></p>
+<p>Using the definition of the rate of change in the wage share, <span class="math inline">\(\hat{\psi}=\dot{\psi}/\psi\)</span> and rewriting the function in the log form, we get:</p>
+<p><span class="math display">\[
+\hat{\psi}=\omega_0+\omega_1ln(u)+\omega_2ln(\psi)
+\]</span> With:</p>
+<ul>
+<li><p><span class="math inline">\(\omega_0=\phi\lambda_0+(1-\alpha)\theta(1-\eta_0)-q_0\)</span></p></li>
+<li><p><span class="math inline">\(\omega_1=\phi\lambda_1-(1-\alpha)\eta_1-q_1\)</span></p>
+<p>Which corresponds to whether increase in u whether the response of wages to demand pressures dominates the responses of prices and productivity</p></li>
+<li><p><span class="math inline">\(\omega_2=-[\phi+(1-\alpha)\theta+q_2]\)</span></p>
+<p>Which is assumed to be negative <span class="math inline">\(\omega_2&lt;0\)</span>, implying that increase in the wage share decreases its own rate of increase. That means that the more the wage share increases, the less workers will bargain for even further increase in the wage share.</p></li>
+</ul>
+</section>
+<section id="dynamic-aggregate-demand-curve" class="level4" data-number="9.4.2.2">
+<h4 data-number="9.4.2.2" class="anchored" data-anchor-id="dynamic-aggregate-demand-curve"><span class="header-section-number">9.4.2.2</span> Dynamic Aggregate Demand Curve</h4>
+<p>Change in aggregate demand can be describe as:</p>
+<p><span class="math display">\[\hat{u}=\hat{Y}-\hat{Y}_K\]</span></p>
+<p>With:</p>
+<p><span class="math display">\[\hat{Y}=d_0+d_1u+d_2\psi\]</span> And</p>
+<p><span class="math display">\[\hat{Y}_K=b_0+b_1u+b_2\psi\]</span></p>
+<p><span class="math inline">\(d_0\)</span> represents autonomous and exogenous determinants of aggregate demand (government expenditures, exports, business and consumer confidence…)., <span class="math inline">\(d_1\)</span> is assumed to be negative and <span class="math inline">\(d_2\)</span> will determine whether demand is profit-led (if negative) or wage-led (if positive).</p>
+<p><span class="math inline">\(b_1\)</span> (effect of u on investment) is assumed positive, <span class="math inline">\(b_2\)</span> can be assumed either negative or positive.</p>
+<p>In log form, the equation is:</p>
+<p><span class="math display">\[\hat{u}=v_0+v_1ln(u)+v_2ln(\psi)\]</span></p>
+<p>With <span class="math inline">\(v_i=d_i-b_i, i = (1,2,3)\)</span>.</p>
+<p>We have thus two simultaneous equations:</p>
+<p><span class="math display">\[\hat{u}=v_0+v_1ln(u)+v_2ln(\psi)\]</span></p>
+<p><span class="math display">\[\hat{\psi}=\omega_0+\omega_1ln(u)+\omega_2ln(\psi)\]</span></p>
+<p>If we set <span class="math inline">\(\hat{u}=0\)</span> and <span class="math inline">\(\hat{psi}=0\)</span>, we get the nullcline curves, and then rewrite the two equations to get the wage share as a function of utilization:</p>
+<p><span class="math display">\[ln(\psi)=-\frac{v_0}{v_2}-\frac{v_1}{v_2}ln(u)\]</span></p>
+<p><span class="math display">\[ln(\psi)=-\frac{\omega_0}{\omega_2}-\frac{\omega_1}{\omega_2}ln(u)\]</span></p>
+<p><span class="math inline">\(v_1\)</span> is assumed negative, so that the AD curve will be positive if <span class="math inline">\(v_2&gt;0\)</span> (wage led demand) and negative if <span class="math inline">\(v_2&lt;0\)</span> (profit led demand).</p>
+<p>Since <span class="math inline">\(\omega_2\)</span> is also assumed to be negative, distribution curve will be wage squeeze if <span class="math inline">\(\omega_1&lt;0\)</span> and profit squeeze if <span class="math inline">\(\omega_1&gt;0\)</span>.</p>
+<p>Depending on the signs of <span class="math inline">\(v_2\)</span> and <span class="math inline">\(\omega_1\)</span>, we can get many possible combinations and results, Blecker and Setterfield present the following cases in the case of profit led demand:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/neogoodwin233.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Blecker and Setterfield (2019, 233)</figcaption>
+</figure>
+</div>
+<p>If demand if profit led and distribution is profit squeeze, we are in the case of stable “neo-Goodwin” business cycles. The more the economy grows (moving gradually on the right on the u axis), the more the wage share increases, the more the wage share will increase (growth redistributes bargaining power and income to workers). However, increasing wage share will gradually depress demand because declining profit share will eventually depress investment demand and growth. The decline in growth and demand will in return decrease the wage share until the latter decreases enough so that firms begin to invest again, which will increase demand, output and wage share. The increase in wage share will gradually depress demand through, again, decline in investment and so on… This cycle is “stable” because as cycles unfold, we get closer to equilibrium. Conversely, the graph down on the right shows unstable neo-Goodwin cycles (when <span class="math inline">\(\omega_2&gt;0\)</span>, meaning that when the wage share increase, workers seek to bargain even higher wage share).</p>
 
 
 </section>
