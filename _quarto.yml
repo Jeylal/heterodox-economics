@@ -50,6 +50,9 @@ book:
     - part: "Extended Heterodox Models: Distributional Conflicts and Cycles"
       chapters: 
         - distributional-conflicts-neogoodwin-cycles.qmd
+    - part: "Kaldorian models: Export-led Growth and Balance of Payment Constraint"
+      chapters: 
+        - kaldorELCC.qmd
     - references.qmd
 
 bibliography: references.bib
