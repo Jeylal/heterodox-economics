@@ -6,11 +6,11 @@
 
 Neo-Keynesian and neo-Kaleckian seen in the previous chapters are key models within heterodox macroeconomics. However, all these models consider important variables as exogenous. Neo-Keynesian models typically assume a given nominal wage and the neo-Kaleckian models generally assume an exogenous markup rate (except open-economy models).
 
-A major drawback of these two types of models is that they do not explicitly give an explanation of inflation arising from distributional conflict. The only exception is the Marglin's synthesis we saw in the Neo-Keynesian models part.
+A major drawback of these two types of model is that they do not explicitly give an explanation of inflation arising from distributional conflict. The only exception is the Marglin's synthesis we saw in the neo-Keynesian models part.
 
-Developing models which include class conflict between workers and capitalists over the distribution of national income is crucial for heterodox economics, because one characteristic common to all heterodox schools (Marxian, Kalecian, Keynesian...) is that they all recognized that capitalists economies are marked by class conflict.
+Developing models which include class conflict between workers and capitalists over the distribution of national income is crucial in heterodox economics, because one characteristic common to all heterodox schools (Marxian, Kalecian, Keynesian...) is that they all recognized that capitalists economies are marked by class conflict over the distribution of total income.
 
-We will see that the outcome of distributive conflict models is the derivation of the **distributive curve** (DC), which is an important result of post-Keynesian/heterodox macroeconomics. In simple terms, the DC describes the relationship and dynamics between aggregate demand (measure through capacity rate $u$) and inequality (measured through wage share $\psi$). If the DC is positive, higher aggregate demand and growth lead to higher wage share because increase in the former redistributes income to wages (thus a positive DC implies that workers have strong bargaining power). Conversely, a negative DC means that as output and aggregate demand increase, the wage share decreases. We will see that a positive DC is called **profit-squeeze** and a negative DC **wage-squeeze**.
+We will see that the outcome of distributive conflict models is the derivation of the **distributive curve** (DC), which is an important result of post-Keynesian/heterodox macroeconomics. In simple terms, the DC describes the relationship and dynamics between aggregate demand (measure through capacity rate $u$) and inequality (measured through wage share $\psi$). If the DC is positive, higher aggregate demand and growth lead to higher wage share because increase in the former redistributes income to wages (thus a positive DC implies that workers have strong bargaining power). Conversely, a negative DC means that as output and aggregate demand increase, the wage share decreases. We will see that a positive DC corresponds to a **profit-squeeze** effect of growth on distribution and a negative DC a **wage-squeeze** effect.
 
 ## Basic Distributional Conflict Model
 
@@ -26,7 +26,7 @@ $$\hat{W}=\phi(w_w-w)$$
 
 ### Change in Price $\hat{P}$
 
-On the price side, change in price will be a positive function of the difference between actual real wage and target real wage for firms $w-w_f$. The higher this difference, the more firms will raise their depending on the price adjustment speed factor $\theta$, which depends on the monopoly power of the firms and antitrust regulation:
+On the price side, change in price level will be a positive function of the difference between actual real wage and target real wage for firms $w-w_f$. The higher this difference, the more firms will raise their price depending on the price adjustment speed factor $\theta$, which depends on the monopoly power of the firms and antitrust regulation:
 
 $$\hat{P}=\theta(w-w_f)$$
 
