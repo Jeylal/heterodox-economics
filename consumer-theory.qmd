@@ -92,6 +92,8 @@ IC
 
 ```{r}
 #| echo: false
+
+
 ### function taken from Andrew Heiss blog: https://www.andrewheiss.com/blog/2019/02/16/algebra-calculus-r-yacas/ 
 utility_y <- function(my_x, my_U){
   solved <- Solve(utility_u(x, y) == U, y)
@@ -120,7 +122,7 @@ In the indifference curve graph above, the consumer can choose any combination o
 
 $$
 \begin{aligned}
-Income = P_{apple}Q_{apple} + P_{watch}Q_{watch}
+Income = P_{apple}*Q_{apple} + P_{watch}*Q_{watch}
 \\
 600 = 4apple + 200watch
 \end{aligned}
@@ -128,7 +130,7 @@ $$
 
 To include this budget constraint into the previous graph, we have to rearrange this equation to have the quantity of apples as a function of the quantity of books:
 
-```{=tex}
+$$
 \begin{aligned}
 600 = 4apple + 200watch
 \\
@@ -138,7 +140,7 @@ apple = 600/4 - 200/4watch
 \\
 apple = 150 - 50watch
 \end{aligned}
-```
+$$
 
 
 More generally, the budget function can also be written as
@@ -180,20 +182,20 @@ So what will be the consumer's final choice? He will choose the point at which t
 
 Mathematically, this means that the quantity of apples and watches the consumer will choose is the point at which the slope of the budget line $\frac{P_{watch}}{P_{apples}}$ is equal to the slope of the indifference curve, which microeconomics call the **marginal rate of substitution**. Marginal rate of substitution shows how much of a good (here apples) the consumer can give up in exchange of one unit of the other good (here a watch). Using algebra, we can find the slope of the budget line and of the indifference curve by computing their derivatives.
 
-```{=tex}
+$$
 \begin{aligned}
 apple = 150 - 50watch
 \\
 \frac{\partial{apple}}{\partial{watch}} = -50
 \\
 \end{aligned}
-```
+$$
 
 Note that finding the marginal rate of substitution is a bit trickier than for the budget line. To find the MRS, we have to compute the derivative with respect to the first good (x which are apples here) and then for the second one (y the watches). Then, the MRS is the ratio between the two marginal utilities
 
 $\frac{\frac{\partial{U}}{\partial{x}}}{\frac{\partial{U}}{\partial{y}}}$
 
-```{=tex}
+$$
 \begin{aligned}
 U = x^20.18y
 \\
@@ -201,7 +203,7 @@ U = x^20.18y
 \\
 \frac{\partial{U}}{\partial{y}} = 0.18x^2 
 \end{aligned}
-```
+$$
 
 Thus
 
@@ -218,19 +220,19 @@ mu_y <- deriv(utility_u(x, y), y)
 
 Then, we set the marginal rate of substitution equal to the slope of the budget line:
 
-```{=tex}
+$$
 \begin{aligned}
 2\frac{y}{x} = 50
 \\
 y = 25x
 \end{aligned}
-```
+$$
 
 
 We can then substitute y with 25x in the budget equation
 
 
-```{=tex}
+$$
 \begin{aligned}
 y = 150 - 50x
 \\
@@ -240,7 +242,7 @@ x = 150/75 = 2
 \\
 x = 2
 \end{aligned}
-```
+$$
 
 
 
@@ -322,7 +324,7 @@ $apple = 150 - 50watch$
 
 And now, the price of watch increases up to 400, income is unchanged (Income = 600) as well as the price of apples (4):
 
-```{=tex}
+$$
 \begin{aligned}
 600 = 4apple + 400watch
 \\
@@ -330,7 +332,7 @@ And now, the price of watch increases up to 400, income is unchanged (Income = 6
 \\
 apple = 150 - 100watch
 \end{aligned}
-```
+$$
 
 ```{r}
 #| echo: false

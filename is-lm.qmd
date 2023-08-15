@@ -71,7 +71,7 @@ With $C_{0}$ the minimum level of consumption if income is zero, $C_{1}$ the mar
 
 The consumption function can thus be rewritten:
 
-```{=tex}
+$$
 \begin{aligned}
 C = C_{0}+C_{1}Y
 \\
@@ -79,7 +79,7 @@ C = C_{0} + C_{1}(Y-tY)
 \\
 C = C_{0} + C_{1}Y(1-t)
 \end{aligned}
-```
+$$
 
 #### Investment I
 

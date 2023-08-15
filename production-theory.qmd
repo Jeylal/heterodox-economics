@@ -69,13 +69,13 @@ The neoclassical production function rests on important assumptions which illust
 
     Also called diminishing marginal products, or decreasing marginal productivity. This means that all factors of production (capital and labor) show positive but diminishing marginal returns: when we increase one of the inputs by one, with all the other inputs fixed, output will increase, but by less than the previous additional input. For example, the quantity of capital is often considered fixed in the short run, making labor the only variable input in the short run. Labor is assumed to have a decreasing marginal productivity (or marginal returns): with capital fixed, each time a firm employs an additional laborer, output will increase, but by less than when the previous additional laborer was employed. In our example, marginal product of labour is the first derivative with respect to labour:
 
-```{=tex}
+$$
 \begin{aligned}
 \frac{\partial{Y}}{\partial{L}} = 0.5K^{0.5}L^{0.5-1}
 \\
 = 0.5K^{0.5}L^{-0.5}
 \end{aligned}
-```
+$$
 
 
 
@@ -271,8 +271,6 @@ Those factors explain why the profit equation is concave. This has strong implic
 profits <- function(x) -0.4*(x^2) + 8*x
 ```
 
-
-
 Then, we can show that profit maximization under all of those conditions lead to the marginal cost being equal to marginal revenue
 
 $(\pi)' = 0$ (()' meaning derivative)
@@ -284,6 +282,7 @@ $0 =MR - MC$
 $MR = MC$
 
 Graphically, the profit equation has a negative-concave shape, and optimal level of output is set where profits are at their maximum:
+
 
 ```{r}
 #| echo: false

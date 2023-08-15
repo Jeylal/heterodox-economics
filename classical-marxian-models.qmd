@@ -139,7 +139,8 @@ This assumes that wages are determined through a bargaining process in which wor
 
 $$
 w = (1 - \bar{\pi})/a_0 = (1 - \bar{\pi})Q
-$$ With $Q=Y/L$ labour productivity.
+$$
+With $Q=Y/L$ labour productivity.
 
 3.  Full employment or constant employment
 
