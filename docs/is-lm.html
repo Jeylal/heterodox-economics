@@ -384,7 +384,10 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#the-three-approach-to-gdp" id="toc-the-three-approach-to-gdp" class="nav-link" data-scroll-target="#the-three-approach-to-gdp"><span class="header-section-number">4.2.1</span> The three approach to GDP</a></li>
   <li><a href="#investment-savings-curve-is" id="toc-investment-savings-curve-is" class="nav-link" data-scroll-target="#investment-savings-curve-is"><span class="header-section-number">4.2.2</span> Investment-savings curve (IS)</a></li>
+  <li><a href="#the-liquidity-mondey-lm-curve" id="toc-the-liquidity-mondey-lm-curve" class="nav-link" data-scroll-target="#the-liquidity-mondey-lm-curve"><span class="header-section-number">4.2.3</span> The Liquidity-Mondey (LM) Curve</a></li>
+  <li><a href="#is-lm-equilibrium-and-exogenous-shifts" id="toc-is-lm-equilibrium-and-exogenous-shifts" class="nav-link" data-scroll-target="#is-lm-equilibrium-and-exogenous-shifts"><span class="header-section-number">4.2.4</span> IS-LM equilibrium and exogenous shifts</a></li>
   </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">4.3</span> Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -412,10 +415,12 @@ div.csl-indent {
 <h2 data-number="4.1" class="anchored" data-anchor-id="intro"><span class="header-section-number">4.1</span> Intro</h2>
 <p>The main objective of macroeconomics is to describe and explain the relationship between important economic variables such as unemployment, inflation, production and growth or the interest rate. Questions macroeconomics typically tries to answer are “how can long run growth be sustained?” “how can unemployment be reduced?”. Macroeconomics also takes into account economic policy and the role of the government: how can the government reduce unemployment, increase output and maintain low level of inflation?</p>
 <p>Those are all questions most of macro models try to answer. In this chapter, I will explain one of the most famous and widespread macro model, which is the <strong>Investment-Savings - Liquidity-Money</strong> model (IS-LM model), as it is explained in one of the most famous macro textbook: <span class="citation" data-cites="blanchard_macroeconomics_2020">Blanchard (<a href="references.html#ref-blanchard_macroeconomics_2020" role="doc-biblioref">2020</a>)</span>.</p>
+<p>The is-lm model was originally developed by John Hicks, a British economist who tried to mix neoclassical ideas (mainstream economic theory) with Keynesianism, which constituted a revolution within the discipline at his time. Neoclassical macroeconomics was mainly founded by this economist after he merged Keynes with neoclassical theory. Critics of his work would say that Hicks rather incorporated all Keynes’ insights which were compatible with neoclassical theory while disregarding else.</p>
+<p>Keep in mind that is-lm model is a <em>short-run</em> model, which results from the equilibrium in the goods and services market and in the money supply and demand market. To go to the medium-run, the is-lm model is then combined with a model describing the equilibrium on the labor market. For the long-run, neoclassical macroeconomics is based on the famous <em>Solow growth model</em> and its infinite extensions.</p>
 </section>
 <section id="production-as-gross-national-product-gdp" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="production-as-gross-national-product-gdp"><span class="header-section-number">4.2</span> Production as Gross National Product (GDP)</h2>
-<p>IS-LM can essentially we resumed in a graph, showing the relationship between output and the interest rate. But first, we have to define what is actually output (production) in macro theory.</p>
+<p>The is-lm model can essentially be summarized in a graph, showing the relationship between output and the interest rate. But first, we have to define what is actually output (production) in macro theory.</p>
 <section id="the-three-approach-to-gdp" class="level3" data-number="4.2.1">
 <h3 data-number="4.2.1" class="anchored" data-anchor-id="the-three-approach-to-gdp"><span class="header-section-number">4.2.1</span> The three approach to GDP</h3>
 <p>In economics, Production is defined as the sum of value added within an economy (can be a nation, a region, or the world taken as a whole) during a period of time (a year, month, semester, quarter…).</p>
@@ -478,6 +483,7 @@ C = C_{0} + C_{1}Y(1-t)
 <p>We can see in this equation that ouput Y is negatively related to the interest rate i: the IS curve as thus a negative linear shape.</p>
 <p>To grasp the function in an easier way, we will just consider that the IS curve is a linear function of consumption (positive relation between output and consumption), Investment and government spending (also positive relation) and the interest rate (negative relation):</p>
 <p><span class="math inline">\(IS = Y = F[C(Y_{+}, T_{-}), I(i_{-}), G_{+}]\)</span></p>
+<p>Keep in mind that the IS curve represents all the combinations of output and interest rate at which there is an equilibrium between demand for goods and services and output/production. We thus say that <span class="math inline">\(IS = Y^d=Y\)</span></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#example of a linear IS function</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>IS <span class="ot">&lt;-</span> <span class="cf">function</span>(A, k, x) A <span class="sc">-</span> k<span class="sc">*</span>x <span class="co">#with A autonomous spending, k the mutliplier and x the interest rate</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -488,6 +494,65 @@ C = C_{0} + C_{1}Y(1-t)
 </div>
 </div>
 <p>As shown in the graph above, an increase in government spending or in consumption (but not due to an increase in income) or in investment (except due to a decline in interest rate) will induce a positive shift (upward) of the IS curve. A negative shock will make a shift downwards (negative shock).</p>
+</section>
+</section>
+<section id="the-liquidity-mondey-lm-curve" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="the-liquidity-mondey-lm-curve"><span class="header-section-number">4.2.3</span> The Liquidity-Mondey (LM) Curve</h3>
+<p>The next step is to derive the lm curve, which represents all combinations of interest rate and output for which there is an equilibrium between the demand and supply of money.</p>
+<section id="supply-of-money" class="level4" data-number="4.2.3.1">
+<h4 data-number="4.2.3.1" class="anchored" data-anchor-id="supply-of-money"><span class="header-section-number">4.2.3.1</span> Supply of money</h4>
+<p>The supply of money is considered as exogenous, because controlled directly by the central bank through <em>open-market operations</em>. The central bank can increase the supply of money by:</p>
+<ul>
+<li>Buying bonds or financial assets in general, because the central bank create money to buy these financial asset and thus inject more money in the economy, thus increasing the money supply.</li>
+</ul>
+<p>The central bank can reduce the money supply by:</p>
+<ul>
+<li>Selling bonds or financial assets. By doing so the central bank receive money which will be withdrawn from circulation, thus decreasing the money supply.</li>
+</ul>
+</section>
+<section id="demand-for-money" class="level4" data-number="4.2.3.2">
+<h4 data-number="4.2.3.2" class="anchored" data-anchor-id="demand-for-money"><span class="header-section-number">4.2.3.2</span> Demand for money</h4>
+<p>The demand for money is described through the following function:</p>
+<p><span class="math display">\[M^d=P_+Y_+L(i_-)\]</span> With <span class="math inline">\(P\)</span> the price level, <span class="math inline">\(Y\)</span> output and <span class="math inline">\(L(i_-)\)</span> a non-specified function stating that demand for money is negatively related with the interest rate. The plus and minus sign show the effects of the variables on the demand for money. The latter increases with <span class="math inline">\(P\)</span>, because the higher the price level, the more people need money to settle transaction. It also increases with output <span class="math inline">\(Y\)</span>, because the more goods and services there is in an economy, the more people also need money to transact.</p>
+<p>It is very important to understand why the interest rate has a negative impact on money demand. The higher the interest rate, the less people will want to hold money because bonds and financial assets become more attractive since the interest rate is higher. As the interest rate increases, there is more incentive to buy financial assets and thus less incentive to hold money.</p>
+</section>
+<section id="equilibrium-between-money-demand-and-supply" class="level4" data-number="4.2.3.3">
+<h4 data-number="4.2.3.3" class="anchored" data-anchor-id="equilibrium-between-money-demand-and-supply"><span class="header-section-number">4.2.3.3</span> Equilibrium between money demand and supply</h4>
+<p>The lm curve represents all combinations of interest rate and output for which there is an equilibrium in the money market. The lm curve, if the central bank has not target interest rate, will be positive: as output <span class="math inline">\(Y\)</span> increases, the interest rate will increase. The logic behind this positive relationship is that when output increases (decreases), people need more money to transact, so they will supply bonds and financial assets to get money. This increases the supply of bonds and financial assets in their respective market, and thus reduces their price, which will have the effect to increase the interest rate<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p>Conversely, when output <span class="math inline">\(Y\)</span> falls, people need less money to transact: they hold excess money that they don’t need. As a consequence, they will try to buy bonds or financial assets. Demand for bonds and financial assets rise, their price increases and thus the interest rate declines. Hence the positive association between interest rate and output (but with the causality running from output to interest rate).</p>
+</section>
+</section>
+<section id="is-lm-equilibrium-and-exogenous-shifts" class="level3" data-number="4.2.4">
+<h3 data-number="4.2.4" class="anchored" data-anchor-id="is-lm-equilibrium-and-exogenous-shifts"><span class="header-section-number">4.2.4</span> IS-LM equilibrium and exogenous shifts</h3>
+<p>The equilibrium levels of output and interest rate are the found at the intersection of the IS and LM curves.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="is-lm_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>This model allows to imagine multiple scenarios: the government can for example start spending more and the IS curve will shift to the right. It can also raise taxes, and make the IS curve shift to the left. The central bank can for example increase the money supply and make the LM curve shift down to the right. There are a large set of possibilities, but economists often focus only on two types of shocks: <strong>fiscal/budgetary policy</strong> and <strong>monetary policy</strong></p>
+<section id="fiscal-and-budgetary-policy" class="level4" data-number="4.2.4.1">
+<h4 data-number="4.2.4.1" class="anchored" data-anchor-id="fiscal-and-budgetary-policy"><span class="header-section-number">4.2.4.1</span> Fiscal and budgetary policy</h4>
+<p>Fiscal and budgetary policy refer to government policy regarding public spending and taxes. Any government can either raise or reduce taxes and raise or reduce public spending.</p>
+<ul>
+<li><p>An increase in public spending would make the IS curve shift to the right. The IS-LM model would predict an increase in the equilibrium values of interest rate and output. Along with tax reduction, these types of budgetary policies are called <em>expansionary policies</em>.</p></li>
+<li><p>A decrease in public spending or increase in taxes would make the IS curve shift upward to the left, meaning a negative impact on demand. Those policies, also called <em>austerity measures/policies</em> have a negative impact on equilibrium interest rate and output.</p></li>
+</ul>
+</section>
+<section id="monetary-policy" class="level4" data-number="4.2.4.2">
+<h4 data-number="4.2.4.2" class="anchored" data-anchor-id="monetary-policy"><span class="header-section-number">4.2.4.2</span> Monetary policy</h4>
+<p>Regarding monetary policy, the central bank can either:</p>
+<ul>
+<li><p>Increase the interest rate through a reduction of the money supply, which would make the lm curve shift upward to the left. This <em>restrictive monetary policy</em> would have a negative impact on output.</p></li>
+<li><p>Decrease the interest through an increase in the money supple, which would male the lm curve shift down to the right. This <em>expansionary monetary policy</em> would have a positive impact on output.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="conclusion" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">4.3</span> Conclusion</h2>
+<p>We have thus seen how neoclassical macroeconomists derived the is and lm curves and how they make predictions regarding government and central bank policies on the equilibrium levels of interest rate and output. Expansionary policies such as reducing the interest rate, rising public spending or decreasing taxes have positive impact on growth</p>
+<p>However, it is important to keep in mind that the is-lm model is a short-run model and that an important assumption of the model is that prices are considered as <em>fixed</em>, or at least sticky: they do not adjust directly in the short run. Once we relax this assumption and introduce labor market equilibrium, expansionary policies do nothing but increase inflation in the medium-run.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
@@ -496,7 +561,11 @@ Blanchard, Olivier. 2020. <em>Macroeconomics (8th Edition)</em>. 8th ed. Pearson
 </div>
 </div>
 </section>
-</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>There is always a negative relationship between the price of a bond and its interest rate. The interest rate of a bond is written as <span class="math inline">\(i=\frac{coupon}{P}\)</span> with coupon the periodic fixed revenue promised by the bond.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
