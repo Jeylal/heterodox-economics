@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -63,6 +82,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -325,6 +346,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">10.1</span> Introduction</a></li>
+  <li><a href="#kaldors-growth-laws" id="toc-kaldors-growth-laws" class="nav-link" data-scroll-target="#kaldors-growth-laws"><span class="header-section-number">10.2</span> Kaldor’s growth laws</a></li>
+  <li><a href="#export-driven-demand-led-growth-the-dixon-thirlwall-model" id="toc-export-driven-demand-led-growth-the-dixon-thirlwall-model" class="nav-link" data-scroll-target="#export-driven-demand-led-growth-the-dixon-thirlwall-model"><span class="header-section-number">10.3</span> Export-driven, demand-led growth: the Dixon-Thirlwall model</a></li>
   </ul>
 </nav>
     </div>
@@ -354,9 +377,47 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Aggregate demand is what drives economic growth whether it be in the short or long run. Demand for exports (demand by other countries/regions for domestic products) is a crucial source for aggregate demand. Additionally, there is a positive interactive relationship between manufacturing output growth and labor productivity growth. The latter has also, ceteris paribus, a positive effect on exports since higher productivity reduces the price of exported goods and thus increases international competitiveness of domestic goods. Labor productivity, exports and manufacturing output growth have thus positive cumulative interactions leading to sustain growth process. For instance, an increase in labor productivity will increase exports, which will increase manufacturing output, which will in return increase labor productivity, increase exports even further and a virtuous and cumulative cycle of growth is launched. Note that the impetus of this growth mechanism can be launched by any of the three factors (rise in productivity, manufacturing output or exports after a currency depreciation).</li>
 </ul>
-<p>This short but essential Kaldorian story of export-led cumulative causation growth (ELCC) is based on the following laws</p>
+</section>
+<section id="kaldors-growth-laws" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="kaldors-growth-laws"><span class="header-section-number">10.2</span> Kaldor’s growth laws</h2>
+<p>Furthermore, Kaldor is famous for having underlined the following empirical, or “stylized facts” of growth, from which he developed his model and which are now known as <em>Kaldor’s growth laws</em> <span class="citation" data-cites="blecker_heterodox_2019">(<a href="references.html#ref-blecker_heterodox_2019" role="doc-biblioref">Blecker and Setterfield 2019, 378</a>)</span>:</p>
+<ol type="1">
+<li><p>The faster the growth of output of the manufacturing sector, the faster will total output grow.</p></li>
+<li><p>The faster the rate of growth of manufacturing sector, the faster the growth of labor productivity in manufacturing.</p></li>
+<li><p>The faster the growth of manufacturing, the more labor will transfer from non-manufacturing to manufacturing.</p></li>
+<li><p>The growth of manufacture is constrained by demand from agriculture from an early stage then from export to a later stage. It is not constrained by labor supply.</p></li>
+<li><p>A fast rate of growth of exports and output will tend to set up a cumulative process, or virtuous circle of growth, through the link between output growth and productivity growth.</p></li>
+</ol>
+<p>Finally, one should stress the fact that Kaldor gave great importance to the interaction between demand and supply. Inspired by Adam Smith, Kaldor knows on the one hand that the extent of production and division of labor is constrained by the extent of demand (and hence the size of the market). On the other hand, inspired by Young and his mix of Adam Smith and Jean-Baptiste Say insights, Kaldor also knew that supply can also impact demand positively because at the aggregate level, the economy is essentially production and exchange of goods and if one produces a good, it can <em>potentially</em> stimulate demand for other good and thus a need for exchange on the part of the producer.</p>
+</section>
+<section id="export-driven-demand-led-growth-the-dixon-thirlwall-model" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="export-driven-demand-led-growth-the-dixon-thirlwall-model"><span class="header-section-number">10.3</span> Export-driven, demand-led growth: the Dixon-Thirlwall model</h2>
+<p>Inspired by Kaldor’s work, Dixon and Thirlwall developed a formalized kaldorian model of export-led growth. The main equations of the model are:</p>
+<p><span id="eq-1"><span class="math display">\[y=k_xx \tag{10.1}\]</span></span></p>
+<p>With <span class="math inline">\(y\)</span> the growth rate of real output, <span class="math inline">\(k_x\)</span> the “dynamic foreign trade multiplier”, the marginal impact of real exports <span class="math inline">\(x\)</span> on real output growth.</p>
+<p>Since exports are very important in this model, what are the factors which influence it?</p>
+<p><span id="eq-2"><span class="math display">\[x=\epsilon_X(\hat{P_f}-\hat{P})+\eta_Xy_f \tag{10.2}\]</span></span></p>
+<p>With <span class="math inline">\(\epsilon_X\)</span> the price elasticity of demand for export<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, <span class="math inline">\((\hat{P_f}-\hat{P})\)</span> the difference between foreign price level and domestic price level, <span class="math inline">\(\eta_X\)</span> the income elasticity of demand for exports<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> and <span class="math inline">\(y_f\)</span> the rest of the world output growth.</p>
+<p><span class="math display">\[\hat{P}=\hat{W}-q\]</span> With <span class="math inline">\(\hat{P}\)</span> the change in domestic price, <span class="math inline">\(\hat{W}\)</span> the change in domestic nominal wage and <span class="math inline">\(q\)</span> domestic labor productivity growth. Inflation is thus a positive function of nominal wage inflation and a negative function of labor productivity growth.</p>
+<p>Regarding labor productivity growth:</p>
+<p><span class="math display">\[q=q_0+\rho y\]</span> Which is a positive function of <span class="math inline">\(q_0\)</span> which can be interpreted as any exogenous positive impact on labor productivty (technological change for instance) and of domestic output growth <span class="math inline">\(y\)</span>.</p>
+<p>Foreign price level change and foreign labor productivity growth are modeled as such:</p>
+<p><span class="math display">\[\hat{P_f}=\hat{W_f}-q_f\]</span></p>
+<p><span class="math display">\[q_f=q_0+\rho_fy_f\]</span></p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-blecker_heterodox_2019" class="csl-entry" role="listitem">
+Blecker, Robert A., and Mark Setterfield. 2019. <em>Heterodox Macroeconomics: Models of Demand, Distribution and Growth</em>. Cheltenham, <span>UK</span> ; Northampton, <span>MA</span>, <span>USA</span>: Edward Elgar Publishing Ltd.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>The price elasticity of demand for exports is usually negative, meaning that when the price of exported goods increases, the demand for it abroad decreases (elasticity summarizes this phenomena by taking the percentage change in demand divided by the percentage change in price). However, <span class="citation" data-cites="blecker_heterodox_2019">Blecker and Setterfield (<a href="references.html#ref-blecker_heterodox_2019" role="doc-biblioref">2019</a>)</span> takes the absolute value of the negative elasticity in our context, so that when this elasticity is for instance 1, this means that when price increases by one percent, exports decrease by one percent. Thus, the higher this elasticity, the more exports fall when their price increase.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>The higher the income elasticity of demand for exports, the more exports increase when income abroad increases.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->

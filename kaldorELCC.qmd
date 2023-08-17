@@ -1,61 +1,56 @@
 # Export-led Growth
 
-
 ## Introduction
 
 Kaldorian growth theory represents an important branch of heterodox macroeconomics. Within Kaldorian theory, two distinct models were developed by Kaldorians. Unlike the models seen until, with the exception of the open-economy neo-Kaleckian model, Kaldor and Kaldorians developed models of demand-driven growth based on the positive effects of export demand for growth. Furthermore, Kaldorian theory is based on a generalization of stylized facts, empirical relationships between economic variables which were found during his time. The most famous example of these stylized facts is *Verdoorn law*, which is a law based on an empirical correlation between manufacturing output and labor productivity growth. Therefore, the Kaldorian story of export-led growth can be briefly and roughly summarized as such:
 
-- Aggregate demand is what drives economic growth whether it be in the short or long run. Demand for exports (demand by other countries/regions for domestic products) is a crucial source for aggregate demand. Additionally, there is a positive interactive relationship between manufacturing output growth and labor productivity growth. The latter has also, ceteris paribus, a positive effect on exports since higher productivity reduces the price of exported goods and thus increases international competitiveness of domestic goods. Labor productivity, exports and manufacturing output growth have thus positive cumulative interactions leading to sustain growth process. For instance, an increase in labor productivity will increase exports, which will increase manufacturing output, which will in return increase labor productivity, increase exports even further and a virtuous and cumulative cycle of growth is launched. Note that the impetus of this growth mechanism can be launched by any of the three factors (rise in productivity, manufacturing output or exports after a currency depreciation).
+-   Aggregate demand is what drives economic growth whether it be in the short or long run. Demand for exports (demand by other countries/regions for domestic products) is a crucial source for aggregate demand. Additionally, there is a positive interactive relationship between manufacturing output growth and labor productivity growth. The latter has also, ceteris paribus, a positive effect on exports since higher productivity reduces the price of exported goods and thus increases international competitiveness of domestic goods. Labor productivity, exports and manufacturing output growth have thus positive cumulative interactions leading to sustain growth process. For instance, an increase in labor productivity will increase exports, which will increase manufacturing output, which will in return increase labor productivity, increase exports even further and a virtuous and cumulative cycle of growth is launched. Note that the impetus of this growth mechanism can be launched by any of the three factors (rise in productivity, manufacturing output or exports after a currency depreciation).
 
-This short but essential Kaldorian story of export-led cumulative causation growth (ELCC) is based on the following laws 
+## Kaldor's growth laws
 
+Furthermore, Kaldor is famous for having underlined the following empirical, or "stylized facts" of growth, from which he developed his model and which are now known as *Kaldor's growth laws* [@blecker_heterodox_2019, p. 378]:
 
+1.  The faster the growth of output of the manufacturing sector, the faster will total output grow.
 
+2.  The faster the rate of growth of manufacturing sector, the faster the growth of labor productivity in manufacturing.
 
+3.  The faster the growth of manufacturing, the more labor will transfer from non-manufacturing to manufacturing.
 
+4.  The growth of manufacture is constrained by demand from agriculture from an early stage then from export to a later stage. It is not constrained by labor supply.
 
+5.  A fast rate of growth of exports and output will tend to set up a cumulative process, or virtuous circle of growth, through the link between output growth and productivity growth.
 
+Finally, one should stress the fact that Kaldor gave great importance to the interaction between demand and supply. Inspired by Adam Smith, Kaldor knows on the one hand that the extent of production and division of labor is constrained by the extent of demand (and hence the size of the market). On the other hand, inspired by Young and his mix of Adam Smith and Jean-Baptiste Say insights, Kaldor also knew that supply can also impact demand positively because at the aggregate level, the economy is essentially production and exchange of goods and if one produces a good, it can *potentially* stimulate demand for other good and thus a need for exchange on the part of the producer.
 
+## Export-driven, demand-led growth: the Dixon-Thirlwall model
 
+Inspired by Kaldor's work, Dixon and Thirlwall developed a formalized kaldorian model of export-led growth. The main equations of the model are:
 
+$$y=k_xx$$ {#eq-1}
 
+With $y$ the growth rate of real output, $k_x$ the "dynamic foreign trade multiplier", the marginal impact of real exports $x$ on real output growth.
 
+Since exports are very important in this model, what are the factors which influence it?
 
+$$x=\epsilon_X(\hat{P_f}-\hat{P})+\eta_Xy_f$$ {#eq-2}
 
+With $\epsilon_X$ the price elasticity of demand for export[^kaldorelcc-1], $(\hat{P_f}-\hat{P})$ the difference between foreign price level and domestic price level, $\eta_X$ the income elasticity of demand for exports[^kaldorelcc-2] and $y_f$ the rest of the world output growth.
 
+[^kaldorelcc-1]: The price elasticity of demand for exports is usually negative, meaning that when the price of exported goods increases, the demand for it abroad decreases (elasticity summarizes this phenomena by taking the percentage change in demand divided by the percentage change in price). However, @blecker_heterodox_2019 takes the absolute value of the negative elasticity in our context, so that when this elasticity is for instance 1, this means that when price increases by one percent, exports decrease by one percent. Thus, the higher this elasticity, the more exports fall when their price increase.
 
+[^kaldorelcc-2]: The higher the income elasticity of demand for exports, the more exports increase when income abroad increases.
 
+$$\hat{P}=\hat{W}-q$$ With $\hat{P}$ the change in domestic price, $\hat{W}$ the change in domestic nominal wage and $q$ domestic labor productivity growth. Inflation is thus a positive function of nominal wage inflation and a negative function of labor productivity growth.
 
+Regarding labor productivity growth:
 
+$$q=q_0+\rho y$$ Which is a positive function of $q_0$ which can be interpreted as any exogenous positive impact on labor productivty (technological change for instance) and of domestic output growth $y$.
 
+Foreign price level change and foreign labor productivity growth are modeled as such:
 
+$$\hat{P_f}=\hat{W_f}-q_f$$
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$$q_f=q_0+\rho_fy_f$$
 
 
 
