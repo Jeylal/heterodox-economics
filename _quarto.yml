@@ -53,6 +53,7 @@ book:
     - part: "Kaldorian models: Export-led Growth and Balance of Payment Constraint"
       chapters: 
         - kaldorELCC.qmd
+    - conclusion.qmd
     - references.qmd
 
 bibliography: references.bib

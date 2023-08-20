@@ -1,0 +1,120 @@
+# Summary and Conclusion
+
+
+```{=html}
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Variable\Model</th>
+    <th class="tg-0pky">Classical-Marxian</th>
+    <th class="tg-0pky">Neo-Keynesian</th>
+    <th class="tg-0pky">Kalecki-Steindl<br></th>
+    <th class="tg-0pky">Neo-Kaleckian</th>
+    <th class="tg-0pky">Distributional Conflict</th>
+    <th class="tg-0pky">Kaldorian Export-led Growth</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Assumptions\Main characteristics</td>
+    <td class="tg-0pky">- Leontief production function<br>- Capital limits maximum output (max Y is Y_K<br>- only one good<br>- No government<br>- No foreign trade<br>- Only capitalists and workers<br>- Supply-led growth<br></td>
+    <td class="tg-0pky">- Distinction between savings and investment <br>- Labor limits maximum output, not capital<br>- Growth is demand-led<br>- Only one good<br>- No foreign trade<br>- Only capitalist and workers<br>- nominal wage fixed\exogenous<br><br></td>
+    <td class="tg-0pky">- Distinction between savings and investment <br>- Labor limits maximum output, not capital<br>- Growth is demand-led<br>- Only one good<br>- No foreign trade<br>- Only capitalist and workers<br><br></td>
+    <td class="tg-0pky">- Positive savings out of wages<br>- Different specification of investment function<br>- Demand can also be profit-led, depends on the sensitivity of investment from the profit share<br>- Open-economy<br></td>
+    <td class="tg-0pky">Introduction of class conflict between workers and capitalist over <br>the distribution of national income<br>Wage-led and profit-led demand regime <br>introduce the effects of utilization on distribution<br><br>Two different hyptheses on distribution and output adjustment speed:<br><br>1. Output adjusts more rapidly than distribution (nominal wage and price)<br>2. Output and distribution have the same adjustment speed<br><br><br><br></td>
+    <td class="tg-0pky">Growth is demand-led<br>Demand is driven by exports<br>Positive association between output and productivity growth<br>Important role of the size of the manufacturing sector<br>Most productivity gains come from manufactures<br>Export-led cumulative causation growth <br></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Technology</td>
+    <td class="tg-0pky">No technological change or exogenous<br>Hicks, Harrod and Solow neutral technological change increase profit rate, growth rate and real wage all at once <br>Marx biased technological change leads to falling rate of profit under fixed wage share closure<br></td>
+    <td class="tg-0pky">- Exogenous </td>
+    <td class="tg-0pky">-&nbsp;&nbsp;Exogenous</td>
+    <td class="tg-0pky">Exogenous</td>
+    <td class="tg-0pky">Labor productivity growth reduces the wage share if not followed by increase in nominal wage.<br>Hence, when labor productivity increases, workers try to bargain for higher nominal wage<br></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Capacity rate of utilization</td>
+    <td class="tg-0pky">Fixed at full level (u = 1)</td>
+    <td class="tg-0pky">Constant</td>
+    <td class="tg-0pky">Flexible and always below one because:<br>1. Bulding ahead of demand<br>2. Entry deterrence<br>3. Indivisibilities<br><br></td>
+    <td class="tg-0pky">Flexible and always below one because:<br>1. Bulding ahead of demand<br>2. Entry deterrence<br>3. Indivisibilities<br><br></td>
+    <td class="tg-0pky">Flexible and always below one because:<br>1. Bulding ahead of demand<br>2. Entry deterrence<br>3. Indivisibilities<br><br><br>Wage-led demand: positively influenced by wage share<br>profit-led demand: negatively influenced by wage share<br><br><br>Wage-squeeze: utilization rate has a negative impact on the wage share<br>Profit-squeeze: utilization rate has a positive impact on the wage share<br><br></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Output growth</td>
+    <td class="tg-0pky">Increase with:<br>- More savings<br>- Lower real wage and higher profit rate<br>- Technological change<br></td>
+    <td class="tg-0pky">Increase with:<br>- Higher growth and profit rate expectations<br>- Confidence in the economy<br>- Higher investment, but not necessarily with higher savings<br><br> Excess savings can depress growth<br></td>
+    <td class="tg-0pky">Increase with:<br>- lower markup rate<br>- higher wage share and real wage<br>- Driven by private consumption<br><br>==&gt; wage-led demand regime<br></td>
+    <td class="tg-0pky">Demand-led, but demand regime either:<br><br>Wage-led:<br><br>- when saving propensity out of wages is relatively low<br>- Sensibility of investments from profit share is low<br>- Foreign trade is not important, domestic economy weakly connected to international trade<br><br><br>Profit-led:<br><br>- When saving propensity out of wage is relatively high<br>- Sensibility of investments from profit share is high<br>- Domestic economy is strongly connected to international trade<br><br><br></td>
+    <td class="tg-0pky"><br>Wage-led demand: positively influenced by wage share<br>profit-led demand: negatively influenced by wage share<br><br><br>Wage-squeeze: utilization rate has a negative impact on the wage share<br>Profit-squeeze: utilization rate has a positive impact on the wage share<br><br></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Inequality (wage and profit shares)<br></td>
+    <td class="tg-0pky">Increasing inequality allows for more rapid growth<br>Wage share constant under closure 2 (fixed wage share through bargaining process)<br></td>
+    <td class="tg-0pky">Increasing inequality allows for more rapid growth: more investment leads to inflation<br>and depress real wage, but increase output<br><br><br></td>
+    <td class="tg-0pky">Less inequality leads to higher rate of growth</td>
+    <td class="tg-0pky">Wage-led:<br>- Lower inequality increases growth<br><br>Profit-led:<br>- Greater inequality increases growth<br></td>
+    <td class="tg-0pky">Wage share and profit share depend on target&nbsp;&nbsp;wage share for firms and workers, which in return depend on institutional factors<br>which favor either capitalists or workers <br></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Real Wage<br></td>
+    <td class="tg-0pky">With technology constant, inverse relationship with profit rate<br>Exogenous under closure 1 (fixed real wage) and determined by historical and social norms<br>defining a minimum standard of living for workers<br><br></td>
+    <td class="tg-0pky">Nominal wage fixed, adjustment in real wage through inflation and deflation<br>Since inflation is always demand-driven, excess investment reduces real wage<br></td>
+    <td class="tg-0pky">Increase with decreasing markup, positive impact on growth<br></td>
+    <td class="tg-0pky">Wage-led:<br>- Higher real wage boosts demand and growth<br><br>Profit-led:<br>-Higher real wage depress growth<br></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Profit Rate</td>
+    <td class="tg-0pky">With technology constant, inverse relationship with real wage </td>
+    <td class="tg-0pky">Higher profit rate expectation necessary for more rapid growth<br></td>
+    <td class="tg-0pky">Inverse relationship with profit share, positive with markup</td>
+    <td class="tg-0pky">Wage-led:<br>- Higher profit rate depress growth<br><br>Profit-led:<br>- Higher profit rate boost growth<br></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Savings and Investment</td>
+    <td class="tg-0pky">No distinction between savings and investment<br>Savings only out of profits, workers do not save<br></td>
+    <td class="tg-0pky">Clear distinction<br>Savings only out of profits (except in early kaldorian model)<br><br>Investment drives growth<br>Excess savings can depress growth through reduction in aggregate demand<br></td>
+    <td class="tg-0pky">Clear distinction</td>
+    <td class="tg-0pky">Clear distinction</td>
+    <td class="tg-0pky">Clear distinction</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Inflation</td>
+    <td class="tg-0pky">Demand-driven?<br></td>
+    <td class="tg-0pky">Always demand-driven, inflation is the result of excess demand<br>from investment in the market for goods and services<br></td>
+    <td class="tg-0pky">Markup pricing<br>Introduction of supply led inflation<br></td>
+    <td class="tg-0pky">Markup pricing<br>Inflation can be supply-led through increase in costs<br></td>
+    <td class="tg-0pky">Markup Pricing</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+</tbody>
+</table>
+```
+
+

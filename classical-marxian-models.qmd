@@ -10,7 +10,6 @@ library(pander)
 library(matlib)
 library(readxl)
 library(mosaic)
-library(reconPlots)
 library(Ryacas0)
 theme_set(theme_light())
 ```
