@@ -1,6 +1,6 @@
 # Introduction: Market Equilibrium
 
-This website is a guide to mainstream and heterodox economics constructed from my personal notes from a variety of bachelor and master level economics courses. goal is to provide summaries of the main topics and models of neoclassical and heterodox economics. Since having some background in mainstream economics is crucial to understand the heterodox and Post-Keynesian economics, mainly because the latter are constructed partly as a response and critic of mainstream-neoclassical economics, the present introduction will summarize the basics of neoclassical production theory, consumer theory and market equilibrium.
+This website is a guide to mainstream and heterodox economics constructed from my personal notes from a variety of bachelor and master level economics courses. The goal is to provide summaries of the main topics and models of neoclassical and heterodox economics. Since having some background in mainstream economics is crucial to understand the heterodox and post-Keynesian economics, mainly because the latter are constructed partly as a response and critic of mainstream-neoclassical economics, the present introduction will summarize the basics of neoclassical production theory, consumer theory and market equilibrium.
 
 Let's first recall what market equilibrium is, because it is one of the most important concept in economics.
 
@@ -34,7 +34,7 @@ The definition given by @pindyck_microeconomics_2013 is more precise:
 
 Stated simply, market equilibrium tells what will be the price of any object or service, as long as the latter are turned into commodities. Market equilibrium explains not only the equilibrium level of prices and commodities of any good or service, but also the change in prices resulting from exogenous shocks (change in income, confidence, technology...).
 
-A market is thus a place (material or not) where an object or service turned into a commodity is offered by suppliers and demanded by consumers and thus traded when an agreement is reached over the price which will determine the value of the traded commodity.
+A market is thus a place (material or not) where an object or service turned into a commodity is offered by suppliers and demanded by consumers and thus traded when an agreement is reached over the price which will determine the value of the traded commodity. In theory and practice, any object, service or even immaterial objects can be commodified and thus have a market with a supply and a demand.
 
 ### Markets under perfect competition
 
@@ -77,7 +77,8 @@ To find the equilibrium price and quantity, we equate the demand and supply func
 
 $$
 q_{demand} = 7- 0.5p
-$$ $$
+$$ 
+$$
 q_{supply} = 1 + 0.6p 
 $$
 
@@ -97,9 +98,11 @@ $$
 p^* = 6/1.1 = 5.45
 $$
 
+
 The equilibrium price level is thus $p^* = 5.45$. To find the equilibrium quantity, we simple put the value of the equilibrium price (5.45) into either the supply or demand function: $7-0.5 \times 5.45 = 4.275 = p^*$
 
 It is easy to check directly if the computation is correct in r:
+
 
 ```{r}
 equilibrium <- curve_intersect(demand, supply, empirical = FALSE, domain = c(1,10))
@@ -121,7 +124,7 @@ ggplot(data = tibble(x = 0:10), aes(x = x))+
   annotate(geom = "segment", x = 0, y = 4.27, xend = 5.45, yend = 4.27, linetype = "dashed")
 ```
 
-At equilibrium, economists say that "the market clears". In other words, when equilibrium is reached all commodities are sold, every suppliers have sold their commodities and every consumers have purchased one.
+At equilibrium, economists say that "the market clears". In other words, when equilibrium is reached all commodities are sold, every suppliers have sold their commodities and every consumers have purchased one. The equilibrium price and quantity levels are also considered as giving the most efficient allocation of resources, efficiency being defined as a situation in which the welfare of every agent cannot be increased at expense of other agent (**Pareto efficiency**, which is the definition of efficiency used in economics).
 
 ### Deviations from market price
 
